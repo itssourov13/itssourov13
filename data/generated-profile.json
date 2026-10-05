@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-05T13:11:28.529Z",
+  "collectedAt": "2026-10-05T14:38:52.607Z",
   "contributions": {
     "monthly": [
       {
@@ -1634,7 +1634,7 @@
       "name": "passhunter",
       "pushedAt": "2026-08-13T15:25:55Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/passhunter"
     },
@@ -1646,7 +1646,7 @@
       "name": "cyberos",
       "pushedAt": "2026-08-30T05:55:49Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/cyberos"
     }
@@ -1702,7 +1702,7 @@
       "name": "personal-website-test",
       "pushedAt": "2026-10-01T21:34:43Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-test"
     },
@@ -1714,7 +1714,7 @@
       "name": "personal-website-demo",
       "pushedAt": "2026-09-30T21:37:51Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [
         "nextjs"
       ],
@@ -1728,7 +1728,7 @@
       "name": "blog",
       "pushedAt": "2026-09-27T07:29:34Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [
         "mdx",
         "typescript",
@@ -1744,7 +1744,7 @@
       "name": "apk-sherlock",
       "pushedAt": "2026-09-22T14:35:13Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/apk-sherlock"
     },
@@ -1756,7 +1756,7 @@
       "name": "hackergf-ai",
       "pushedAt": "2026-09-22T14:34:23Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/hackergf-ai"
     },
@@ -1768,7 +1768,7 @@
       "name": "onyx",
       "pushedAt": "2026-09-22T14:33:03Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/onyx"
     }
@@ -1806,10 +1806,10 @@
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 16,
-    "followers": 2,
+    "followers": 3,
     "publicRepos": 22,
     "totalContributions": 116,
-    "totalStars": 19
+    "totalStars": 38
   },
   "status": "ok",
   "world": {

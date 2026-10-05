@@ -46,7 +46,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="22 public repositories, 2 followers, 16 repositories pushed in the last 90 days, 19 stars received" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="22 public repositories, 3 followers, 16 repositories pushed in the last 90 days, 38 stars received" width="100%">
 
 ## Languages & activity
 
