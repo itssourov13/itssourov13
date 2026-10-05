@@ -1,0 +1,113 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { describe, expect, it } from 'vitest';
+import { fixtureData } from '../fixtures/index.ts';
+import { validateConfig } from './config/schema.ts';
+import type { MediaState } from './data/media.ts';
+import { inspectMedia } from './data/media.ts';
+import { buildOutputs, diffOutputs, writeOutputs } from './pipeline.ts';
+import { checkLinks, checkSecrets, findLocalRefs, scanForSecrets } from './validation/checks.ts';
+
+const config = validateConfig({
+  profile: { username: 'itssourov13', profile_url: 'https://github.com/itssourov13', display_name: 'Md Sourov Mondol', short_name: 'Sourov', headline: 'Security', bio: ['Hello & welcome'] },
+  featured_repositories: ['fixture-scanner', 'fixture-os'],
+  focus: ['AppSec'],
+  socials: { github: 'https://github.com/itssourov13' },
+  world: { url: 'https://itssourov13.github.io/itssourov13/' },
+});
+const noMedia: MediaState = { warnings: [] };
+const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'profile-'));
+
+describe('generation', () => {
+  it('is deterministic', () => {
+    const a = buildOutputs(config, fixtureData(), noMedia).files;
+    const b = buildOutputs(config, fixtureData(), noMedia).files;
+    expect(a).toEqual(b);
+  });
+  it('renders a valid state before any data is collected, without fabricated metrics', () => {
+    const { files } = buildOutputs(config, null, noMedia);
+    const readme = files.find((f) => f.path === 'README.md')!.content;
+    expect(readme).toContain('Awaiting first data collection');
+    expect(readme).not.toMatch(/followers|stars received/i);
+    expect(files.some((f) => f.path.endsWith('contribution-terrain.svg'))).toBe(false);
+    JSON.parse(files.find((f) => f.path === 'data/generated-profile.json')!.content);
+  });
+  it('never creates a card for the profile repository', () => {
+    const { files } = buildOutputs({ ...config, featured_repositories: ['fixture-scanner'] }, fixtureData(), noMedia);
+    expect(files.some((f) => f.path.endsWith('/itssourov13.svg'))).toBe(false);
+    const readme = files.find((f) => f.path === 'README.md')!.content;
+    expect(readme).not.toContain('repos/itssourov13/itssourov13');
+  });
+  it('escapes hostile repository metadata', () => {
+    const data = fixtureData();
+    data.repos[0]!.description = '<script>alert(1)</script> | **x** [a](javascript:alert(1))';
+    data.repos[0]!.topics = ['"><svg onload=alert(1)>'];
+    const { files } = buildOutputs(config, data, noMedia);
+    for (const f of files.filter((x) => x.path.endsWith('.svg') || x.path === 'README.md')) {
+      expect(f.content).not.toContain('<script>');
+      expect(f.content).not.toContain('<svg onload');
+    }
+  });
+  it('writes only what it should, removes stale SVGs, and passes the sync/link/secret checks', () => {
+    const root = tmp();
+    const { files } = buildOutputs(config, fixtureData(), noMedia);
+    fs.mkdirSync(path.join(root, 'assets/generated'), { recursive: true });
+    fs.writeFileSync(path.join(root, 'assets/generated/stale.svg'), '<svg/>');
+    fs.writeFileSync(path.join(root, 'assets/generated/keep.png'), 'x');
+    writeOutputs(root, files);
+    fs.mkdirSync(path.join(root, 'docs'), { recursive: true });
+    fs.writeFileSync(path.join(root, 'docs/ARCHITECTURE.md'), '# x');
+    expect(fs.existsSync(path.join(root, 'assets/generated/stale.svg'))).toBe(false);
+    expect(fs.existsSync(path.join(root, 'assets/generated/keep.png'))).toBe(true);
+    expect(diffOutputs(root, files)).toEqual([]);
+    expect(checkLinks(root)).toEqual([]);
+    expect(checkSecrets(root)).toEqual([]);
+    fs.appendFileSync(path.join(root, 'README.md'), 'x');
+    expect(diffOutputs(root, files)).toEqual(['out of date: README.md']);
+  });
+  it('detects broken local references and secret-looking values', () => {
+    const root = tmp();
+    fs.writeFileSync(path.join(root, 'README.md'), '<img src="assets/missing.svg"> [x](docs/none.md) [ok](https://example.com)');
+    expect(checkLinks(root)).toHaveLength(2);
+    expect(findLocalRefs('<a href="#a"><img src="a/b.svg?x=1">')).toEqual(['a/b.svg']);
+    expect(scanForSecrets('token ghp_' + 'A'.repeat(36))).toContain('GitHub token');
+    expect(scanForSecrets('nothing here')).toEqual([]);
+  });
+});
+
+describe('media handling', () => {
+  const mediaCfg = { profile_image: 'assets/source/profile.png', hero_animation: 'assets/source/intro.gif', intro_video: 'assets/source/intro.mp4', intro_video_url: '' };
+  const png = (w: number, h: number) => {
+    const b = Buffer.alloc(32);
+    Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]).copy(b);
+    b.writeUInt32BE(w, 16);
+    b.writeUInt32BE(h, 20);
+    return b;
+  };
+  it('treats absent media as a normal fallback (no warnings, no image in README)', () => {
+    const root = tmp();
+    const media = inspectMedia(root, mediaCfg);
+    expect(media.profileImage).toBeUndefined();
+    expect(media.warnings).toEqual([]);
+    const readme = buildOutputs(config, null, media).files.find((f) => f.path === 'README.md')!.content;
+    expect(readme).not.toContain('assets/source');
+  });
+  it('accepts a valid PNG and rejects disguised or out-of-range files', () => {
+    const root = tmp();
+    fs.mkdirSync(path.join(root, 'assets/source'), { recursive: true });
+    fs.writeFileSync(path.join(root, 'assets/source/profile.png'), png(400, 400));
+    const ok = inspectMedia(root, mediaCfg);
+    expect(ok.profileImage).toMatchObject({ path: 'assets/source/profile.png', width: 400, height: 400 });
+    expect(buildOutputs(config, null, ok).files.find((f) => f.path === 'README.md')!.content).toContain('assets/source/profile.png');
+    fs.writeFileSync(path.join(root, 'assets/source/profile.png'), 'not an image at all, just text');
+    expect(inspectMedia(root, mediaCfg).warnings.join()).toContain('not a supported format');
+    fs.writeFileSync(path.join(root, 'assets/source/profile.png'), png(10, 10));
+    expect(inspectMedia(root, mediaCfg).profileImage).toBeUndefined();
+  });
+  it('refuses paths outside the repository', () => {
+    const media = inspectMedia(tmp(), { ...mediaCfg, profile_image: '../outside.png' });
+    expect(media.profileImage).toBeUndefined();
+    expect(media.warnings.join()).toContain('outside the repository');
+  });
+});

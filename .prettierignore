@@ -1,0 +1,9 @@
+node_modules
+world/dist
+.preview
+assets/generated
+data
+README.md
+HANDOFF.md
+CLAUDE_MASTER_PROMPT.md
+package-lock.json

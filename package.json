@@ -1,0 +1,52 @@
+{
+  "name": "itssourov13-profile-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SOUROV // DIGITAL SECURITY PROFILE ENGINE — self-updating GitHub profile README + 3D companion for itssourov13",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "collect": "tsx scripts/src/index.ts collect --allow-stale",
+    "generate": "tsx scripts/src/index.ts generate",
+    "update": "tsx scripts/src/index.ts update",
+    "generate:fixture": "tsx scripts/src/index.ts generate --fixture",
+    "validate:config": "tsx scripts/src/index.ts validate-config",
+    "check:generated": "tsx scripts/src/index.ts check-generated",
+    "check:links": "tsx scripts/src/index.ts check-links",
+    "check:secrets": "tsx scripts/src/index.ts check-secrets",
+    "check": "npm run validate:config && npm run check:generated && npm run check:links && npm run check:secrets",
+    "world:dev": "vite --config world/vite.config.ts",
+    "world:build": "vite build --config world/vite.config.ts",
+    "world:preview": "vite preview --config world/vite.config.ts",
+    "build": "npm run world:build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": ">=0.170.0 <1.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": ">=0.170.0 <1.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0",
+    "yaml": "^2.6.0"
+  }
+}

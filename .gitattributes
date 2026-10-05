@@ -1,0 +1,4 @@
+* text=auto eol=lf
+assets/generated/** linguist-generated=true
+data/** linguist-generated=true
+README.md linguist-generated=false

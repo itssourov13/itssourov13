@@ -1,0 +1,65 @@
+# SOUROV // DIGITAL SECURITY PROFILE — single human-editable source of truth.
+# Validated by scripts/src/config/schema.ts on every run. See docs/CUSTOMIZATION.md.
+
+profile:
+  username: itssourov13 # canonical account; the generator refuses any other value
+  profile_url: https://github.com/itssourov13
+  display_name: Md Sourov Mondol
+  short_name: Sourov
+  headline: Cybersecurity · Software Engineering · Research
+  location: Bangladesh
+  website: "" # optional https URL
+  photo_alt: Portrait of Md Sourov Mondol
+  bio:
+    - Cybersecurity, software engineering and research — building security tooling and learning in public.
+
+socials: # empty string = hidden; all values must be https URLs
+  github: https://github.com/itssourov13
+  linkedin: https://www.linkedin.com/in/mdsourov-mondol630
+  x: https://x.com/md_sourov630
+  facebook: https://www.facebook.com/md.sourov.mondol630
+  instagram: https://www.instagram.com/md.sourov.mondol630
+  blog: ""
+  portfolio: ""
+
+# Descriptive focus areas (identity content, not metrics). Review and edit freely.
+focus:
+  - Application Security
+  - Web Security
+  - Vulnerability Research
+  - Reverse Engineering
+  - Security Tooling
+  - Security Automation
+
+# Manually curated; never replaced by newly created repositories.
+# Names are matched against live GitHub data; unknown names are skipped with a warning.
+featured_repositories:
+  - passhunter
+  - cyberos
+
+project_rules: # applies to the automatic "latest" list only
+  latest_limit: 6
+  featured_limit: 6
+  exclude_forks: true
+  exclude_archived: true
+  public_only: true
+
+content: # toggle optional README sections
+  show_constellation: true
+  show_terrain: true
+  show_intelligence: true
+  show_language_galaxy: true
+  show_activity_pulse: true
+
+media: # user-supplied files; missing files simply hide the related block
+  profile_image: assets/source/profile.png
+  hero_animation: assets/source/intro.gif
+  intro_video: assets/source/intro.mp4
+  intro_video_url: "" # optional https URL the hero GIF links to (e.g. a hosted video)
+
+world:
+  enabled: true
+  title: SOUROV // DIGITAL WORLD
+  url: https://itssourov13.github.io/itssourov13/ # README call-to-action target
+  reduced_motion_default: false
+  quality: auto # auto | low | medium | high
