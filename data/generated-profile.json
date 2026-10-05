@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-05T14:38:52.607Z",
+  "collectedAt": "2026-10-05T22:34:40.067Z",
   "contributions": {
     "monthly": [
       {
@@ -36,22 +36,22 @@
       },
       {
         "month": "2026-07",
-        "total": 36
+        "total": 37
       },
       {
         "month": "2026-08",
-        "total": 18
+        "total": 47
       },
       {
         "month": "2026-09",
-        "total": 41
+        "total": 69
       },
       {
         "month": "2026-10",
-        "total": 4
+        "total": 36
       }
     ],
-    "total": 116,
+    "total": 206,
     "weeks": [
       [
         [
@@ -1036,11 +1036,11 @@
         ],
         [
           13,
-          4
+          3
         ],
         [
           4,
-          2
+          1
         ]
       ],
       [
@@ -1249,8 +1249,8 @@
           0
         ],
         [
-          0,
-          0
+          1,
+          1
         ]
       ],
       [
@@ -1272,7 +1272,7 @@
         ],
         [
           8,
-          4
+          2
         ],
         [
           0,
@@ -1290,11 +1290,11 @@
         ],
         [
           7,
-          3
+          2
         ],
         [
           8,
-          4
+          2
         ],
         [
           0,
@@ -1316,11 +1316,11 @@
       [
         [
           10,
-          4
+          2
         ],
         [
           3,
-          2
+          1
         ],
         [
           0,
@@ -1361,12 +1361,12 @@
           0
         ],
         [
-          0,
-          0
+          2,
+          1
         ],
         [
-          0,
-          0
+          3,
+          1
         ],
         [
           0,
@@ -1392,160 +1392,10 @@
         ],
         [
           6,
-          3
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ]
-      ],
-      [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          4,
-          2
-        ],
-        [
-          3,
-          2
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          2,
-          1
-        ]
-      ],
-      [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ]
-      ],
-      [
-        [
-          1,
-          1
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ]
-      ],
-      [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          8,
-          4
-        ]
-      ],
-      [
-        [
-          1,
-          1
-        ],
-        [
-          1,
-          1
-        ],
-        [
-          5,
           2
         ],
         [
           4,
-          2
-        ],
-        [
-          8,
-          4
-        ],
-        [
-          2,
           1
         ],
         [
@@ -1555,24 +1405,174 @@
       ],
       [
         [
-          5,
-          2
+          0,
+          0
         ],
         [
           0,
           0
+        ],
+        [
+          9,
+          2
         ],
         [
           6,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          11,
           3
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          5,
+          1
         ],
         [
           0,
           0
         ],
         [
-          0,
-          0
+          10,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          10,
+          2
         ],
         [
           0,
@@ -1610,17 +1610,17 @@
         ],
         [
           3,
-          2
+          1
         ]
       ],
       [
         [
-          0,
-          0
+          12,
+          3
         ],
         [
-          1,
-          1
+          21,
+          4
         ]
       ]
     ]
@@ -1657,19 +1657,19 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 67.2
+        "percent": 66.6
       },
       {
         "name": "Python",
-        "percent": 13.2
+        "percent": 13.1
       },
       {
         "name": "Go",
-        "percent": 10.4
+        "percent": 10.3
       },
       {
         "name": "JavaScript",
-        "percent": 4.3
+        "percent": 4.5
       },
       {
         "name": "MDX",
@@ -1677,23 +1677,35 @@
       },
       {
         "name": "CSS",
-        "percent": 0.7
+        "percent": 0.9
       },
       {
         "name": "Rust",
         "percent": 0.6
       },
       {
-        "name": "HTML",
-        "percent": 0.2
+        "name": "Astro",
+        "percent": 0.5
       },
       {
         "name": "Other",
-        "percent": 0.4
+        "percent": 0.6
       }
     ]
   },
   "latest": [
+    {
+      "createdAt": "2026-10-05T16:00:03Z",
+      "description": "Sketchbook",
+      "forks": 0,
+      "language": "Astro",
+      "name": "sketchbook",
+      "pushedAt": "2026-10-05T22:17:47Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/sketchbook"
+    },
     {
       "createdAt": "2026-09-17T15:59:42Z",
       "description": "Personal website . Build with Next js.",
@@ -1759,18 +1771,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/hackergf-ai"
-    },
-    {
-      "createdAt": "2026-09-20T10:29:15Z",
-      "description": "Onion Web - A privacy-first research archive for security, privacy, intelligence, and network observability.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "onyx",
-      "pushedAt": "2026-09-22T14:33:03Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/onyx"
     }
   ],
   "media": {
@@ -1805,11 +1805,11 @@
   },
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 16,
+    "activeRepos90d": 17,
     "followers": 3,
-    "publicRepos": 22,
-    "totalContributions": 116,
-    "totalStars": 38
+    "publicRepos": 23,
+    "totalContributions": 206,
+    "totalStars": 39
   },
   "status": "ok",
   "world": {

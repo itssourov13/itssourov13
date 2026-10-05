@@ -25,32 +25,32 @@ Cybersecurity, software engineering and research — building security tooling a
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-test, personal-website-demo, blog, apk-sherlock, hackergf-ai, onyx" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, sketchbook, personal-website-test, personal-website-demo, blog, apk-sherlock, hackergf-ai" width="100%">
 
 ## Latest activity
 
 | Repository | Description | Language | Last push |
 | --- | --- | --- | --- |
+| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | 2026-10-05 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | 2026-10-01 |
 | [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering. | TypeScript | 2026-09-30 |
 | [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and… | MDX | 2026-09-27 |
 | [apk-sherlock](https://github.com/itssourov13/apk-sherlock) | APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analysis, risk… | TypeScript | 2026-09-22 |
 | [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create,… | JavaScript | 2026-09-22 |
-| [onyx](https://github.com/itssourov13/onyx) | Onion Web - A privacy-first research archive for security, privacy, intelligence, and network observability. | TypeScript | 2026-09-22 |
 
 <sub>Automatically selected from public repositories by most recent push.</sub>
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 116 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 206 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="22 public repositories, 3 followers, 16 repositories pushed in the last 90 days, 38 stars received" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="23 public repositories, 3 followers, 17 repositories pushed in the last 90 days, 39 stars received" width="100%">
 
 ## Languages & activity
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 67.2%, Python 13.2%, Go 10.4%, JavaScript 4.3%, MDX 2.9%, CSS 0.7%, Rust 0.6%, HTML 0.2%, Other 0.4%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.6%, Python 13.1%, Go 10.3%, JavaScript 4.5%, MDX 2.9%, CSS 0.9%, Rust 0.6%, Astro 0.5%, Other 0.6%" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution trend over the last 12 months" width="100%">
 
