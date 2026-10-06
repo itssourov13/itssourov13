@@ -31,7 +31,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | Active | 2026-10-05 |
+| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | Active | 2026-10-06 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
 | [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
 | [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-09-27 |
@@ -52,7 +52,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 212 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 215 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
@@ -60,7 +60,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Languages & activity
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.6%, Python 13.1%, Go 10.3%, JavaScript 4.5%, MDX 2.9%, CSS 0.9%, Rust 0.6%, Astro 0.5%, Other 0.6%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.7%, Python 13.1%, Go 10.3%, JavaScript 4.5%, MDX 2.9%, CSS 0.9%, Rust 0.6%, Astro 0.3%, Other 0.6%" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution trend over the last 12 months" width="100%">
 
