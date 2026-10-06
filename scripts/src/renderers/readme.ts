@@ -1,6 +1,7 @@
 import type { CollectedData, ProfileConfig, ProjectRecord } from '../types.ts';
 import type { MediaState } from '../data/media.ts';
-import { computeStats, graphProjects, languageTotals, selectFeatured, selectLatest } from '../data/normalize.ts';
+import { activityOf, computeStats, excludedProjects, graphProjects, languageTotals, selectFeatured, selectLatest } from '../data/normalize.ts';
+import { ACTIVITY_LABELS } from '../../../shared/activity.ts';
 import { escapeMd, escapeXml, safeRepoSlug, safeUrl, truncate } from '../util/escape.ts';
 
 export const GEN = 'assets/generated';
@@ -84,11 +85,21 @@ function featuredSection(targets: CardTarget[]): string {
   return `## Featured work\n\n<table>\n${rows.join('\n')}\n</table>`;
 }
 
-function latestSection(latest: ProjectRecord[], hasData: boolean): string {
+function latestSection(latest: ProjectRecord[], hasData: boolean, ref: string): string {
   if (!hasData) return '## Latest activity\n\n_Live repository data appears after the first scheduled update._';
   if (latest.length === 0) return '## Latest activity\n\n_No public repositories match the current display rules._';
-  const rows = latest.map((p) => `| [${escapeMd(p.name)}](${safeUrl(p.url)}) | ${escapeMd(truncate(p.description || '—', 110))} | ${escapeMd(p.primaryLanguage ?? '—')} | ${p.pushedAt.slice(0, 10)} |`);
-  return ['## Latest activity', '', '| Repository | Description | Language | Last push |', '| --- | --- | --- | --- |', ...rows, '', '<sub>Automatically selected from public repositories by most recent push.</sub>'].join('\n');
+  const rows = latest.map((p) => {
+    const tags = p.topics.slice(0, 3).map((t) => `\`${t.replace(/[^A-Za-z0-9-]/g, '')}\``).join(' ');
+    const desc = escapeMd(truncate(p.description || '—', 100));
+    return `| [${escapeMd(p.name)}](${safeUrl(p.url)}) | ${desc}${tags ? `<br>${tags}` : ''} | ${escapeMd(p.primaryLanguage ?? '—')} | ${ACTIVITY_LABELS[activityOf(p, ref)]} | ${p.pushedAt.slice(0, 10)} |`;
+  });
+  return ['## Latest activity', '', '| Repository | Description | Language | Status | Last push |', '| --- | --- | --- | --- | --- |', ...rows, '', '<sub>Automatically selected from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>'].join('\n');
+}
+
+function excludedSection(items: ReturnType<typeof excludedProjects>): string {
+  if (items.length === 0) return '';
+  const rows = items.map(({ project: p, reason }) => `| [${escapeMd(p.name)}](${safeUrl(p.url)}) | ${reason === 'archived' ? 'Archived' : 'Fork'} | ${p.pushedAt.slice(0, 10)} |`);
+  return ['<details>', `<summary>Archived &amp; excluded (${items.length})</summary>`, '', '| Repository | Reason | Last push |', '| --- | --- | --- |', ...rows, '', '</details>'].join('\n');
 }
 
 export function renderReadme(config: ProfileConfig, data: CollectedData | null, media: MediaState): string {
@@ -108,7 +119,8 @@ export function renderReadme(config: ProfileConfig, data: CollectedData | null, 
   if (data && c.show_constellation && graph.length >= 2) {
     sections.push(`${img(`${GEN}/project-constellation.svg`, `Project constellation: ${graph.map((g) => g.name).join(', ')}`, 'width="100%"')}`);
   }
-  sections.push(latestSection(latest, data !== null));
+  sections.push(latestSection(latest, data !== null, data?.collectedAt ?? ''));
+  if (data) sections.push(excludedSection(excludedProjects(data.repos, config.project_rules, targets.map((t) => t.name), config.profile.username)));
 
   if (data) {
     const parts: string[] = [];

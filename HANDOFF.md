@@ -76,29 +76,35 @@ GitHub Actions automation
 
 ## 2. Current Status
 
-**Status:** Phase 1 complete (code, workflows, docs written) — **not yet installed, built, or run in a real toolchain or on GitHub.**
-**Date of this state:** 2026-10-04
+**Status:** Upgrade pass (phases 1–14 of the upgrade brief) implemented on top of the Phase 1 delivery. **Source-complete; not verified in a real toolchain** (see §16 and the change log). Date: 2026-10-06.
 
-### What exists right now
+### Baseline (before the upgrade)
+- Live repo `itssourov13/itssourov13` (web fetch, 2026-10-06): working, 2 commits, README generated from real data (22 public repos, data stamp 2026-10-05), 9 open PRs (presumably Dependabot, not inspected).
+- The upgrade was developed on a sandbox copy of the Phase 1 delivery (no `node_modules`, no network from bash, no access to the user's working copy). Baseline checks runnable there: stand-in-vitest 45/45, `validate-config`/`check-*` OK, `tsc` clean on scripts. Not runnable: `npm run lint|build|format:check` (tools not installed; installation forbidden by the brief).
 
-- `profile.config.yml` — validated source of truth (username pinned to `itssourov13`).
-- `scripts/src/` — config validator, GitHub API client (timeouts/retries/strict parsing), collection, normalization, deterministic SVG generators (hero light/dark, project cards, isometric contribution terrain, constellation, language galaxy, activity pulse, intelligence panel, terminal, CTA), README renderer, media inspection, validation checks, CLI (`collect | generate | update | validate-config | check-generated | check-links | check-secrets`).
-- `world/` — Vite + React 19 + R3F app (data core, project nodes, language ring, instanced contribution terrain, timeline pillars, optional portrait frame, particles, camera tour, quality presets, reduced motion, no-WebGL/context-lost fallback, DOM overlay with all content as real links/text).
-- `.github/workflows/` — `ci.yml`, `update-profile.yml`, `deploy-world.yml`, `dependabot.yml`.
-- `docs/` — ARCHITECTURE, AUTOMATION, MEDIA, 3D_WORLD, CUSTOMIZATION, TROUBLESHOOTING, RESEARCH.
-- `README.md`, `assets/generated/*`, `data/generated-profile.json` — generated in the **"no collected data yet"** state: hero, focus, featured cards (name + link only, "details appear after next update"), world CTA. **No GitHub-derived numbers are present because none have been collected.** `data/github.*.json` and `data/repositories.json` do not exist until the first `collect`.
+### Current architecture
+`profile.config.yml` → collector (`scripts/src/api`, `data/collect.ts`) → `data/*.json` → pure pipeline (`scripts/src/pipeline.ts`) → `README.md`, `assets/generated/*.svg`, `data/generated-profile.json` → world (`world/`). **New:** `shared/` (activity classification, relationship graph, momentum) is imported by both the generator and the world. See docs/ARCHITECTURE.md (selection/sorting rules), docs/3D_WORLD.md (zones, performance, a11y), docs/AUTOMATION.md (deploy-trigger audit).
 
-### Environment limits of the session that produced this
-Sandbox network was disabled (GitHub API and npm registry returned 403), so: no `npm install`, no lockfile, no live API call, no real `vitest`/`eslint`/`vite` run. The user said they would install/build in their own terminal.
+### Completed phases (summary)
+1. **Data model:** shared activity/graph/momentum; `excludedProjects`; tests for missing fields, dedupe, sorting, archived/fork handling.
+2. **Showcase:** cards show activity status, archived marker, release; Latest table has Status + topics; collapsed “Archived & excluded”; escaping tests.
+3. **Intelligence:** 30-day momentum (real calendar only), shown in the pulse panel and world; stale-data notice in the world (runtime, ≥3 days).
+4. **World zones:** layered core with language satellites, batched constellation with selection/halo/detail panel, instanced terrain, GitHub intelligence wall, security lab (focus areas), date-true timeline with release markers, portrait, links gate, 9 zone-aware camera stops. Split into `world/src/scene/*`.
+5–6, 9. **Interaction/a11y/mobile:** DOM equivalents for every interactive 3D concept, live region, skip link, Escape, Prev/Next project, 44px targets, bottom-sheet and tablet layouts, forced-colors rule.
+7. **Performance:** hybrid frameloop (demand when no ambient motion), store-owned DPR with movement regression, pure hysteresis controller (no ping-pong), no Canvas remount except manual Low↔other, draw-call caps, memoized static zones, no per-frame state/allocations (grep-audited).
+8. **Loading/failure:** skeleton, retry, scene-loading, error boundary, lazy portrait with fallback.
+10–11. **Polish/settings:** restrained motion; Quality, Reduce motion, Pause ambient, status line, reset; schema-safe `localStorage` prefs.
+12. **README** hierarchy preserved; **13. Actions audit:** `shared/**` added to deploy paths; deploy now runs only when `data/generated-profile.json` changed; Dependabot grouped + majors of the 3D stack ignored.
+14. **Tests:** 96 (stand-in runner) across scripts, shared, world pure modules.
 
-### Decisions made
-- npm (not pnpm), single `package.json` at root (world is not a separate package). **`package-lock.json` is missing and must be generated and committed** (`npm ci` in CI requires it).
-- Featured seeds: `passhunter`, `cyberos` (from verified seed list). `onyx` (mentioned in master prompt example) is unconfirmed, so not featured. Others (`blog`, `study-planner-apk`, `personal-website-demo`) are discoverable via Latest, not featured — user can add.
-- Focus areas, headline and bio in `profile.config.yml` are **seed text derived from the master prompt example**; the user should review them.
-- Hand-written config validator (no zod) to keep dependencies minimal. Only runtime script dependency: `yaml`.
-- No image-processing dependency: media is validated, not transcoded (see docs/MEDIA.md). No contribution-snake (needs third-party action); optional GIF slot instead.
-- No postprocessing in the world (kept lean). No research-archive room (no research data source).
-- Deploy is triggered explicitly from the update workflow via `workflow_call` because `GITHUB_TOKEN` pushes do not trigger workflows.
+### Dependency requests
+None. `package.json` is unchanged (no new dependencies). `DEPENDENCY_REQUEST.md` was not needed.
+
+### Decisions not to reverse casually
+- Generated outputs are authoritative; never hand-edit README/`assets/generated`/`data/generated-profile.json`.
+- `schemaVersion` stays 1 with additive fields; the world parser derives missing fields via `shared/`.
+- Only the Low↔non-Low manual switch remounts the Canvas (antialiasing).
+- Camera stops exist only for zones with content. No invented categories, metrics, telemetry, or research items.
 
 ## 3. Immediate First Actions for a New Agent
 
@@ -478,24 +484,21 @@ Before an agent reports completion, update this table with real evidence:
 
 | Check | Status | Evidence / command |
 |---|---|---|
-| Repository inspected | ✅ | Greenfield: only the two uploaded markdown files existed (`ls`, `find`). |
-| Config schema validated | ✅ | `node scripts/src/index.ts validate-config` → OK (run via Node 22 type stripping; `yaml` 2.8.3 borrowed from a global package). |
-| Dependencies installed from lockfile | ☐ | Not done — no network, no lockfile. |
-| Lint passes | ☐ | `eslint` never run. |
-| Typecheck passes | ◐ | Global `tsc` 6.0.3 on `scripts/**` (incl. tests, via a vitest type shim) and `world/src/data/parse.ts`, `world/base.ts`: **0 errors**. Full `npm run typecheck` (incl. React/R3F/three types) **not run**; the world TSX was only syntax-checked (no TS1xxx errors; other errors were missing-module noise). |
-| Unit tests pass | ◐ | 45/45 pass, but executed with a **~60-line stand-in for vitest**, not real vitest. Re-run `npm test`. |
-| Generator runs | ✅ | `node scripts/src/index.ts generate` (no data) and `generate --fixture` (synthetic data). |
-| README generated | ✅ | No-data state only. Data-rich README only exercised with fixtures in tests / `.preview/` (deleted). |
-| Generated assets exist | ✅ | `assets/generated/{hero-dark,hero-light,terminal,enter-world}.svg`, `cards/{passhunter,cyberos}.svg` |
-| No broken local asset paths | ✅ | `check-links` → OK |
-| No secrets emitted | ✅ | `check-secrets` → OK |
-| Git diff clean check | ☐ | Not a git repo in the sandbox; run `git diff --check`. |
+| Repository inspected | ◐ | Live README fetched; sandbox copy fully read. **User's working copy and git history not accessible** — a patch (not a commit) is provided. |
+| Config schema validated | ✅ | `node scripts/src/index.ts validate-config` → OK |
+| Dependencies installed from lockfile | ☐ | Forbidden by brief / unavailable. |
+| Lint passes | ☐ | `eslint` not installed here. Run `npm run lint`. (Code avoids `eslint-disable` for unknown rules.) |
+| Typecheck passes | ◐ | `tsc` 6.0.3: scripts + shared + world pure modules + tests **0 errors**. World TSX checked only against hand-written stubs of react/three/R3F/drei: only stub-artifact errors (implicit-any on JSX handlers, CSS import) — i.e. no cross-file mistakes, but **real library types unverified**. Run `npm run typecheck`. |
+| Unit tests pass | ◐ | 96/96 with a ~60-line stand-in for vitest (`describe/it/expect` subset). Run `npm test`. |
+| Generator runs / deterministic | ✅ | `generate`, `generate --fixture`; `check-generated` OK; determinism asserted in tests (README + all outputs byte-identical). |
+| README generated | ◐ | Sandbox has no collected data → generated the no-data state only. **The patch deliberately excludes README.md, assets/generated/**, data/** — run `npm run generate` in your repo (it has real data).** Data-rich README exercised through fixtures/tests. |
+| No broken local asset paths / secrets | ✅ | `check-links`, `check-secrets` OK (no-data state). |
+| `git diff --check` | ✅ | clean in the sandbox repo. |
+| Format check | ☐ | `prettier` not installed. Run `npm run format:check` / `npm run format` (code was hand-formatted, not prettier-run; expect diffs). |
 | 3D production build passes | ☐ | Not run. |
-| Pages workflow validated | ◐ | All four YAML files parse. Never executed on GitHub. Action versions cross-checked with GitHub Pages docs (docs/RESEARCH.md). |
-| Browser/WebGL runtime tested | ☐ | Not run. (Chromium exists in the sandbox at `/opt/pw-browsers`, used only to screenshot SVGs.) |
-| Mobile behavior tested | ☐ | Not run. CSS has a ≤720px layout; untested. |
-| Reduced motion tested | ☐ | Not run. |
-| Final README inspected | ◐ | No-data README read in full. Fixture SVGs (hero, terrain, constellation, language galaxy, pulse, intelligence, cards, terminal, CTA) were rendered with headless Chromium and viewed; fixed: terrain depth, constellation bounds, card text overflow. Not viewed: hero-light, and any rendering on github.com itself. |
+| Pages workflow validated | ◐ | YAML parses; logic reviewed; never executed on GitHub. |
+| Browser/WebGL/mobile/reduced-motion/keyboard runtime | ☐ | **Not run.** Nothing in `world/` has executed in a browser. |
+| Visual inspection | ◐ | Fixture SVGs (cards with status dot/archived, pulse with momentum, terrain, constellation, language galaxy, intelligence, terminal, CTA) rendered in headless Chromium and viewed; one overlap fixed (pulse label). 3D scene and DOM overlay CSS never rendered. |
 
 Never mark a runtime/browser check as passed unless it was actually performed.
 
@@ -560,6 +563,30 @@ Future agents should append entries using this format:
 5. `npm run build`; push; Settings → Pages → Source = GitHub Actions; run **Update profile** manually; confirm https://itssourov13.github.io/itssourov13/ loads.
 6. Update docs/RESEARCH.md rows from Provisional to Verified; tick §16 honestly.
 7. Optional: add `assets/source/profile.png` (see docs/MEDIA.md), review focus/bio text in `profile.config.yml`.
+
+### 2026-10-06 — Upgrade pass (phases 1–14) — implemented, unbuilt
+
+**Changed** (source only; see `git diff --stat` on the patch): new `shared/` (3 modules + tests); `scripts/src/data/{normalize,worldData}.ts`, `generators/{cards,panels}.ts`, `renderers/readme.ts`, `pipeline.ts` (+tests); `world/src/{data/parse.ts, effects/*, state/selection.ts, scene/* (split), ui/*, app/App.tsx, styles.css}`; `.github/workflows/{update-profile,deploy-world}.yml`, `dependabot.yml`; docs (all six + RESEARCH); `tsconfig.json`, `vitest.config.ts` (include `shared`).
+
+**Verified**: see §16. Test count 45 → 96 (stand-in runner).
+
+**Not verified**: everything needing npm/browsers: lint, real vitest, prettier, `vite build`, any runtime behaviour of the 3D world (frameloop demand/invalidate interplay, `regress`/DPR behaviour, PerformanceMonitor hysteresis feel, instanced lab/wall transforms, label legibility, touch), keyboard/screen-reader pass, GitHub workflows, Dependabot syntax.
+
+**Known limitations / things most likely to need a fix on first real run**
+- R3F/drei API assumptions listed in docs/RESEARCH.md (e.g. `useThree(s => s.performance.current)` re-render cadence; `OrbitControls regress`; `Html` with `distanceFactor`).
+- Lab rack/screen/scan placement math (`ResearchLab.place`) is untested visually — verify racks face the core and the scan bar stays on the screen.
+- Intelligence wall and lab are placed at z = −22 / +17; camera stops tuned by reasoning, not by eye.
+- Stale-data notice uses `Date.now()` in the browser (README stays deterministic).
+- No Prettier pass was run.
+
+**Next (exact steps)**
+1. In your repo: `git switch -c upgrade/world-v2`; `git apply --3way --check <patch>` then `git apply --3way <patch>` (patch is source-only).
+2. `npm run generate` (regenerates README/cards/JSON from your real `data/*.json`), then `npm run format` (Prettier), `npm run lint`, `npm run typecheck`, `npm test`, `npm run check`, `npm run build`. Fix whatever the real toolchain reports (expect small API/type fixes in `world/src/scene/*`).
+3. `npm run world:dev` and walk the checklist in docs/3D_WORLD.md: all 9 stops, select/open a project by mouse and by keyboard, Prev/Next, Escape, Low/Medium/High, Reduce motion, Pause ambient, WebGL disabled, a phone viewport (≤ 480 px) and tablet, delete `assets/source/profile.png` (portrait stop disappears), corrupt `generated-profile.json` (retry UI), refresh (preferences persist).
+4. Watch `frameloop`: with Reduce motion on, confirm the scene still redraws on orbit, hover, stop change; if not, add the missing `invalidate` source in `Perf.tsx`.
+5. Decide whether to feature `onyx` (it exists on GitHub) in `featured_repositories`.
+6. Triage the 9 open Dependabot PRs after the new `dependabot.yml` lands (majors of the 3D stack are now ignored).
+7. Update docs/RESEARCH.md rows to Verified and tick §16.
 
 ## 18. Next-Agent Handoff Format
 

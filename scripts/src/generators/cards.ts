@@ -1,4 +1,6 @@
 import type { ProjectRecord } from '../types.ts';
+import { ACTIVITY_LABELS, classifyActivity } from '../../../shared/activity.ts';
+import type { Activity } from '../../../shared/activity.ts';
 import { truncate } from '../util/escape.ts';
 import { DARK, FONT_MONO, LANGUAGE_COLORS, f, panel, svgDoc, text, wrapText } from './svg.ts';
 
@@ -9,7 +11,9 @@ const t = DARK;
 const day = (iso: string) => iso.slice(0, 10);
 
 /** Project card. `project` is null for a configured-but-not-yet-collected repository (name + link only). */
-export function renderCard(name: string, project: ProjectRecord | null): string {
+const ACTIVITY_COLOR: Record<Activity, string> = { active: t.accentHi, recent: t.cool, quiet: t.muted, dormant: t.border };
+
+export function renderCard(name: string, project: ProjectRecord | null, referenceIso: string): string {
   let body = panel(W, H, t) + `<rect x="0" y="24" width="4" height="48" fill="${t.accent}"/>`;
   body += text(28, 56, truncate(name, 30), { size: 24, mono: true, weight: 600, fill: t.text });
   let desc: string;
@@ -29,12 +33,15 @@ export function renderCard(name: string, project: ProjectRecord | null): string 
     if (tags) body += text(x, 142, tags, { size: 14, mono: true, fill: t.cool });
     const meta = [`★ ${project.stars}`, `⑂ ${project.forks}`].join('   ');
     body += text(W - 28, 142, meta, { size: 15, mono: true, fill: t.muted, anchor: 'end' });
-    const foot = [`Pushed ${day(project.pushedAt)}`];
+    const act = classifyActivity(project.pushedAt, referenceIso);
+    const foot = [ACTIVITY_LABELS[act], `Pushed ${day(project.pushedAt)}`];
     if (project.latestRelease) foot.push(`Release ${truncate(project.latestRelease.tag, 18)}`);
     body += `<line x1="28" y1="160" x2="${W - 28}" y2="160" stroke="${t.border}"/>`;
-    body += text(28, 183, foot.join('  ·  '), { size: 14, mono: true, fill: t.muted });
+    body += `<circle cx="34" cy="178" r="4" fill="${ACTIVITY_COLOR[act]}"/>`;
+    body += text(46, 183, foot.join('  ·  '), { size: 14, mono: true, fill: t.muted });
+    if (project.archived) body += text(W - 28, 56, 'ARCHIVED', { size: 13, mono: true, fill: t.muted, anchor: 'end', spacing: 2 });
   }
-  const title = project ? `${project.name}: ${truncate(project.description || 'repository', 90)}` : `${name} repository`;
+  const title = project ? `${project.name}: ${truncate(project.description || 'repository', 90)}${project.archived ? ' (archived)' : ''}` : `${name} repository`;
   return svgDoc(W, H, body, title, `Repository card for ${name}`);
 }
 

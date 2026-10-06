@@ -2,6 +2,7 @@ import type { ContributionCalendar, ProfileConfig, ProjectRecord } from '../type
 import type { LanguageSummary, Stats } from '../data/normalize.ts';
 import { buildEdges, monthlyTotals } from '../data/normalize.ts';
 import { truncate } from '../util/escape.ts';
+import { momentum } from '../../../shared/momentum.ts';
 import { DARK, LANGUAGE_COLORS, f, label, panel, svgDoc, text, unavailable } from './svg.ts';
 
 const t = DARK;
@@ -70,11 +71,13 @@ export function renderPulse(cal: ContributionCalendar | null): string {
   if (!cal) return unavailable(W, H, t, 'Activity pulse', 'Contribution data unavailable — it appears after the next successful update.');
   const data = monthlyTotals(cal);
   const max = Math.max(1, ...data.map((d) => d.total));
-  const x0 = 80, x1 = W - 80, yb = 215, yt = 105;
+  const x0 = 80, x1 = W - 80, yb = 218, yt = 124;
   const X = (i: number) => (data.length === 1 ? (x0 + x1) / 2 : x0 + (i / (data.length - 1)) * (x1 - x0));
   const Y = (v: number) => yb - (v / max) * (yb - yt);
   let body = panel(W, H, t) + label(40, 52, 'Activity pulse', t);
-  body += text(40, 78, 'Contributions per month · first and last month may be partial', { size: 17, fill: t.muted });
+  const mo = momentum(cal.weeks.flat().map((d) => ({ date: d.date, count: d.count })));
+  const sub = mo ? `Last 30 days: ${mo.last30} (previous 30: ${mo.prev30}) · monthly totals below, first and last month may be partial` : 'Contributions per month · first and last month may be partial';
+  body += text(40, 78, sub, { size: 17, fill: t.muted });
   const pts = data.map((d, i) => `${f(X(i))} ${f(Y(d.total))}`);
   body += `<defs><linearGradient id="a" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${t.accent}" stop-opacity=".35"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></linearGradient></defs>`;
   body += `<path d="M${f(X(0))} ${yb}L${pts.join('L')}L${f(X(data.length - 1))} ${yb}Z" fill="url(#a)"/>`;
@@ -85,7 +88,7 @@ export function renderPulse(cal: ContributionCalendar | null): string {
     body += text(X(i), Y(d.total) - 12, String(d.total), { size: 15, mono: true, fill: t.text, anchor: 'middle' });
     body += text(X(i), yb + 26, m, { size: 15, fill: t.muted, anchor: 'middle' });
   });
-  return svgDoc(W, H, body, 'Activity pulse', `Monthly contributions: ${data.map((d) => `${d.month} ${d.total}`).join(', ')}.`);
+  return svgDoc(W, H, body, 'Activity pulse', `${mo ? `Last 30 days ${mo.last30}, previous 30 days ${mo.prev30}. ` : ''}Monthly contributions: ${data.map((d) => `${d.month} ${d.total}`).join(', ')}.`);
 }
 
 export function renderIntelligence(stats: Stats | null, collectedAt: string | null, fixture: boolean): string {

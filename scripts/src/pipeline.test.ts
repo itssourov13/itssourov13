@@ -76,6 +76,52 @@ describe('generation', () => {
   });
 });
 
+describe('README project sections (phase 2)', () => {
+  const readme = (data = fixtureData()) => buildOutputs(config, data, noMedia).files.find((f) => f.path === 'README.md')!.content;
+  it('shows a status column and topic tags in Latest, backed by real data', () => {
+    const r = readme();
+    expect(r).toContain('| Repository | Description | Language | Status | Last push |');
+    expect(r).toMatch(/\| Active \| 2026-01-02 \|/);
+    expect(r).toContain('`security`');
+  });
+  it('keeps Featured, Latest and Archived & excluded as separate sections', () => {
+    const data = fixtureData();
+    data.repos.push({ ...data.repos[1]!, name: 'fixture-archived', fullName: 'itssourov13/fixture-archived', url: 'https://github.com/itssourov13/fixture-archived', archived: true });
+    const r = readme(data);
+    const iFeat = r.indexOf('## Featured work');
+    const iLatest = r.indexOf('## Latest activity');
+    const iExcl = r.indexOf('Archived &amp; excluded');
+    expect(iFeat).toBeLessThan(iLatest);
+    expect(iLatest).toBeLessThan(iExcl);
+    expect(r.slice(iLatest, iExcl)).not.toContain('fixture-archived');
+    expect(r.slice(iExcl)).toContain('fixture-archived');
+    expect(r.slice(iExcl)).toContain('| Fork |');
+  });
+  it('omits the excluded block when nothing is excluded', () => {
+    const data = fixtureData();
+    data.repos = data.repos.filter((p) => !p.fork);
+    expect(readme(data)).not.toContain('Archived &amp; excluded');
+  });
+  it('escapes hostile topics and descriptions in the Latest table', () => {
+    const data = fixtureData();
+    data.repos[0]!.topics = ['x|y', '<img src=x>'];
+    data.repos[0]!.description = '| injected | cell <b>bold</b>';
+    const r = readme(data);
+    expect(r).not.toContain('<b>');
+    expect(r).not.toContain('<img src=x>');
+    expect(r.split('\n').filter((l) => l.includes('fixture-scanner') && l.startsWith('|')).every((l) => (l.match(/(?<!\\)\|/g) ?? []).length === 6)).toBe(true);
+  });
+  it('shows an archived marker on featured cards', () => {
+    const data = fixtureData();
+    data.repos[0]!.archived = true;
+    const svg = buildOutputs({ ...config, featured_repositories: ['fixture-scanner'] }, data, noMedia).files.find((f) => f.path.endsWith('cards/fixture-scanner.svg'))!.content;
+    expect(svg).toContain('ARCHIVED');
+  });
+  it('is byte-identical across runs with the same data', () => {
+    expect(readme()).toBe(readme());
+  });
+});
+
 describe('media handling', () => {
   const mediaCfg = { profile_image: 'assets/source/profile.png', hero_animation: 'assets/source/intro.gif', intro_video: 'assets/source/intro.mp4', intro_video_url: '' };
   const png = (w: number, h: number) => {

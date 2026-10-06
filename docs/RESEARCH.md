@@ -15,3 +15,11 @@ Status legend: **Verified** (checked against a live source in this session) · *
 | Live account | `https://github.com/itssourov13` could not be fetched here (bash network disabled); seed repos come from HANDOFF.md only. `onyx` (mentioned in the master prompt example) is unconfirmed and not featured. | Not verified |
 
 **Action for the next agent with network access:** fetch the live profile and API, confirm repo names, run `npm install`, and move rows to Verified.
+
+## Additions (upgrade pass)
+
+| Topic | Finding | Status |
+| --- | --- | --- |
+| Live profile | `https://github.com/itssourov13/itssourov13` loaded on 2026-10-06: 22 public repositories listed by the generated README, `onyx` exists, data stamp 2026-10-05, 2 commits, 9 open pull requests (likely Dependabot). Repository contents beyond the README were not inspected. | Verified (web fetch) |
+| R3F / drei APIs relied on | `Canvas` props `frameloop`, `performance`, `dpr`, `shadows`; store `setDpr`, `invalidate`, `performance.current/regress`; drei `OrbitControls regress`, `PerformanceMonitor onDecline`, `Line`, `Html`, `useTexture`. Used from prior knowledge of R3F 9 / drei 10; **typechecked only against local stubs**. Re-verify on the first real `npm run typecheck` / `world:build`. | Provisional |
+| Dependabot | `groups`, `exclude-patterns`, `ignore.update-types` syntax used from prior knowledge. | Provisional |

@@ -1,10 +1,11 @@
 import { SCHEMA_VERSION } from '../constants.ts';
 import type { CollectedData, ProfileConfig, ProjectRecord } from '../types.ts';
 import type { MediaState } from './media.ts';
-import { computeStats, languageTotals, monthlyTotals, selectFeatured, selectLatest } from './normalize.ts';
+import { activityOf, buildEdges, computeStats, graphProjects, languageTotals, monthlyTotals, selectFeatured, selectLatest } from './normalize.ts';
 
-function card(p: ProjectRecord) {
+function card(p: ProjectRecord, referenceIso: string) {
   return {
+    activity: activityOf(p, referenceIso), archived: p.archived,
     name: p.name, url: p.url, description: p.description, language: p.primaryLanguage ?? null, topics: p.topics,
     stars: p.stars, forks: p.forks, createdAt: p.createdAt, pushedAt: p.pushedAt,
     release: p.latestRelease?.tag ?? null,
@@ -17,6 +18,9 @@ export function buildWorldData(config: ProfileConfig, data: CollectedData | null
   const latest = data ? selectLatest(data.repos, config.project_rules, config.profile.username) : [];
   const langs = data ? languageTotals(data.repos) : null;
   const cal = data?.contributions ?? null;
+  const ref = data?.collectedAt ?? '1970-01-01T00:00:00Z';
+  // Scene projects + relationships are computed once here (shared logic) so the world never re-derives them.
+  const scene = graphProjects(featured, latest);
   return {
     schemaVersion: SCHEMA_VERSION,
     status: data ? 'ok' : 'unavailable',
@@ -33,8 +37,10 @@ export function buildWorldData(config: ProfileConfig, data: CollectedData | null
       introVideoUrl: config.media.intro_video_url || null,
     },
     stats: data ? computeStats(data.user, data.repos, cal, data.collectedAt) : null,
-    featured: featured.map(card),
-    latest: latest.map(card),
+    featured: featured.map((p) => card(p, ref)),
+    latest: latest.map((p) => card(p, ref)),
+    scene: scene.map((p) => p.name),
+    edges: buildEdges(scene).map((e) => [e.a, e.b, e.kind, e.label]),
     languages: langs ? { basis: langs.basis, items: langs.items.map((i) => ({ name: i.name, percent: i.percent })) } : null,
     contributions: cal ? { total: cal.total, weeks: cal.weeks.map((w) => w.map((d) => [d.count, d.level])), monthly: monthlyTotals(cal) } : null,
   };

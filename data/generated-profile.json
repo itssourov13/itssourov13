@@ -1625,8 +1625,30 @@
       ]
     ]
   },
+  "edges": [
+    [
+      3,
+      4,
+      "language",
+      "TypeScript"
+    ],
+    [
+      3,
+      6,
+      "language",
+      "TypeScript"
+    ],
+    [
+      4,
+      6,
+      "language",
+      "TypeScript"
+    ]
+  ],
   "featured": [
     {
+      "activity": "recent",
+      "archived": false,
       "createdAt": "2026-08-13T05:40:40Z",
       "description": "PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and security research. Generates structured, deduplicated candidate wordlists from target profiles with configurable patterns, PINs, checkpoints, statistics, and multiple output formats.",
       "forks": 0,
@@ -1639,6 +1661,8 @@
       "url": "https://github.com/itssourov13/passhunter"
     },
     {
+      "activity": "recent",
+      "archived": false,
       "createdAt": "2026-08-30T05:44:38Z",
       "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations. Built around a Go-based security spine with modular Python/Rust tooling, evidence collection, orchestration, and reporting.",
       "forks": 0,
@@ -1695,6 +1719,8 @@
   },
   "latest": [
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-05T16:00:03Z",
       "description": "Sketchbook",
       "forks": 0,
@@ -1707,6 +1733,8 @@
       "url": "https://github.com/itssourov13/sketchbook"
     },
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-09-17T15:59:42Z",
       "description": "Personal website . Build with Next js.",
       "forks": 0,
@@ -1719,6 +1747,8 @@
       "url": "https://github.com/itssourov13/personal-website-test"
     },
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-09-16T16:39:38Z",
       "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
       "forks": 0,
@@ -1733,6 +1763,8 @@
       "url": "https://github.com/itssourov13/personal-website-demo"
     },
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-09-12T05:23:11Z",
       "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
       "forks": 0,
@@ -1749,6 +1781,8 @@
       "url": "https://github.com/itssourov13/blog"
     },
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-08-22T09:37:30Z",
       "description": "APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analysis, risk assessment, IOC detection, permission analysis, certificate inspection, SDK/component discovery, URL extraction, and structured security reporting.",
       "forks": 0,
@@ -1761,6 +1795,8 @@
       "url": "https://github.com/itssourov13/apk-sherlock"
     },
     {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-20T08:21:33Z",
       "description": "Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create, research, and solve problems with powerful AI.",
       "forks": 0,
@@ -1803,10 +1839,24 @@
     },
     "username": "itssourov13"
   },
+  "scene": [
+    "passhunter",
+    "cyberos",
+    "sketchbook",
+    "personal-website-test",
+    "personal-website-demo",
+    "blog",
+    "apk-sherlock",
+    "hackergf-ai"
+  ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 17,
     "followers": 3,
+    "momentum": {
+      "last30": 101,
+      "prev30": 49
+    },
     "publicRepos": 23,
     "totalContributions": 206,
     "totalStars": 39
