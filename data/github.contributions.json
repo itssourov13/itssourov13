@@ -1,6 +1,6 @@
 {
   "calendar": {
-    "total": 206,
+    "total": 212,
     "weeks": [
       [
         {
@@ -2302,6 +2302,12 @@
           "date": "2026-10-05",
           "level": 4,
           "weekday": 1
+        },
+        {
+          "count": 6,
+          "date": "2026-10-06",
+          "level": 2,
+          "weekday": 2
         }
       ]
     ]
