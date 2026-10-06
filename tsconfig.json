@@ -15,6 +15,6 @@
     "noImplicitOverride": true,
     "types": ["node", "vite/client"]
   },
-  "include": ["scripts", "world", "vitest.config.ts"],
+  "include": ["scripts", "world", "shared", "vitest.config.ts"],
   "exclude": ["node_modules", "world/dist", ".preview"]
 }

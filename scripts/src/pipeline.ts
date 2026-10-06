@@ -34,7 +34,7 @@ export function buildOutputs(config: ProfileConfig, data: CollectedData | null, 
   add(`${GEN}/hero-light.svg`, renderHero(config, 'light'));
   add(`${GEN}/terminal.svg`, renderTerminal(config));
   add(`${GEN}/enter-world.svg`, renderCta(config.world.title));
-  for (const t of targets) add(`${GEN}/cards/${t.name}.svg`, renderCard(t.name, t.project));
+  for (const t of targets) add(`${GEN}/cards/${t.name}.svg`, renderCard(t.name, t.project, data?.collectedAt ?? '1970-01-01T00:00:00Z'));
   if (data) {
     const graph = graphProjects(targets.map((t) => t.project).filter((p) => p !== null), latest);
     add(`${GEN}/project-constellation.svg`, renderConstellation(graph));

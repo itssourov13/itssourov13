@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { fixtureCalendar, fixtureData } from '../../fixtures/index.ts';
 import { parseRepo } from '../api/parse.ts';
-import { buildEdges, languageTotals, monthlyTotals, normalizeRepos, selectFeatured, selectLatest } from './normalize.ts';
+import { activityOf, buildEdges, computeStats, excludedProjects, languageTotals, monthlyTotals, normalizeRepos, selectFeatured, selectLatest, sortByActivity } from './normalize.ts';
 
 const rules = { latest_limit: 3, featured_limit: 6, exclude_forks: true, exclude_archived: true, public_only: true };
 
@@ -76,5 +76,54 @@ describe('derived data', () => {
     const edges = buildEdges(fixtureData().repos.slice(0, 4));
     expect(edges.some((e) => e.kind === 'topic' && e.label === 'security')).toBe(true);
     for (const e of edges) expect(e.a).toBeLessThan(e.b);
+  });
+});
+
+describe('phase 1: project intelligence', () => {
+  const data = fixtureData();
+  it('parses a repository with only the minimum fields (optional fields default, nothing invented)', () => {
+    const r = parseRepo({ name: 'min', full_name: 'itssourov13/min', html_url: 'https://github.com/itssourov13/min', owner: { login: 'itssourov13' }, fork: false, archived: false, stargazers_count: 0, forks_count: 0, created_at: '2025-01-01T00:00:00Z', updated_at: '2025-03-01T00:00:00Z' });
+    expect(r.description).toBe('');
+    expect(r.topics).toEqual([]);
+    expect(r.primaryLanguage).toBeUndefined();
+    expect(r.license).toBeUndefined();
+    expect(r.pushedAt).toBe('2025-03-01T00:00:00Z'); // falls back to updated_at, a real field
+    expect(r.visibility).toBe('public');
+  });
+  it('ignores a NOASSERTION license and non-string topics', () => {
+    const r = parseRepo(rawRepo({ license: { spdx_id: 'NOASSERTION' }, topics: ['ok', 3, null] }));
+    expect(r.license).toBeUndefined();
+    expect(r.topics).toEqual(['ok']);
+  });
+  it('deduplicates case-insensitively', () => {
+    const out = normalizeRepos([parseRepo(rawRepo()), parseRepo(rawRepo({ full_name: 'ITSSOUROV13/DEMO' }))], 'itssourov13', true);
+    expect(out).toHaveLength(1);
+  });
+  it('sorts by push date then name, deterministically', () => {
+    const a = parseRepo(rawRepo({ name: 'b', full_name: 'itssourov13/b' }));
+    const b = parseRepo(rawRepo({ name: 'a', full_name: 'itssourov13/a' }));
+    const c = parseRepo(rawRepo({ name: 'c', full_name: 'itssourov13/c', pushed_at: '2025-06-01T00:00:00Z' }));
+    expect(sortByActivity([a, b, c]).map((p) => p.name)).toEqual(['c', 'a', 'b']);
+  });
+  it('lists archived and fork repos as excluded with a reason, never the profile repo or featured ones', () => {
+    const repos = [...data.repos, { ...data.repos[1]!, name: 'old', fullName: 'itssourov13/old', archived: true }];
+    const ex = excludedProjects(repos, rules, ['fixture-notes'], 'itssourov13');
+    expect(ex.map((e) => [e.project.name, e.reason])).toEqual([['fixture-fork', 'fork'], ['old', 'archived']]);
+    expect(excludedProjects(repos, rules, ['fixture-notes', 'old', 'fixture-fork']).length).toBe(0);
+  });
+  it('keeps featured independent of the latest list', () => {
+    const { featured } = selectFeatured(data.repos, ['fixture-site'], 6);
+    const latest = selectLatest(data.repos, { ...rules, latest_limit: 1 });
+    expect(featured[0]!.name).toBe('fixture-site');
+    expect(latest.map((p) => p.name)).toEqual(['fixture-scanner']);
+  });
+  it('classifies activity from collectedAt, not the wall clock', () => {
+    expect(activityOf(data.repos[0]!, data.collectedAt)).toBe('active');
+    expect(activityOf(data.repos[2]!, data.collectedAt)).toBe('recent');
+  });
+  it('computes contribution momentum from the real calendar only', () => {
+    const s = computeStats(data.user, data.repos, data.contributions, data.collectedAt);
+    expect(s.momentum).not.toBeNull();
+    expect(computeStats(data.user, data.repos, null, data.collectedAt).momentum).toBeNull();
   });
 });

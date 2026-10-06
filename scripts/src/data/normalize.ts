@@ -1,5 +1,10 @@
 import type { ContributionCalendar, GithubUser, ProfileConfig, ProjectRecord } from '../types.ts';
 import { CANONICAL_USERNAME } from '../constants.ts';
+import { classifyActivity } from '../../../shared/activity.ts';
+import type { Activity } from '../../../shared/activity.ts';
+import { buildRelationships } from '../../../shared/graph.ts';
+import { momentum } from '../../../shared/momentum.ts';
+import type { Momentum } from '../../../shared/momentum.ts';
 
 type WithOwner = ProjectRecord & { ownerLogin: string };
 
@@ -99,19 +104,33 @@ export interface Edge {
   label: string;
 }
 
-/** Relationships derived only from real shared topics / primary language. */
+/** Relationships derived only from real shared topics / primary language (shared with the 3D world). */
 export function buildEdges(projects: ProjectRecord[]): Edge[] {
-  const edges: Edge[] = [];
-  for (let a = 0; a < projects.length; a++) {
-    for (let b = a + 1; b < projects.length; b++) {
-      const pa = projects[a]!;
-      const pb = projects[b]!;
-      const shared = pa.topics.filter((t) => pb.topics.includes(t));
-      if (shared.length > 0) edges.push({ a, b, kind: 'topic', label: shared[0]! });
-      else if (pa.primaryLanguage && pa.primaryLanguage === pb.primaryLanguage) edges.push({ a, b, kind: 'language', label: pa.primaryLanguage });
-    }
+  return buildRelationships(projects.map((p) => ({ topics: p.topics, language: p.primaryLanguage })));
+}
+
+export function activityOf(p: ProjectRecord, referenceIso: string): Activity {
+  return classifyActivity(p.pushedAt, referenceIso);
+}
+
+export interface ExcludedProject {
+  project: ProjectRecord;
+  reason: 'archived' | 'fork';
+}
+
+/**
+ * Public repositories that the automatic "latest" list hides because of the display rules.
+ * Never includes the profile repository and never includes featured repos (they are shown anyway).
+ */
+export function excludedProjects(projects: ProjectRecord[], rules: ProfileConfig['project_rules'], featuredNames: string[], username = CANONICAL_USERNAME): ExcludedProject[] {
+  const featured = new Set(featuredNames.map((n) => n.toLowerCase()));
+  const out: ExcludedProject[] = [];
+  for (const p of sortByActivity(projects)) {
+    if (isProfileRepo(p, username) || featured.has(p.name.toLowerCase())) continue;
+    if (rules.exclude_archived && p.archived) out.push({ project: p, reason: 'archived' });
+    else if (rules.exclude_forks && p.fork) out.push({ project: p, reason: 'fork' });
   }
-  return edges;
+  return out;
 }
 
 export interface Stats {
@@ -120,6 +139,7 @@ export interface Stats {
   totalContributions: number | null;
   activeRepos90d: number;
   totalStars: number;
+  momentum: Momentum | null;
 }
 
 export function computeStats(user: GithubUser, projects: ProjectRecord[], cal: ContributionCalendar | null, refIso: string): Stats {
@@ -131,6 +151,7 @@ export function computeStats(user: GithubUser, projects: ProjectRecord[], cal: C
     totalContributions: cal ? cal.total : null,
     activeRepos90d: own.filter((p) => ref - Date.parse(p.pushedAt) <= 90 * 86_400_000).length,
     totalStars: own.filter((p) => !p.fork).reduce((a, p) => a + p.stars, 0),
+    momentum: cal ? momentum(cal.weeks.flat().map((d) => ({ date: d.date, count: d.count }))) : null,
   };
 }
 

@@ -1,3 +1,8 @@
+import { classifyActivity } from '../../../shared/activity.ts';
+import type { Activity } from '../../../shared/activity.ts';
+import { buildRelationships } from '../../../shared/graph.ts';
+import type { Relationship } from '../../../shared/graph.ts';
+
 /** Runtime validation of data/generated-profile.json (the only data the world consumes). */
 export interface WorldProject {
   name: string;
@@ -10,6 +15,8 @@ export interface WorldProject {
   createdAt: string;
   pushedAt: string;
   release: string | null;
+  activity: Activity;
+  archived: boolean;
 }
 export interface WorldProfile {
   status: 'ok' | 'unavailable';
@@ -21,9 +28,12 @@ export interface WorldProfile {
   };
   world: { title: string; quality: 'auto' | 'low' | 'medium' | 'high'; reducedMotionDefault: boolean };
   media: { profileImage: { file: string; alt: string } | null; introVideoUrl: string | null };
-  stats: { publicRepos: number; followers: number; totalContributions: number | null; activeRepos90d: number; totalStars: number } | null;
+  stats: { publicRepos: number; followers: number; totalContributions: number | null; activeRepos90d: number; totalStars: number; momentum: { last30: number; prev30: number } | null } | null;
   featured: WorldProject[];
   latest: WorldProject[];
+  /** Ordered names of the projects shown as nodes (featured first, then latest; capped). */
+  scene: string[];
+  edges: Relationship[];
   languages: { basis: 'bytes' | 'repos'; items: { name: string; percent: number }[] } | null;
   contributions: { total: number; weeks: [number, number][][]; monthly: { month: string; total: number }[] } | null;
 }
@@ -52,13 +62,19 @@ const https = (v: unknown, what: string): string => {
 };
 const strs = (v: unknown, what: string): string[] => arr(v, what).map((x, i) => str(x, `${what}[${i}]`));
 
-function project(v: unknown, i: number): WorldProject {
+const ACTIVITIES = ['active', 'recent', 'quiet', 'dormant'];
+
+function project(v: unknown, i: number, ref: string | null): WorldProject {
   const o = obj(v, `project[${i}]`);
+  const pushedAt = str(o.pushedAt, 'pushedAt');
+  // Older JSON may lack `activity`; derive it with the shared rule rather than guessing.
+  const activity = (typeof o.activity === 'string' && ACTIVITIES.includes(o.activity) ? o.activity : ref ? classifyActivity(pushedAt, ref) : 'dormant') as Activity;
   return {
+    activity, archived: o.archived === true,
     name: str(o.name, 'name'), url: https(o.url, 'url'), description: str(o.description, 'description'),
     language: o.language === null ? null : str(o.language, 'language'), topics: strs(o.topics, 'topics'),
     stars: num(o.stars, 'stars'), forks: num(o.forks, 'forks'), createdAt: str(o.createdAt, 'createdAt'),
-    pushedAt: str(o.pushedAt, 'pushedAt'), release: o.release === null ? null : str(o.release, 'release'),
+    pushedAt, release: o.release === null ? null : str(o.release, 'release'),
   };
 }
 
@@ -77,7 +93,15 @@ export function parseProfile(raw: unknown): WorldProfile {
   const stats = r.stats ? obj(r.stats, 'stats') : null;
   const langs = r.languages ? obj(r.languages, 'languages') : null;
   const contrib = r.contributions ? obj(r.contributions, 'contributions') : null;
+  const ref = typeof r.collectedAt === 'string' ? r.collectedAt : null;
+  const featured = arr(r.featured, 'featured').map((x, i) => project(x, i, ref));
+  const latest = arr(r.latest, 'latest').map((x, i) => project(x, i, ref));
+  const base = [...featured, ...latest];
+  const scene = Array.isArray(r.scene) ? strs(r.scene, 'scene').filter((n) => base.some((p) => p.name === n)).slice(0, MAX_SCENE) : sceneNames(featured, latest);
+  const sceneList = scene.map((n) => base.find((p) => p.name === n)!);
+  const edges = Array.isArray(r.edges) ? parseEdges(r.edges, scene.length) : buildRelationships(sceneList.map((p) => ({ topics: p.topics, language: p.language })));
   return {
+    scene, edges,
     status: r.status === 'ok' ? 'ok' : 'unavailable',
     collectedAt: r.collectedAt === null ? null : str(r.collectedAt, 'collectedAt'),
     fixture: r.fixture === true,
@@ -96,10 +120,11 @@ export function parseProfile(raw: unknown): WorldProfile {
           publicRepos: num(stats.publicRepos, 'stats.publicRepos'), followers: num(stats.followers, 'stats.followers'),
           totalContributions: stats.totalContributions === null ? null : num(stats.totalContributions, 'stats.totalContributions'),
           activeRepos90d: num(stats.activeRepos90d, 'stats.activeRepos90d'), totalStars: num(stats.totalStars, 'stats.totalStars'),
+          momentum: stats.momentum ? { last30: num(obj(stats.momentum, 'momentum').last30, 'last30'), prev30: num(obj(stats.momentum, 'momentum').prev30, 'prev30') } : null,
         }
       : null,
-    featured: arr(r.featured, 'featured').map(project),
-    latest: arr(r.latest, 'latest').map(project),
+    featured,
+    latest,
     languages: langs
       ? { basis: langs.basis === 'repos' ? 'repos' : 'bytes', items: arr(langs.items, 'languages.items').map((x, i) => { const o = obj(x, `lang[${i}]`); return { name: str(o.name, 'name'), percent: num(o.percent, 'percent') }; }) }
       : null,
@@ -113,20 +138,25 @@ export function parseProfile(raw: unknown): WorldProfile {
   };
 }
 
-/** Relationships for the 3D scene: shared topic or shared primary language. */
-export function projectEdges(projects: WorldProject[]): [number, number][] {
-  const out: [number, number][] = [];
-  for (let a = 0; a < projects.length; a++)
-    for (let b = a + 1; b < projects.length; b++) {
-      const pa = projects[a]!;
-      const pb = projects[b]!;
-      if (pa.topics.some((t) => pb.topics.includes(t)) || (pa.language && pa.language === pb.language)) out.push([a, b]);
-    }
-  return out;
+export const MAX_SCENE = 12;
+
+function sceneNames(featured: WorldProject[], latest: WorldProject[]): string[] {
+  const seen = new Set<string>();
+  return [...featured, ...latest].filter((x) => (seen.has(x.name) ? false : (seen.add(x.name), true))).slice(0, MAX_SCENE).map((p) => p.name);
 }
 
-/** Unique featured-then-latest projects shown as nodes (capped for performance). */
-export function sceneProjects(p: WorldProfile, max = 12): WorldProject[] {
-  const seen = new Set<string>();
-  return [...p.featured, ...p.latest].filter((x) => (seen.has(x.name) ? false : (seen.add(x.name), true))).slice(0, max);
+function parseEdges(raw: unknown[], n: number): Relationship[] {
+  return raw.map((e, i) => {
+    const a = arr(e, `edges[${i}]`);
+    const [x, y] = [num(a[0], 'edge.a'), num(a[1], 'edge.b')];
+    if (!Number.isInteger(x) || !Number.isInteger(y) || x < 0 || y < 0 || x >= n || y >= n || x >= y) throw new Error(`edges[${i}] out of range`);
+    if (a[2] !== 'topic' && a[2] !== 'language') throw new Error(`edges[${i}] has an unknown kind`);
+    return { a: x, b: y, kind: a[2], label: str(a[3], 'edge.label') };
+  });
+}
+
+/** The projects drawn as nodes, in scene order (single definition: the generated `scene` list). */
+export function sceneProjects(p: WorldProfile): WorldProject[] {
+  const all = [...p.featured, ...p.latest];
+  return p.scene.map((n) => all.find((x) => x.name === n)!).filter(Boolean);
 }

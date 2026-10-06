@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'world/**'
+      - 'shared/**' # imported by the world build
       - 'data/generated-profile.json'
       - 'assets/source/**'
       - 'package.json'

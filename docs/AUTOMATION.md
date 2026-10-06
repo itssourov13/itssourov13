@@ -22,3 +22,16 @@
 2. Repo → Settings → Pages → Source: **GitHub Actions**.
 3. Settings → Actions → General → Workflow permissions: allow workflows to run; the update job requests its own write scope.
 4. Run **Update profile** manually once to collect real data.
+
+## Deployment triggers (audited)
+
+| Change | Triggers `deploy-world`? |
+| --- | --- |
+| `world/**`, `shared/**` (imported by the world), `package.json`, `package-lock.json`, `assets/source/**`, `data/generated-profile.json`, the workflow itself (push to `main`) | yes |
+| README-only / `assets/generated/**` / docs / `scripts/**` / `profile.config.yml` | no |
+| Scheduled update that changed `data/generated-profile.json` | yes — `update-profile` calls the deploy workflow (`world_changed` output) because `GITHUB_TOKEN` pushes do not trigger workflows |
+| Scheduled update that changed only README/cards/other data files | no |
+
+Permissions are unchanged: `contents: write` only on the update job; `pages: write` + `id-token: write` only on deploy. No workflow writes back to a branch that triggers itself (bot pushes use `GITHUB_TOKEN`).
+
+**Dependabot:** minor/patch npm updates are grouped (except `three` / `@types/three`); semver-major updates of React, R3F, drei, Vite, Vitest, TypeScript and ESLint are ignored so they are deliberate upgrades; `three` receives patch updates only (0.x minors can break R3F/drei). Revisit when you choose to upgrade the stack.

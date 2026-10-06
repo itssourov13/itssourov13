@@ -13,3 +13,7 @@ Put your own files under `assets/source/` (paths come from `media:` in `profile.
 - **Optimizing** (not automated, to avoid heavy dependencies and non-deterministic output):
   `ffmpeg -i raw.png -vf scale=640:-1 assets/source/profile.png` · poster frame: `ffmpeg -ss 2 -i intro.mp4 -frames:v 1 -vf scale=1280:-1 poster.png`.
 - Prefer small files; every clone downloads them.
+
+## Loading and failure behaviour in the 3D world
+
+The portrait texture is **not** requested at startup: it loads when the browser is idle or when the visitor opens the Portrait stop, and is disposed when unmounted. If the file is missing, blocked or undecodable, the frame stays empty and the rest of the world is unaffected. The Portrait camera stop is only offered when `generated-profile.json` declares a valid portrait. Nothing is generated or substituted for personal imagery.

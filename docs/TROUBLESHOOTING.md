@@ -12,3 +12,9 @@
 | `Rate limit` error | Unauthenticated calls are limited to 60/hour. Use a token (Actions provides one). |
 | Scheduled run did not happen | GitHub can delay/skip schedules, or disable them after inactivity; run it manually. |
 | Slow / hot on phone | Set quality to Low in the Display panel. |
+
+| World is blank for a moment | Expected: a skeleton, then “Preparing 3D scene…”. If it persists, check the console for a failed `data/generated-profile.json` request (wrong `WORLD_BASE`). |
+| “The 3D scene could not start” | A render error was caught by the scene boundary; the text summary still works. Open the console for the error. |
+| Quality keeps dropping | By design the controller steps down after sustained slow frames and never oscillates; choose a fixed level in Display to override. |
+| A stop (e.g. Lab, Intelligence) is missing | Stops only appear when their zone has content (focus items, language/contribution data, portrait, links). |
+| Settings do not persist | `localStorage` may be blocked (private mode); the app works, preferences just reset. |

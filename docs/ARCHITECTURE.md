@@ -39,3 +39,20 @@ GitHub profile README              world/ (React + R3F) — reads only generated
 ## Contract: `data/generated-profile.json`
 
 `schemaVersion: 1`. Validated by `world/src/data/parse.ts` (rejects unknown versions and non-https URLs). Bump the version and both sides together when changing it.
+
+## Shared model (`shared/`)
+
+Pure logic used by **both** the README generator and the 3D world, so project intelligence is defined once:
+
+- `activity.ts` — `classifyActivity(pushedAt, collectedAt)`: active ≤ 30 d · recent ≤ 90 d · quiet ≤ 365 d · dormant. Reference is the *collection time*, never the wall clock (deterministic).
+- `graph.ts` — `buildRelationships`: link two projects only for a shared topic (preferred) or shared primary language.
+- `momentum.ts` — last 30 days vs the previous 30 days of the real contribution calendar; `null` without ≥ 60 days of history.
+
+`data/generated-profile.json` (still `schemaVersion: 1`, additive): projects gain `activity` and `archived`; top-level `scene` (ordered node names, ≤ 12), `edges` (`[a, b, kind, label]` into `scene`), `stats.momentum`. The world parser derives any missing field with the same shared functions, so older JSON keeps working.
+
+## Project selection and sorting rules
+
+1. **Featured** = `featured_repositories` order, exact names, manual and stable; unknown names are reported, never invented.
+2. **Latest** = public, owned by `itssourov13`, de-duplicated (case-insensitive), minus the profile repository, minus forks / archived per `project_rules`, sorted by `pushedAt` descending then name, capped by `latest_limit`.
+3. **Archived & excluded** = repositories hidden from Latest by those rules (archived, forks), minus the profile repo and minus anything featured. Shown collapsed in the README with the reason.
+4. Missing optional API fields default to empty/absent (`description ''`, no language, no license); `pushedAt` falls back to the real `updated_at`. Malformed required fields reject the whole response (fail closed).

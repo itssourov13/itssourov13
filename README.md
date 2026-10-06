@@ -29,16 +29,26 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Latest activity
 
-| Repository | Description | Language | Last push |
-| --- | --- | --- | --- |
-| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | 2026-10-05 |
-| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | 2026-10-01 |
-| [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering. | TypeScript | 2026-09-30 |
-| [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and… | MDX | 2026-09-27 |
-| [apk-sherlock](https://github.com/itssourov13/apk-sherlock) | APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analysis, risk… | TypeScript | 2026-09-22 |
-| [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create,… | JavaScript | 2026-09-22 |
+| Repository | Description | Language | Status | Last push |
+| --- | --- | --- | --- | --- |
+| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | Active | 2026-10-05 |
+| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
+| [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
+| [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-09-27 |
+| [apk-sherlock](https://github.com/itssourov13/apk-sherlock) | APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analy… | TypeScript | Active | 2026-09-22 |
+| [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn… | JavaScript | Active | 2026-09-22 |
 
-<sub>Automatically selected from public repositories by most recent push.</sub>
+<sub>Automatically selected from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
+
+<details>
+<summary>Archived &amp; excluded (2)</summary>
+
+| Repository | Reason | Last push |
+| --- | --- | --- |
+| [js.org](https://github.com/itssourov13/js.org) | Fork | 2026-08-19 |
+| [awesome](https://github.com/itssourov13/awesome) | Fork | 2026-06-30 |
+
+</details>
 
 ## Contribution terrain
 
