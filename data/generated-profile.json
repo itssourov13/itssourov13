@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-06T07:37:45.305Z",
+  "collectedAt": "2026-10-06T16:00:23.106Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 45
+        "total": 50
       }
     ],
-    "total": 215,
+    "total": 220,
     "weeks": [
       [
         [
@@ -1623,28 +1623,46 @@
           4
         ],
         [
-          9,
-          2
+          14,
+          3
         ]
       ]
     ]
   },
   "edges": [
     [
-      3,
+      2,
       4,
       "language",
       "TypeScript"
     ],
     [
-      3,
-      6,
+      2,
+      5,
+      "language",
+      "TypeScript"
+    ],
+    [
+      2,
+      7,
       "language",
       "TypeScript"
     ],
     [
       4,
-      6,
+      5,
+      "language",
+      "TypeScript"
+    ],
+    [
+      4,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
+      5,
+      7,
       "language",
       "TypeScript"
     ]
@@ -1685,27 +1703,27 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 66.7
+        "percent": 67.5
       },
       {
         "name": "Python",
-        "percent": 13.1
+        "percent": 12.8
       },
       {
         "name": "Go",
-        "percent": 10.3
+        "percent": 10.1
       },
       {
         "name": "JavaScript",
-        "percent": 4.5
+        "percent": 4.4
       },
       {
         "name": "MDX",
-        "percent": 2.9
+        "percent": 2.8
       },
       {
         "name": "CSS",
-        "percent": 0.9
+        "percent": 1
       },
       {
         "name": "Rust",
@@ -1725,15 +1743,31 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-10-05T16:00:03Z",
-      "description": "Sketchbook",
+      "createdAt": "2026-10-06T11:07:24Z",
+      "description": "A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Next.js, React, Three.js, GSAP, and WebGL.",
       "forks": 0,
-      "language": "Astro",
-      "name": "sketchbook",
-      "pushedAt": "2026-10-06T07:29:23Z",
+      "language": "TypeScript",
+      "name": "rise-of-ai",
+      "pushedAt": "2026-10-06T11:09:45Z",
       "release": null,
       "stars": 1,
       "topics": [],
+      "url": "https://github.com/itssourov13/rise-of-ai"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-05T16:00:03Z",
+      "description": "Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketchbook — built with Astro.",
+      "forks": 0,
+      "language": "Astro",
+      "name": "sketchbook",
+      "pushedAt": "2026-10-06T08:01:58Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "astro"
+      ],
       "url": "https://github.com/itssourov13/sketchbook"
     },
     {
@@ -1797,20 +1831,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/apk-sherlock"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-20T08:21:33Z",
-      "description": "Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create, research, and solve problems with powerful AI.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "hackergf-ai",
-      "pushedAt": "2026-09-22T14:34:23Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackergf-ai"
     }
   ],
   "media": {
@@ -1846,24 +1866,24 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "rise-of-ai",
     "sketchbook",
     "personal-website-test",
     "personal-website-demo",
     "blog",
-    "apk-sherlock",
-    "hackergf-ai"
+    "apk-sherlock"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 17,
+    "activeRepos90d": 18,
     "followers": 3,
     "momentum": {
-      "last30": 110,
+      "last30": 115,
       "prev30": 46
     },
-    "publicRepos": 23,
-    "totalContributions": 215,
-    "totalStars": 39
+    "publicRepos": 24,
+    "totalContributions": 220,
+    "totalStars": 40
   },
   "status": "ok",
   "world": {

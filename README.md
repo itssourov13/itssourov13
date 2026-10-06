@@ -25,18 +25,18 @@ Cybersecurity, software engineering and research — building security tooling a
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, sketchbook, personal-website-test, personal-website-demo, blog, apk-sherlock, hackergf-ai" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog, apk-sherlock" width="100%">
 
 ## Latest activity
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook | Astro | Active | 2026-10-06 |
+| [rise-of-ai](https://github.com/itssourov13/rise-of-ai) | A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Nex… | TypeScript | Active | 2026-10-06 |
+| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketch…<br>`astro` | Astro | Active | 2026-10-06 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
 | [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
 | [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-09-27 |
 | [apk-sherlock](https://github.com/itssourov13/apk-sherlock) | APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analy… | TypeScript | Active | 2026-09-22 |
-| [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn… | JavaScript | Active | 2026-09-22 |
 
 <sub>Automatically selected from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 
@@ -52,15 +52,15 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 215 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 220 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="23 public repositories, 3 followers, 17 repositories pushed in the last 90 days, 39 stars received" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="24 public repositories, 3 followers, 18 repositories pushed in the last 90 days, 40 stars received" width="100%">
 
 ## Languages & activity
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.7%, Python 13.1%, Go 10.3%, JavaScript 4.5%, MDX 2.9%, CSS 0.9%, Rust 0.6%, Astro 0.3%, Other 0.6%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 67.5%, Python 12.8%, Go 10.1%, JavaScript 4.4%, MDX 2.8%, CSS 1%, Rust 0.6%, Astro 0.3%, Other 0.6%" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution trend over the last 12 months" width="100%">
 
