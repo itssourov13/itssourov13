@@ -19,9 +19,12 @@ export const ORDER: QualityLevel[] = ['low', 'medium', 'high'];
 /** Heuristic starting level for "auto"; PerformanceMonitor lowers it at runtime if frames drop. */
 export function detectAutoQuality(): QualityLevel {
   const nav = navigator as Navigator & { deviceMemory?: number };
-  const coarse = window.matchMedia('(pointer: coarse)').matches;
+  // Some phones/tablets report a fine primary pointer in desktop-site mode even though
+  // the underlying hardware is still touch-first. Keep them out of the desktop/high-quality
+  // path: high DPR + shadows + continuous animation is disproportionately expensive there.
+  const touch = window.matchMedia('(pointer: coarse)').matches || nav.maxTouchPoints > 0;
   const weak = (nav.hardwareConcurrency ?? 4) <= 4 || (nav.deviceMemory ?? 4) <= 2;
-  if (coarse) return weak ? 'low' : 'medium';
+  if (touch) return weak ? 'low' : 'medium';
   return weak ? 'medium' : 'high';
 }
 

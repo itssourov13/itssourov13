@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ACTIVITY_LABELS } from '../../../shared/activity.ts';
 import { sceneProjects } from '../data/parse.ts';
 import type { WorldProfile } from '../data/parse.ts';
@@ -41,6 +41,19 @@ export function Overlay(p: OverlayProps) {
   const { profile } = p;
   const projects = useMemo(() => sceneProjects(profile), [profile]);
   const panelOpen = open || !p.sceneActive;
+
+  useEffect(() => {
+    if (!open || !p.sceneActive) return;
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      const panel = document.getElementById('details');
+      if (panel && !panel.contains(target)) setOpen(false);
+    };
+    window.addEventListener('pointerdown', onPointerDown);
+    return () => window.removeEventListener('pointerdown', onPointerDown);
+  }, [open, p.sceneActive]);
+
   const selIdx = projects.findIndex((x) => x.name === p.selected);
   const sel = selIdx >= 0 ? projects[selIdx]! : null;
   const staleDays = useMemo(() => {
