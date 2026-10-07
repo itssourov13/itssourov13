@@ -52,7 +52,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 223 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 225 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
@@ -60,7 +60,7 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Languages & activity
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 67.1%, Python 12.7%, Go 10%, JavaScript 4.6%, MDX 2.8%, CSS 1.2%, Rust 0.6%, HTML 0.4%, Other 0.7%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.8%, Python 12.6%, Go 10%, JavaScript 4.8%, MDX 2.8%, CSS 1.3%, Rust 0.6%, HTML 0.5%, Other 0.7%" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution trend over the last 12 months" width="100%">
 
