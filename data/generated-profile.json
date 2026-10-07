@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-07T07:18:13.631Z",
+  "collectedAt": "2026-10-07T16:36:43.073Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 50
+        "total": 52
       }
     ],
-    "total": 220,
+    "total": 222,
     "weeks": [
       [
         [
@@ -1627,46 +1627,28 @@
           3
         ],
         [
-          0,
-          0
+          2,
+          1
         ]
       ]
     ]
   },
   "edges": [
     [
-      2,
-      4,
-      "language",
-      "TypeScript"
-    ],
-    [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      2,
-      7,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      5,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      7,
+      3,
+      6,
       "language",
       "TypeScript"
     ],
     [
       5,
-      7,
+      6,
       "language",
       "TypeScript"
     ]
@@ -1747,6 +1729,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-07T16:05:28Z",
+      "description": "",
+      "forks": 0,
+      "language": null,
+      "name": "gks27",
+      "pushedAt": "2026-10-07T16:13:27Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/gks27"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-06T11:07:24Z",
       "description": "A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Next.js, React, Three.js, GSAP, and WebGL.",
       "forks": 0,
@@ -1821,20 +1817,6 @@
         "website"
       ],
       "url": "https://github.com/itssourov13/blog"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-08-22T09:37:30Z",
-      "description": "APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analysis, risk assessment, IOC detection, permission analysis, certificate inspection, SDK/component discovery, URL extraction, and structured security reporting.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "apk-sherlock",
-      "pushedAt": "2026-09-22T14:35:13Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/apk-sherlock"
     }
   ],
   "media": {
@@ -1870,23 +1852,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "gks27",
     "rise-of-ai",
     "sketchbook",
     "personal-website-test",
     "personal-website-demo",
-    "blog",
-    "apk-sherlock"
+    "blog"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 18,
+    "activeRepos90d": 19,
     "followers": 3,
     "momentum": {
-      "last30": 115,
+      "last30": 117,
       "prev30": 46
     },
-    "publicRepos": 24,
-    "totalContributions": 220,
+    "publicRepos": 25,
+    "totalContributions": 222,
     "totalStars": 40
   },
   "status": "ok",

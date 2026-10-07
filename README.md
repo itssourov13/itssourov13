@@ -25,18 +25,18 @@ Cybersecurity, software engineering and research — building security tooling a
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog, apk-sherlock" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, gks27, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog" width="100%">
 
 ## Latest activity
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [gks27](https://github.com/itssourov13/gks27) | — | — | Active | 2026-10-07 |
 | [rise-of-ai](https://github.com/itssourov13/rise-of-ai) | A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Nex… | TypeScript | Active | 2026-10-06 |
 | [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketch…<br>`astro` | Astro | Active | 2026-10-06 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
 | [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
 | [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-09-27 |
-| [apk-sherlock](https://github.com/itssourov13/apk-sherlock) | APK Sherlock — an extensible cybersecurity asset analysis platform for automated APK security analy… | TypeScript | Active | 2026-09-22 |
 
 <sub>Automatically selected from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 
@@ -52,11 +52,11 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 220 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 222 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="24 public repositories, 3 followers, 18 repositories pushed in the last 90 days, 40 stars received" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="25 public repositories, 3 followers, 19 repositories pushed in the last 90 days, 40 stars received" width="100%">
 
 ## Languages & activity
 
