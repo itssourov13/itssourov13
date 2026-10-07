@@ -2,19 +2,24 @@
   "repos": [
     {
       "archived": false,
-      "createdAt": "2026-10-07T16:05:28Z",
+      "createdAt": "2026-10-07T19:39:09Z",
       "defaultBranch": "main",
-      "description": "",
+      "description": "Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GSAP, Lenis, and Three.js.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/gks27",
-      "languages": {},
-      "name": "gks27",
-      "pushedAt": "2026-10-07T16:13:27Z",
-      "stars": 0,
+      "fullName": "itssourov13/arven",
+      "languages": {
+        "CSS": 27772,
+        "HTML": 19965,
+        "JavaScript": 36103
+      },
+      "name": "arven",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-07T20:53:03Z",
+      "stars": 1,
       "topics": [],
-      "updatedAt": "2026-10-07T16:13:30Z",
-      "url": "https://github.com/itssourov13/gks27",
+      "updatedAt": "2026-10-07T20:55:56Z",
+      "url": "https://github.com/itssourov13/arven",
       "visibility": "public"
     },
     {
@@ -33,10 +38,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-07T07:18:16Z",
+      "pushedAt": "2026-10-07T16:36:46Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-07T07:18:20Z",
+      "updatedAt": "2026-10-07T16:36:50Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },

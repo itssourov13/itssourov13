@@ -25,13 +25,13 @@ Cybersecurity, software engineering and research — building security tooling a
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, gks27, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, arven, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog" width="100%">
 
 ## Latest activity
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [gks27](https://github.com/itssourov13/gks27) | — | — | Active | 2026-10-07 |
+| [arven](https://github.com/itssourov13/arven) | Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GS… | JavaScript | Active | 2026-10-07 |
 | [rise-of-ai](https://github.com/itssourov13/rise-of-ai) | A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Nex… | TypeScript | Active | 2026-10-06 |
 | [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketch…<br>`astro` | Astro | Active | 2026-10-06 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
@@ -52,15 +52,15 @@ Cybersecurity, software engineering and research — building security tooling a
 
 ## Contribution terrain
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 222 GitHub contributions over the last 12 months" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 223 GitHub contributions over the last 12 months" width="100%">
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="25 public repositories, 3 followers, 19 repositories pushed in the last 90 days, 40 stars received" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="25 public repositories, 3 followers, 19 repositories pushed in the last 90 days, 41 stars received" width="100%">
 
 ## Languages & activity
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 67.5%, Python 12.8%, Go 10.1%, JavaScript 4.4%, MDX 2.8%, CSS 1%, Rust 0.6%, Astro 0.3%, Other 0.6%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 67.1%, Python 12.7%, Go 10%, JavaScript 4.6%, MDX 2.8%, CSS 1.2%, Rust 0.6%, HTML 0.4%, Other 0.7%" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution trend over the last 12 months" width="100%">
 
