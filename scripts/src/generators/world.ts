@@ -44,9 +44,7 @@ export function renderCta(title: string, graph?: MiniGraph): string {
   const body =
     motion(
       '.core{transform-origin:920px 128px;animation:pulse 3.6s ease-in-out infinite}' +
-        '.launch-arrow{animation:nudge 2.8s ease-in-out infinite}' +
-        '@keyframes pulse{50%{transform:scale(1.45);opacity:.35}}' +
-        '@keyframes nudge{50%{transform:translateX(3px);opacity:.78}}',
+        '@keyframes pulse{50%{transform:scale(1.45);opacity:.35}}',
     ) +
     `<defs><radialGradient id="cg" cx="74%" cy="50%" r="52%"><stop offset="0" stop-color="${t.accent}" stop-opacity=".17"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient></defs>` +
     panel(W, H, t) +
@@ -64,22 +62,15 @@ export function renderCta(title: string, graph?: MiniGraph): string {
       size: 20,
       fill: t.muted,
     }) +
-    `<rect x="48.5" y="178.5" width="360" height="56" rx="28" fill="${t.accent}" fill-opacity=".16" stroke="${t.accentHi}" stroke-width="1.5"/>` +
-    text(228.5, 214, 'OPEN 3D WORLD', {
-      size: 22,
+    `<rect x="48.5" y="178.5" width="410" height="56" rx="28" fill="${t.accent}" fill-opacity=".16" stroke="${t.accentHi}" stroke-width="1.5"/>` +
+    text(253.5, 214, 'OPEN 3D WORLD  —>', {
+      size: 21,
       mono: true,
       weight: 700,
       fill: t.accentHi,
       anchor: 'middle',
-      spacing: 2.5,
+      spacing: 2.2,
     }) +
-    `<circle cx="1126" cy="128" r="28" fill="${t.accentHi}" fill-opacity=".14" stroke="${t.accentHi}" stroke-width="1.5"/>` +
-    `<g class="launch-arrow">${text(1126, 138, '→', {
-      size: 32,
-      weight: 700,
-      fill: t.accentHi,
-      anchor: 'middle',
-    })}</g>` +
     map;
   return svgDoc(W, H, body, truncate(title, 60), 'Open the interactive 3D companion');
 }

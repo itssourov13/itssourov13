@@ -206,8 +206,8 @@ describe('cinematic section', () => {
     const cta = out.find((f) => f.path === 'assets/generated/enter-world.svg')!.content;
     expect(cta).toContain('INTERACTIVE 3D EXPERIENCE');
     expect(cta).toContain('CLICK / TAP');
-    expect(cta).toContain('OPEN 3D WORLD');
-    expect(cta).toContain('→');
+    expect(cta).toContain('OPEN 3D WORLD  —&gt;');
+    expect(cta).not.toContain('launch-arrow');
     expect(readme).toContain('↗ Open the 3D World');
     expect(readme).not.toContain('interactive WebGL experience</p>');
   });
