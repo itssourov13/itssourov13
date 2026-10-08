@@ -15,22 +15,22 @@ export interface MiniGraph {
  */
 export function renderCta(title: string, graph?: MiniGraph): string {
   const W = 1200;
-  const H = 230;
-  const cx = 902;
-  const cy = 118;
+  const H = 270;
+  const cx = 920;
+  const cy = 128;
   const n = graph ? Math.min(12, graph.count) : 8;
 
   const pos = Array.from({ length: n }, (_, i) => {
     const inner = i % 3 === 2;
     const a = (i / n) * Math.PI * 2 - 0.5;
-    const rx = inner ? 104 : 206;
-    const ry = inner ? 34 : 66;
+    const rx = inner ? 74 : 145;
+    const ry = inner ? 24 : 45;
     return { x: cx + Math.cos(a) * rx, y: cy + Math.sin(a) * ry };
   });
 
   let map = '';
   for (let k = 0; k < 4; k++) {
-    map += `<ellipse cx="${cx}" cy="${cy}" rx="${72 + k * 46}" ry="${f(22 + k * 15)}" fill="none" stroke="${t.border}" stroke-dasharray="2 6"/>`;
+    map += `<ellipse cx="${cx}" cy="${cy}" rx="${55 + k * 32}" ry="${f(18 + k * 11)}" fill="none" stroke="${t.border}" stroke-dasharray="2 6"/>`;
   }
   for (const [a, b] of graph?.edges ?? []) {
     if (a < n && b < n)
@@ -43,32 +43,33 @@ export function renderCta(title: string, graph?: MiniGraph): string {
 
   const body =
     motion(
-      '.core{transform-origin:902px 118px;animation:pulse 3.6s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.45);opacity:.35}}',
+      '.core{transform-origin:920px 128px;animation:pulse 3.6s ease-in-out infinite}' +
+        '@keyframes pulse{50%{transform:scale(1.45);opacity:.35}}',
     ) +
-    `<defs><radialGradient id="cg" cx="78%" cy="50%" r="50%"><stop offset="0" stop-color="${t.accent}" stop-opacity=".16"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient></defs>` +
+    `<defs><radialGradient id="cg" cx="74%" cy="50%" r="52%"><stop offset="0" stop-color="${t.accent}" stop-opacity=".17"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient></defs>` +
     panel(W, H, t) +
     `<rect width="${W}" height="${H}" rx="16" fill="url(#cg)"/>` +
     `<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="16" fill="none" stroke="${t.accent}" stroke-opacity=".55"/>` +
-    `<rect x="1" y="30" width="5" height="${H - 60}" fill="${t.accent}"/>` +
-    text(48, 62, 'Interactive · WebGL · opens in a new experience', {
-      size: 14,
+    `<rect x="1" y="34" width="5" height="${H - 68}" fill="${t.accent}"/>` +
+    text(48, 66, 'INTERACTIVE 3D EXPERIENCE · CLICK / TAP', {
+      size: 16,
       mono: true,
       fill: t.accent,
       spacing: 2,
     }) +
-    text(48, 114, truncate(title, 34), { size: 38, weight: 700, fill: t.text }) +
+    text(48, 112, truncate(title, 34), { size: 42, weight: 700, fill: t.text }) +
     text(48, 146, 'A 3D companion built from the same GitHub data as this page.', {
-      size: 18,
+      size: 20,
       fill: t.muted,
     }) +
-    `<rect x="48.5" y="168.5" width="214" height="42" rx="21" fill="${t.accent}" fill-opacity=".14" stroke="${t.accentHi}"/>` +
-    text(155.5, 195, 'ENTER  →', {
-      size: 17,
+    `<rect x="48.5" y="178.5" width="410" height="56" rx="28" fill="${t.accent}" fill-opacity=".16" stroke="${t.accentHi}" stroke-width="1.5"/>` +
+    text(253.5, 214, 'OPEN 3D WORLD  —>', {
+      size: 21,
       mono: true,
       weight: 700,
       fill: t.accentHi,
       anchor: 'middle',
-      spacing: 3,
+      spacing: 2.2,
     }) +
     map;
   return svgDoc(W, H, body, truncate(title, 60), 'Open the interactive 3D companion');

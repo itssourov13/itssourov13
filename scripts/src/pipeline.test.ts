@@ -200,6 +200,17 @@ describe('cinematic section', () => {
     expect(order.every((i) => i >= 0)).toBe(true);
     expect([...order].sort((a, b) => a - b)).toEqual(order);
   });
+  it('makes the Digital World CTA explicit and mobile-friendly', () => {
+    const out = buildOutputs(config, fixtureData(), noMedia).files;
+    const readme = out.find((f) => f.path === 'README.md')!.content;
+    const cta = out.find((f) => f.path === 'assets/generated/enter-world.svg')!.content;
+    expect(cta).toContain('INTERACTIVE 3D EXPERIENCE');
+    expect(cta).toContain('CLICK / TAP');
+    expect(cta).toContain('OPEN 3D WORLD  —&gt;');
+    expect(cta).not.toContain('launch-arrow');
+    expect(readme).toContain('↗ Open the 3D World');
+    expect(readme).not.toContain('interactive WebGL experience</p>');
+  });
 });
 
 describe('media handling', () => {

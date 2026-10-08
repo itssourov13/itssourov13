@@ -282,9 +282,11 @@ function exploreSection(config: ProfileConfig): Section | null {
     links.push(`<a href="${safeUrl(config.profile.website)}">Website</a>`);
   const parts: string[] = [];
   if (config.world.enabled) {
+    const worldUrl = safeUrl(config.world.url);
     parts.push(
-      `<a href="${safeUrl(config.world.url)}">${wide(`${GEN}/enter-world.svg`, `Enter ${config.world.title} — an interactive 3D companion built from the same GitHub data`)}</a>`,
+      `<a href="${worldUrl}">${wide(`${GEN}/enter-world.svg`, `Open ${config.world.title} — an interactive 3D companion built from the same GitHub data`)}</a>`,
     );
+    parts.push(`<p align="center"><a href="${worldUrl}"><b>↗ Open the 3D World</b></a></p>`);
   }
   if (links.length > 0) parts.push(`<p align="center"><b>Connect</b>${SEP}${links.join(SEP)}</p>`);
   if (parts.length === 0) return null;
