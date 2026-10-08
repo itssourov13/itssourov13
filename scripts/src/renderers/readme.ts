@@ -286,9 +286,7 @@ function exploreSection(config: ProfileConfig): Section | null {
     parts.push(
       `<a href="${worldUrl}">${wide(`${GEN}/enter-world.svg`, `Open ${config.world.title} — an interactive 3D companion built from the same GitHub data`)}</a>`,
     );
-    parts.push(
-      `<p align="center"><a href="${worldUrl}"><b>↗ Open the 3D World</b></a> · interactive WebGL experience</p>`,
-    );
+    parts.push(`<p align="center"><a href="${worldUrl}"><b>↗ Open the 3D World</b></a></p>`);
   }
   if (links.length > 0) parts.push(`<p align="center"><b>Connect</b>${SEP}${links.join(SEP)}</p>`);
   if (parts.length === 0) return null;
