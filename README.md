@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, arven, rise-of-ai, sketchbook, personal-website-test, personal-website-demo, blog" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-test, arven, rise-of-ai, sketchbook, personal-website-demo, blog" width="100%">
 
 ## After hours
 
@@ -41,10 +41,10 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-08 |
 | [arven](https://github.com/itssourov13/arven) | Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GS… | JavaScript | Active | 2026-10-07 |
 | [rise-of-ai](https://github.com/itssourov13/rise-of-ai) | A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Nex… | TypeScript | Active | 2026-10-06 |
 | [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketch…<br>`astro` | Astro | Active | 2026-10-06 |
-| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-01 |
 | [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
 | [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-09-27 |
 
