@@ -605,3 +605,13 @@ The handoff should answer:
 9. What exact next step should the next agent take?
 
 A future agent should never have to infer the project's state from chat history alone.
+
+---
+
+## 19. Change log — README V3 (visual rebuild)
+
+**What changed:** README redesigned as a story (hero + nav → intro → Focus terminal → Featured work cards + constellation → After hours cinematic frame → GitHub intelligence/terrain/pulse/galaxy → Recent work → Explore banner + connect → footer). `generators/panels.ts` was split into one file per visual; new `cinematic.ts` (original generated night-city frame + caption strip), `world.ts` (Explore banner + footer), shared `languageColor`/`rng`/`motion` helpers. Terrain/pulse trim leading empty history (`activeCalendar`, `activeMonthlyTotals`), terrain marks the peak day, momentum moved into the intelligence panel. New config: `cinematic.*`, `media.cinematic_image` (own photo replaces the illustration; placeholder no longer generated). `data/generated-profile.json` and the 3D world are untouched.
+
+**Commands run:** a throwaway driver (outside the repo) ran the real generator to produce outputs; SVGs were rendered in headless Chromium and viewed. **Not run:** npm scripts, lint, typecheck, test suite, build (tests were edited/added but not executed).
+
+**Next:** `npm run generate && npm run format && npm run lint && npm run typecheck && npm test && npm run check`; fix whatever the real toolchain reports; then drop a photo at `assets/source/cinematic.jpg` and set `cinematic.alt`.

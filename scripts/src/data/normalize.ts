@@ -97,6 +97,55 @@ export function monthlyTotals(cal: ContributionCalendar, months = 12): { month: 
   return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0])).slice(-months).map(([month, total]) => ({ month, total }));
 }
 
+/**
+ * The calendar trimmed to the period that has real activity (one empty week of lead-in, at least `minWeeks` wide).
+ * New accounts would otherwise render as a long empty runway; nothing is invented or removed, only leading zeros.
+ */
+export function activeCalendar(cal: ContributionCalendar, minWeeks = 26): ContributionCalendar {
+  const first = cal.weeks.findIndex((w) => w.some((d) => d.count > 0));
+  if (first < 0) return cal;
+  const start = Math.max(0, Math.min(first - 1, cal.weeks.length - minWeeks));
+  return start === 0 ? cal : { total: cal.total, weeks: cal.weeks.slice(start) };
+}
+
+/** Monthly totals starting at the first month with activity (but never fewer than `minMonths` bars). */
+export function activeMonthlyTotals(cal: ContributionCalendar, minMonths = 4): { month: string; total: number }[] {
+  const all = monthlyTotals(cal);
+  const first = all.findIndex((m) => m.total > 0);
+  if (first < 0) return all.slice(-minMonths);
+  return all.slice(Math.min(first, Math.max(0, all.length - minMonths)));
+}
+
+/** First calendar day of the trimmed window, as YYYY-MM-DD (null for an empty calendar). */
+export function calendarStart(cal: ContributionCalendar): string | null {
+  return cal.weeks[0]?.[0]?.date ?? null;
+}
+
+export interface PeakDay {
+  date: string;
+  count: number;
+  week: number;
+  weekday: number;
+}
+/** The single busiest day (first one wins on ties); null when there is no activity at all. */
+export function peakDay(cal: ContributionCalendar): PeakDay | null {
+  let best: PeakDay | null = null;
+  for (let week = 0; week < cal.weeks.length; week++) {
+    const days = cal.weeks[week]!;
+    for (let k = 0; k < days.length; k++) {
+      const d = days[k]!;
+      if (d.count > 0 && (best === null || d.count > best.count)) best = { date: d.date, count: d.count, week, weekday: d.weekday ?? k };
+    }
+  }
+  return best;
+}
+
+/** Relative change between the two 30-day windows. `pct` is null when the earlier window was empty. */
+export function momentumDelta(m: Momentum): { pct: number | null; dir: 'up' | 'down' | 'flat' } {
+  const dir = m.last30 > m.prev30 ? 'up' : m.last30 < m.prev30 ? 'down' : 'flat';
+  return { pct: m.prev30 === 0 ? null : Math.round(((m.last30 - m.prev30) / m.prev30) * 100), dir };
+}
+
 export interface Edge {
   a: number;
   b: number;

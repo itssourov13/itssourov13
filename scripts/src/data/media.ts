@@ -13,6 +13,7 @@ export interface MediaState {
   profileImage?: MediaItem;
   heroGif?: MediaItem;
   introVideo?: MediaItem;
+  cinematicImage?: MediaItem;
   warnings: string[];
 }
 
@@ -90,6 +91,14 @@ export function inspectMedia(root: string, media: ProfileConfig['media']): Media
   const profileImage = inspectOne(root, media.profile_image, ['png', 'jpeg', 'webp'], 5 * MB, 'profile image', warnings);
   const heroGif = inspectOne(root, media.hero_animation, ['gif'], 10 * MB, 'hero animation', warnings);
   const introVideo = inspectOne(root, media.intro_video, ['mp4'], 50 * MB, 'intro video', warnings);
+  const cinematicImage = inspectOne(root, media.cinematic_image, ['png', 'jpeg', 'webp'], 6 * MB, 'cinematic image', warnings);
+  if (cinematicImage) {
+    if (cinematicImage.bytes > 1.5 * MB) warnings.push(`cinematic image is ${(cinematicImage.bytes / MB).toFixed(1)} MB; consider optimizing (docs/MEDIA.md).`);
+    const { width, height } = cinematicImage;
+    if (width && height && (width / height < 1.8 || width / height > 3)) {
+      warnings.push(`cinematic image is ${width}x${height}; a wide frame (about 21:9, e.g. 2400x1000) keeps the section composition intact (docs/MEDIA.md).`);
+    }
+  }
   if (profileImage && profileImage.bytes > MB) warnings.push(`profile image is ${(profileImage.bytes / MB).toFixed(1)} MB; consider optimizing (docs/MEDIA.md).`);
-  return { profileImage, heroGif, introVideo, warnings };
+  return { profileImage, heroGif, introVideo, cinematicImage, warnings };
 }

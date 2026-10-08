@@ -32,6 +32,15 @@ export interface ProfileConfig {
     hero_animation: string;
     intro_video: string;
     intro_video_url: string;
+    /** Optional photo for the cinematic "After hours" section; an original illustrated frame is used when absent. */
+    cinematic_image: string;
+  };
+  cinematic: {
+    enabled: boolean;
+    title: string;
+    caption: string;
+    /** Alt text for the user's own photo (the built-in illustration has its own description). */
+    alt: string;
   };
   world: {
     enabled: boolean;

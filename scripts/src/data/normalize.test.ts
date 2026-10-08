@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { fixtureCalendar, fixtureData } from '../../fixtures/index.ts';
+import type { ContributionCalendar, ContributionDay } from '../types.ts';
 import { parseRepo } from '../api/parse.ts';
-import { activityOf, buildEdges, computeStats, excludedProjects, languageTotals, monthlyTotals, normalizeRepos, selectFeatured, selectLatest, sortByActivity } from './normalize.ts';
+import { activeCalendar, activeMonthlyTotals, activityOf, buildEdges, computeStats, excludedProjects, languageTotals, momentumDelta, monthlyTotals, normalizeRepos, peakDay, selectFeatured, selectLatest, sortByActivity } from './normalize.ts';
 
 const rules = { latest_limit: 3, featured_limit: 6, exclude_forks: true, exclude_archived: true, public_only: true };
 
@@ -125,5 +126,45 @@ describe('phase 1: project intelligence', () => {
     const s = computeStats(data.user, data.repos, data.contributions, data.collectedAt);
     expect(s.momentum).not.toBeNull();
     expect(computeStats(data.user, data.repos, null, data.collectedAt).momentum).toBeNull();
+  });
+});
+
+describe('active window helpers', () => {
+  const day = (date: string, count: number, weekday: number): ContributionDay => ({ date, count, level: count > 0 ? 1 : 0, weekday });
+  const weeks = (counts: number[]): ContributionDay[][] => counts.map((c, w) => Array.from({ length: 7 }, (_, k) => day(`2026-0${1 + Math.floor(w / 5)}-${String((w % 5) * 7 + k + 1).padStart(2, '0')}`, k === 2 ? c : 0, k)));
+  const cal = (counts: number[]): ContributionCalendar => ({ total: counts.reduce((a, b) => a + b, 0), weeks: weeks(counts) });
+
+  it('drops leading empty weeks but keeps one lead-in week and a minimum width', () => {
+    const c = cal([...Array.from({ length: 40 }, () => 0), 3, 0, 5]);
+    expect(c.weeks).toHaveLength(43);
+    const t = activeCalendar(c, 10);
+    expect(t.weeks).toHaveLength(10);
+    expect(t.total).toBe(8);
+    expect(activeCalendar(cal([1, 2, 3]), 26).weeks).toHaveLength(3);
+  });
+  it('leaves an all-empty calendar untouched', () => {
+    const c = cal([0, 0, 0]);
+    expect(activeCalendar(c)).toBe(c);
+  });
+  it('finds the busiest day and returns null without activity', () => {
+    const p = peakDay(cal([1, 9, 4]))!;
+    expect(p.count).toBe(9);
+    expect(p.week).toBe(1);
+    expect(p.weekday).toBe(2);
+    expect(peakDay(cal([0, 0]))).toBeNull();
+  });
+  it('starts monthly bars at the first active month with a floor of minMonths', () => {
+    const c = fixtureCalendar();
+    const all = monthlyTotals(c);
+    const trimmed = activeMonthlyTotals(c, 2);
+    expect(trimmed.length).toBeLessThanOrEqual(all.length);
+    expect(trimmed.length).toBeGreaterThanOrEqual(Math.min(2, all.length));
+    expect(trimmed[0]!.total > 0 || trimmed.length === 2).toBe(true);
+  });
+  it('computes momentum deltas, including an empty earlier window', () => {
+    expect(momentumDelta({ last30: 115, prev30: 46 })).toEqual({ pct: 150, dir: 'up' });
+    expect(momentumDelta({ last30: 5, prev30: 10 })).toEqual({ pct: -50, dir: 'down' });
+    expect(momentumDelta({ last30: 4, prev30: 0 })).toEqual({ pct: null, dir: 'up' });
+    expect(momentumDelta({ last30: 0, prev30: 0 }).dir).toBe('flat');
   });
 });

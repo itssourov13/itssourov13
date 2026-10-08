@@ -17,15 +17,15 @@ GitHub profile README              world/ (React + R3F) — reads only generated
 
 ## Modules
 
-| Path | Responsibility |
-| --- | --- |
-| `scripts/src/config/` | Hand-written validator for `profile.config.yml` (https-only URLs, safe relative paths, unknown keys rejected, username pinned to `itssourov13`). |
-| `scripts/src/api/` | `http.ts` (timeout, retry/backoff, rate-limit errors, host allow-list), `parse.ts` (strict shape checks), `github.ts` (REST pagination, languages, releases, GraphQL calendar). |
-| `scripts/src/data/` | `collect.ts` (live collection), `store.ts` (validated read/write; unchanged data is not rewritten), `normalize.ts` (selection rules, language/month/edge/stat derivations), `media.ts` (magic-byte/size/dimension checks), `worldData.ts` (JSON contract for the world). |
-| `scripts/src/generators/` | SVG generators. Pure functions; fixed number formatting → byte-stable output. |
-| `scripts/src/renderers/readme.ts` | README composition. All untrusted text goes through `escapeMd` / `escapeXml`; URLs through `safeUrl`. |
-| `scripts/src/validation/checks.ts` | Local-link, secret-pattern and JSON checks. |
-| `world/` | Vite + React + React Three Fiber app. `base.ts` is the single source of truth for the deploy base path. |
+| Path                               | Responsibility                                                                                                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `scripts/src/config/`              | Hand-written validator for `profile.config.yml` (https-only URLs, safe relative paths, unknown keys rejected, username pinned to `itssourov13`).                                                                                                                                                                                                                                                      |
+| `scripts/src/api/`                 | `http.ts` (timeout, retry/backoff, rate-limit errors, host allow-list), `parse.ts` (strict shape checks), `github.ts` (REST pagination, languages, releases, GraphQL calendar).                                                                                                                                                                                                                       |
+| `scripts/src/data/`                | `collect.ts` (live collection), `store.ts` (validated read/write; unchanged data is not rewritten), `normalize.ts` (selection rules, language/month/edge/stat derivations), `media.ts` (magic-byte/size/dimension checks), `worldData.ts` (JSON contract for the world).                                                                                                                              |
+| `scripts/src/generators/`          | SVG generators, one file per visual (`hero`, `terminal`, `cards`, `constellation`, `intelligence`, `terrain`, `pulse`, `languages`, `cinematic`, `world`); shared palette, `languageColor`, seeded `rng` and `motion()` live in `svg.ts`. Pure functions; fixed number formatting and seeded randomness → byte-stable output. CSS animation is always paired with a `prefers-reduced-motion` opt-out. |
+| `scripts/src/renderers/readme.ts`  | README composition (V3 story: hero + nav → intro → Focus → Featured work → After hours → GitHub intelligence → Recent work → Explore → footer; navigation is derived from the sections actually rendered). All untrusted text goes through `escapeMd` / `escapeXml`; URLs through `safeUrl`.                                                                                                          |
+| `scripts/src/validation/checks.ts` | Local-link, secret-pattern and JSON checks.                                                                                                                                                                                                                                                                                                                                                           |
+| `world/`                           | Vite + React + React Three Fiber app. `base.ts` is the single source of truth for the deploy base path.                                                                                                                                                                                                                                                                                               |
 
 ## Key decisions (do not reverse casually)
 
@@ -44,7 +44,7 @@ GitHub profile README              world/ (React + R3F) — reads only generated
 
 Pure logic used by **both** the README generator and the 3D world, so project intelligence is defined once:
 
-- `activity.ts` — `classifyActivity(pushedAt, collectedAt)`: active ≤ 30 d · recent ≤ 90 d · quiet ≤ 365 d · dormant. Reference is the *collection time*, never the wall clock (deterministic).
+- `activity.ts` — `classifyActivity(pushedAt, collectedAt)`: active ≤ 30 d · recent ≤ 90 d · quiet ≤ 365 d · dormant. Reference is the _collection time_, never the wall clock (deterministic).
 - `graph.ts` — `buildRelationships`: link two projects only for a shared topic (preferred) or shared primary language.
 - `momentum.ts` — last 30 days vs the previous 30 days of the real contribution calendar; `null` without ≥ 60 days of history.
 

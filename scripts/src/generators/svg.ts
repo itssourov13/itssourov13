@@ -14,15 +14,32 @@ export interface Theme {
 }
 
 export const DARK: Theme = {
-  bg: '#0b0d10', bg2: '#11151a', panel: '#12161c', border: '#262c35', text: '#e8e6e1',
-  muted: '#9098a3', accent: '#d98a4e', accentHi: '#f0a65a', cool: '#5fa8c9', grid: '#1b2028',
+  bg: '#0b0d10',
+  bg2: '#11151a',
+  panel: '#12161c',
+  border: '#262c35',
+  text: '#e8e6e1',
+  muted: '#9098a3',
+  accent: '#d98a4e',
+  accentHi: '#f0a65a',
+  cool: '#5fa8c9',
+  grid: '#1b2028',
 };
 export const LIGHT: Theme = {
-  bg: '#f4f1ec', bg2: '#ebe7e0', panel: '#faf8f4', border: '#d6d1c8', text: '#15181c',
-  muted: '#5d646e', accent: '#a85a1c', accentHi: '#c46a22', cool: '#2b7494', grid: '#e1ddd6',
+  bg: '#f4f1ec',
+  bg2: '#ebe7e0',
+  panel: '#faf8f4',
+  border: '#d6d1c8',
+  text: '#15181c',
+  muted: '#5d646e',
+  accent: '#a85a1c',
+  accentHi: '#c46a22',
+  cool: '#2b7494',
+  grid: '#e1ddd6',
 };
 
-export const FONT_SANS = "Inter, 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif";
+export const FONT_SANS =
+  "Inter, 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif";
 export const FONT_MONO = "ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace";
 
 /** Number formatting with fixed precision so output is byte-stable. */
@@ -55,7 +72,10 @@ export interface TextOpts {
 }
 export function text(x: number, y: number, s: string, o: TextOpts = {}): string {
   const attrs = [
-    `x="${f(x)}"`, `y="${f(y)}"`, `font-family="${o.mono ? FONT_MONO : FONT_SANS}"`, `font-size="${o.size ?? 18}"`,
+    `x="${f(x)}"`,
+    `y="${f(y)}"`,
+    `font-family="${o.mono ? FONT_MONO : FONT_SANS}"`,
+    `font-size="${o.size ?? 18}"`,
     `fill="${o.fill ?? '#e8e6e1'}"`,
   ];
   if (o.weight) attrs.push(`font-weight="${o.weight}"`);
@@ -74,7 +94,13 @@ function parseHex(h: string): [number, number, number] {
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }
 const toHex = (r: number, g: number, b: number) =>
-  `#${[r, g, b].map((v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0')).join('')}`;
+  `#${[r, g, b]
+    .map((v) =>
+      Math.max(0, Math.min(255, Math.round(v)))
+        .toString(16)
+        .padStart(2, '0'),
+    )
+    .join('')}`;
 
 /** Multiply brightness (k<1 darkens). */
 export function shade(hex: string, k: number): string {
@@ -108,17 +134,99 @@ export function wrapText(input: string, maxChars: number, maxLines: number): str
   }
   if (i < words.length && lines.length > 0) {
     const last = lines[maxLines - 1] ?? lines[lines.length - 1]!;
-    lines[lines.length - 1] = last.length >= maxChars ? `${last.slice(0, maxChars - 1)}…` : `${last}…`;
+    lines[lines.length - 1] =
+      last.length >= maxChars ? `${last.slice(0, maxChars - 1)}…` : `${last}…`;
   }
   return lines.slice(0, maxLines);
 }
 
-export function unavailable(w: number, h: number, t: Theme, title: string, message: string): string {
+export function unavailable(
+  w: number,
+  h: number,
+  t: Theme,
+  title: string,
+  message: string,
+): string {
   return svgDoc(
-    w, h,
-    panel(w, h, t) + label(40, 52, title, t) + text(40, h / 2 + 8, message, { size: 20, fill: t.muted }),
-    `${title} (unavailable)`, message,
+    w,
+    h,
+    panel(w, h, t) +
+      label(40, 52, title, t) +
+      text(40, h / 2 + 8, message, { size: 20, fill: t.muted }),
+    `${title} (unavailable)`,
+    message,
   );
 }
 
-export const LANGUAGE_COLORS = ['#e8a15c', '#5fa8c9', '#8fb08a', '#d9c7a0', '#a98bb5', '#7a8aa0', '#c46a4a', '#4f9d9a'];
+export const LANGUAGE_COLORS = [
+  '#e8a15c',
+  '#5fa8c9',
+  '#8fb08a',
+  '#d9c7a0',
+  '#a98bb5',
+  '#7a8aa0',
+  '#c46a4a',
+  '#4f9d9a',
+];
+
+const KNOWN_LANGUAGE_COLORS: Record<string, string> = {
+  TypeScript: '#5fa8c9',
+  Python: '#e8a15c',
+  Go: '#8fb08a',
+  JavaScript: '#d9c7a0',
+  MDX: '#a98bb5',
+  CSS: '#7a8aa0',
+  Rust: '#c46a4a',
+  Astro: '#4f9d9a',
+  Shell: '#a3b38f',
+  C: '#8d98a6',
+  'C++': '#b58aa0',
+  HTML: '#d2796a',
+  Other: '#6b7280',
+};
+
+/** One colour per language everywhere (cards, constellation, galaxy). Unknown languages get a stable hashed palette colour. */
+export function languageColor(name: string): string {
+  const known = KNOWN_LANGUAGE_COLORS[name];
+  if (known) return known;
+  let h = 0;
+  for (const ch of name) h = (h * 31 + ch.charCodeAt(0)) | 0;
+  return LANGUAGE_COLORS[Math.abs(h) % LANGUAGE_COLORS.length]!;
+}
+
+/** Deterministic PRNG (mulberry32): generated art must be byte-stable across runs. */
+export function rng(seed: number): () => number {
+  return () => {
+    seed |= 0;
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+export function hashString(s: string): number {
+  let h = 2166136261;
+  for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+  return h >>> 0;
+}
+
+/** Shorten a long identifier but keep both ends, so `personal-website-test` and `…-demo` stay distinguishable. */
+export function midEllipsis(input: string, max: number): string {
+  if (input.length <= max) return input;
+  const head = Math.ceil((max - 1) * 0.58);
+  const tail = Math.floor((max - 1) * 0.42);
+  return `${input.slice(0, head)}…${input.slice(input.length - tail)}`;
+}
+
+/** <style> for SMIL-free CSS animation inside an SVG. Motion is switched off for visitors who prefer reduced motion. */
+export function motion(css: string): string {
+  return `<style>${css}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>`;
+}
+
+export const ACTIVITY_DOT: Record<'active' | 'recent' | 'quiet' | 'dormant', string> = {
+  active: '#f0a65a',
+  recent: '#5fa8c9',
+  quiet: '#9098a3',
+  dormant: '#3a414c',
+};
