@@ -17,4 +17,8 @@ Visitors can set Quality (Auto/Low/Medium/High), Reduce motion and Pause ambient
 
 ## Project showcase
 
-Status labels and “Archived & excluded” are derived from real data (thresholds in `shared/activity.ts`). There are no hand-written categories: use GitHub **topics** on your repositories — the cards, the Latest table and the constellation links all use them.
+Status labels and “Archived & excluded” are derived from real data (thresholds in `shared/activity.ts`). There are no hand-written categories: use GitHub **topics** on your repositories — the cards, the Recent work table and the constellation links all use them.
+
+## README V3 sections
+
+`content.show_*` flags control the intelligence panel, terrain, pulse, language galaxy and constellation; `cinematic.*` controls the "After hours" frame (see docs/MEDIA.md); `world.enabled` controls the Explore banner. Terrain and pulse start at your first real contribution, so a young account never renders as a long empty runway.

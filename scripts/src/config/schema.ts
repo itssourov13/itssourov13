@@ -31,7 +31,13 @@ function obj(c: Ctx, v: unknown, path: string, allowed: string[]): Obj {
   return o;
 }
 
-function str(c: Ctx, o: Obj, key: string, path: string, opts: { optional?: boolean; max?: number } = {}): string {
+function str(
+  c: Ctx,
+  o: Obj,
+  key: string,
+  path: string,
+  opts: { optional?: boolean; max?: number } = {},
+): string {
   const v = o[key];
   const p = `${path}.${key}`;
   if (v === undefined || v === null) {
@@ -58,7 +64,15 @@ function bool(c: Ctx, o: Obj, key: string, path: string, def: boolean): boolean 
   return v;
 }
 
-function int(c: Ctx, o: Obj, key: string, path: string, def: number, min: number, max: number): number {
+function int(
+  c: Ctx,
+  o: Obj,
+  key: string,
+  path: string,
+  def: number,
+  min: number,
+  max: number,
+): number {
   const v = o[key];
   if (v === undefined) return def;
   if (typeof v !== 'number' || !Number.isInteger(v) || v < min || v > max) {
@@ -68,7 +82,14 @@ function int(c: Ctx, o: Obj, key: string, path: string, def: number, min: number
   return v;
 }
 
-function strList(c: Ctx, o: Obj, key: string, path: string, maxItems: number, maxLen: number): string[] {
+function strList(
+  c: Ctx,
+  o: Obj,
+  key: string,
+  path: string,
+  maxItems: number,
+  maxLen: number,
+): string[] {
   const v = o[key];
   const p = `${path}.${key}`;
   if (v === undefined) return [];
@@ -79,7 +100,8 @@ function strList(c: Ctx, o: Obj, key: string, path: string, maxItems: number, ma
   if (v.length > maxItems) c.fail(p, `at most ${maxItems} entries`);
   const out: string[] = [];
   v.forEach((item, i) => {
-    if (typeof item !== 'string' || item.trim() === '') c.fail(`${p}[${i}]`, 'must be a non-empty string');
+    if (typeof item !== 'string' || item.trim() === '')
+      c.fail(`${p}[${i}]`, 'must be a non-empty string');
     else if (item.length > maxLen) c.fail(`${p}[${i}]`, `must be at most ${maxLen} characters`);
     else out.push(item.trim());
   });
@@ -104,7 +126,11 @@ export function checkHttpsUrl(c: Ctx, value: string, path: string): string {
 /** Repo-relative path: no absolute paths, no `..`, no backslashes, conservative charset. */
 export function checkRelPath(c: Ctx, value: string, path: string): string {
   if (value === '') return '';
-  if (!/^[A-Za-z0-9._/-]+$/.test(value) || value.startsWith('/') || value.split('/').includes('..')) {
+  if (
+    !/^[A-Za-z0-9._/-]+$/.test(value) ||
+    value.startsWith('/') ||
+    value.split('/').includes('..')
+  ) {
     c.fail(path, 'must be a safe repository-relative path (letters, digits, . _ - /; no "..")');
     return '';
   }
@@ -114,18 +140,44 @@ export function checkRelPath(c: Ctx, value: string, path: string): string {
 export function validateConfig(raw: unknown): ProfileConfig {
   const c = new Ctx();
   const top = obj(c, raw, 'config', [
-    'profile', 'socials', 'focus', 'featured_repositories', 'project_rules', 'content', 'media', 'world',
+    'profile',
+    'socials',
+    'focus',
+    'featured_repositories',
+    'project_rules',
+    'content',
+    'media',
+    'cinematic',
+    'world',
   ]);
 
   const pRaw = obj(c, top.profile, 'profile', [
-    'username', 'profile_url', 'display_name', 'short_name', 'headline', 'location', 'website', 'photo_alt', 'bio',
+    'username',
+    'profile_url',
+    'display_name',
+    'short_name',
+    'headline',
+    'location',
+    'website',
+    'photo_alt',
+    'bio',
   ]);
   const username = str(c, pRaw, 'username', 'profile', { max: 39 });
   if (username && username.toLowerCase() !== CANONICAL_USERNAME) {
-    c.fail('profile.username', `must be "${CANONICAL_USERNAME}" (canonical account; see HANDOFF.md to change it deliberately)`);
+    c.fail(
+      'profile.username',
+      `must be "${CANONICAL_USERNAME}" (canonical account; see HANDOFF.md to change it deliberately)`,
+    );
   }
-  const profileUrl = checkHttpsUrl(c, str(c, pRaw, 'profile_url', 'profile'), 'profile.profile_url');
-  if (profileUrl && profileUrl.replace(/\/$/, '').toLowerCase() !== `${GITHUB_WEB}/${CANONICAL_USERNAME}`) {
+  const profileUrl = checkHttpsUrl(
+    c,
+    str(c, pRaw, 'profile_url', 'profile'),
+    'profile.profile_url',
+  );
+  if (
+    profileUrl &&
+    profileUrl.replace(/\/$/, '').toLowerCase() !== `${GITHUB_WEB}/${CANONICAL_USERNAME}`
+  ) {
     c.fail('profile.profile_url', `must be ${GITHUB_WEB}/${CANONICAL_USERNAME}`);
   }
   const bio = strList(c, pRaw, 'bio', 'profile', 4, 400);
@@ -136,7 +188,11 @@ export function validateConfig(raw: unknown): ProfileConfig {
     short_name: str(c, pRaw, 'short_name', 'profile', { max: 40 }),
     headline: str(c, pRaw, 'headline', 'profile', { max: 120 }),
     location: str(c, pRaw, 'location', 'profile', { optional: true, max: 80 }),
-    website: checkHttpsUrl(c, str(c, pRaw, 'website', 'profile', { optional: true, max: 300 }), 'profile.website'),
+    website: checkHttpsUrl(
+      c,
+      str(c, pRaw, 'website', 'profile', { optional: true, max: 300 }),
+      'profile.website',
+    ),
     photo_alt: str(c, pRaw, 'photo_alt', 'profile', { optional: true, max: 160 }),
     bio,
   };
@@ -144,18 +200,27 @@ export function validateConfig(raw: unknown): ProfileConfig {
   const sRaw = obj(c, top.socials ?? {}, 'socials', SOCIAL_KEYS);
   const socials: Record<string, string> = {};
   for (const k of SOCIAL_KEYS) {
-    const url = checkHttpsUrl(c, str(c, sRaw, k, 'socials', { optional: true, max: 300 }), `socials.${k}`);
+    const url = checkHttpsUrl(
+      c,
+      str(c, sRaw, k, 'socials', { optional: true, max: 300 }),
+      `socials.${k}`,
+    );
     if (url) socials[k] = url;
   }
 
   const focus = strList(c, top, 'focus', 'config', 12, 60);
   const featured = strList(c, top, 'featured_repositories', 'config', 24, 100);
   featured.forEach((n, i) => {
-    if (!/^[A-Za-z0-9._-]+$/.test(n)) c.fail(`featured_repositories[${i}]`, 'not a valid repository name');
+    if (!/^[A-Za-z0-9._-]+$/.test(n))
+      c.fail(`featured_repositories[${i}]`, 'not a valid repository name');
   });
 
   const prRaw = obj(c, top.project_rules ?? {}, 'project_rules', [
-    'latest_limit', 'featured_limit', 'exclude_forks', 'exclude_archived', 'public_only',
+    'latest_limit',
+    'featured_limit',
+    'exclude_forks',
+    'exclude_archived',
+    'public_only',
   ]);
   const project_rules = {
     latest_limit: int(c, prRaw, 'latest_limit', 'project_rules', 6, 0, 24),
@@ -166,7 +231,11 @@ export function validateConfig(raw: unknown): ProfileConfig {
   };
 
   const cRaw = obj(c, top.content ?? {}, 'content', [
-    'show_constellation', 'show_terrain', 'show_intelligence', 'show_language_galaxy', 'show_activity_pulse',
+    'show_constellation',
+    'show_terrain',
+    'show_intelligence',
+    'show_language_galaxy',
+    'show_activity_pulse',
   ]);
   const content = {
     show_constellation: bool(c, cRaw, 'show_constellation', 'content', true),
@@ -176,15 +245,57 @@ export function validateConfig(raw: unknown): ProfileConfig {
     show_activity_pulse: bool(c, cRaw, 'show_activity_pulse', 'content', true),
   };
 
-  const mRaw = obj(c, top.media ?? {}, 'media', ['profile_image', 'hero_animation', 'intro_video', 'intro_video_url']);
+  const mRaw = obj(c, top.media ?? {}, 'media', [
+    'profile_image',
+    'hero_animation',
+    'intro_video',
+    'intro_video_url',
+    'cinematic_image',
+  ]);
   const media = {
-    profile_image: checkRelPath(c, str(c, mRaw, 'profile_image', 'media', { optional: true }), 'media.profile_image'),
-    hero_animation: checkRelPath(c, str(c, mRaw, 'hero_animation', 'media', { optional: true }), 'media.hero_animation'),
-    intro_video: checkRelPath(c, str(c, mRaw, 'intro_video', 'media', { optional: true }), 'media.intro_video'),
-    intro_video_url: checkHttpsUrl(c, str(c, mRaw, 'intro_video_url', 'media', { optional: true, max: 300 }), 'media.intro_video_url'),
+    profile_image: checkRelPath(
+      c,
+      str(c, mRaw, 'profile_image', 'media', { optional: true }),
+      'media.profile_image',
+    ),
+    hero_animation: checkRelPath(
+      c,
+      str(c, mRaw, 'hero_animation', 'media', { optional: true }),
+      'media.hero_animation',
+    ),
+    intro_video: checkRelPath(
+      c,
+      str(c, mRaw, 'intro_video', 'media', { optional: true }),
+      'media.intro_video',
+    ),
+    intro_video_url: checkHttpsUrl(
+      c,
+      str(c, mRaw, 'intro_video_url', 'media', { optional: true, max: 300 }),
+      'media.intro_video_url',
+    ),
+    cinematic_image: checkRelPath(
+      c,
+      str(c, mRaw, 'cinematic_image', 'media', { optional: true }),
+      'media.cinematic_image',
+    ),
+  };
+  const cnRaw = obj(c, top.cinematic ?? {}, 'cinematic', ['enabled', 'title', 'caption', 'alt']);
+  const cinematic = {
+    enabled: bool(c, cnRaw, 'enabled', 'cinematic', true),
+    title: str(c, cnRaw, 'title', 'cinematic', { optional: true, max: 60 }) || 'Night run',
+    caption:
+      str(c, cnRaw, 'caption', 'cinematic', { optional: true, max: 120 }) ||
+      'Wet asphalt, neon haze, nowhere to be.',
+    alt: str(c, cnRaw, 'alt', 'cinematic', { optional: true, max: 200 }),
   };
 
-  const wRaw = obj(c, top.world ?? {}, 'world', ['enabled', 'title', 'url', 'reduced_motion_default', 'quality']);
+  const wRaw = obj(c, top.world ?? {}, 'world', [
+    'enabled',
+    'title',
+    'url',
+    'reduced_motion_default',
+    'quality',
+  ]);
   const quality = str(c, wRaw, 'quality', 'world', { optional: true }) || 'auto';
   if (!QUALITY.includes(quality)) c.fail('world.quality', `must be one of ${QUALITY.join(', ')}`);
   const world = {
@@ -197,5 +308,15 @@ export function validateConfig(raw: unknown): ProfileConfig {
   if (world.enabled && !world.url) c.fail('world.url', 'is required when world.enabled is true');
 
   if (c.problems.length > 0) throw new ConfigError(c.problems);
-  return { profile, socials, focus, featured_repositories: featured, project_rules, content, media, world };
+  return {
+    profile,
+    socials,
+    focus,
+    featured_repositories: featured,
+    project_rules,
+    content,
+    media,
+    cinematic,
+    world,
+  };
 }
