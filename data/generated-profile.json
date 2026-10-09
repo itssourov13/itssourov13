@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-08T22:09:43.121Z",
+  "collectedAt": "2026-10-09T07:27:59.027Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 67
+        "total": 70
       }
     ],
-    "total": 237,
+    "total": 240,
     "weeks": [
       [
         [
@@ -1633,26 +1633,30 @@
         [
           12,
           3
+        ],
+        [
+          3,
+          1
         ]
       ]
     ]
   },
   "edges": [
     [
-      2,
-      4,
+      3,
+      5,
       "language",
       "TypeScript"
     ],
     [
-      2,
-      6,
+      3,
+      7,
       "language",
       "TypeScript"
     ],
     [
-      4,
-      6,
+      5,
+      7,
       "language",
       "TypeScript"
     ]
@@ -1693,23 +1697,27 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 66.8
+        "percent": 65.1
       },
       {
         "name": "Python",
-        "percent": 12.6
+        "percent": 12.4
       },
       {
         "name": "Go",
-        "percent": 10
+        "percent": 9.7
       },
       {
         "name": "JavaScript",
-        "percent": 4.8
+        "percent": 5
       },
       {
         "name": "MDX",
-        "percent": 2.8
+        "percent": 2.7
+      },
+      {
+        "name": "GLSL",
+        "percent": 2
       },
       {
         "name": "CSS",
@@ -1720,16 +1728,26 @@
         "percent": 0.6
       },
       {
-        "name": "HTML",
-        "percent": 0.5
-      },
-      {
         "name": "Other",
-        "percent": 0.7
+        "percent": 1.2
       }
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-09T05:41:46Z",
+      "description": "",
+      "forks": 0,
+      "language": "GLSL",
+      "name": "active-theory",
+      "pushedAt": "2026-10-09T06:43:40Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/active-theory"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1803,24 +1821,6 @@
         "nextjs"
       ],
       "url": "https://github.com/itssourov13/personal-website-demo"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-12T05:23:11Z",
-      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
-      "forks": 0,
-      "language": "MDX",
-      "name": "blog",
-      "pushedAt": "2026-09-27T07:29:34Z",
-      "release": null,
-      "stars": 2,
-      "topics": [
-        "mdx",
-        "typescript",
-        "website"
-      ],
-      "url": "https://github.com/itssourov13/blog"
     }
   ],
   "media": {
@@ -1856,23 +1856,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "active-theory",
     "personal-website-test",
     "arven",
     "rise-of-ai",
     "sketchbook",
-    "personal-website-demo",
-    "blog"
+    "personal-website-demo"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 19,
+    "activeRepos90d": 20,
     "followers": 3,
     "momentum": {
-      "last30": 132,
+      "last30": 135,
       "prev30": 46
     },
-    "publicRepos": 25,
-    "totalContributions": 237,
+    "publicRepos": 26,
+    "totalContributions": 240,
     "totalStars": 41
   },
   "status": "ok",
