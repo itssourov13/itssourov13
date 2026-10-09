@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-09T16:18:23.383Z",
+  "collectedAt": "2026-10-09T21:44:44.617Z",
   "contributions": {
     "monthly": [
       {
@@ -1644,12 +1644,6 @@
   "edges": [
     [
       0,
-      4,
-      "language",
-      "Python"
-    ],
-    [
-      0,
       5,
       "language",
       "Python"
@@ -1657,30 +1651,36 @@
     [
       0,
       6,
+      "language",
+      "Python"
+    ],
+    [
+      0,
+      7,
       "language",
       "Python"
     ],
     [
       2,
-      3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      4,
       5,
-      "language",
-      "Python"
-    ],
-    [
-      4,
       6,
       "language",
       "Python"
     ],
     [
       5,
+      7,
+      "language",
+      "Python"
+    ],
+    [
       6,
+      7,
       "language",
       "Python"
     ]
@@ -1761,6 +1761,34 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-21T08:14:31Z",
+      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai",
+      "pushedAt": "2026-10-09T20:06:30Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-09T05:41:46Z",
+      "description": "",
+      "forks": 0,
+      "language": "GLSL",
+      "name": "active-theory",
+      "pushedAt": "2026-10-09T19:44:55Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/active-theory"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1771,20 +1799,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-21T08:14:31Z",
-      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai",
-      "pushedAt": "2026-10-09T12:20:31Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai"
     },
     {
       "activity": "active",
@@ -1827,20 +1841,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/VercelStrike"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-07T19:39:09Z",
-      "description": "Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GSAP, Lenis, and Three.js.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "arven",
-      "pushedAt": "2026-10-09T11:03:12Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/arven"
     }
   ],
   "media": {
@@ -1876,12 +1876,12 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai-main",
     "hackerai",
+    "active-theory",
+    "hackerai-main",
     "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
     "VercStorm",
-    "VercelStrike",
-    "arven"
+    "VercelStrike"
   ],
   "schemaVersion": 1,
   "stats": {
@@ -1893,7 +1893,7 @@
     },
     "publicRepos": 26,
     "totalContributions": 255,
-    "totalStars": 40
+    "totalStars": 41
   },
   "status": "ok",
   "world": {
