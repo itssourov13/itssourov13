@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-09T07:27:59.027Z",
+  "collectedAt": "2026-10-09T16:18:23.383Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 70
+        "total": 85
       }
     ],
-    "total": 240,
+    "total": 255,
     "weeks": [
       [
         [
@@ -1635,30 +1635,54 @@
           3
         ],
         [
-          3,
-          1
+          18,
+          4
         ]
       ]
     ]
   },
   "edges": [
     [
-      3,
+      0,
+      4,
+      "language",
+      "Python"
+    ],
+    [
+      0,
       5,
+      "language",
+      "Python"
+    ],
+    [
+      0,
+      6,
+      "language",
+      "Python"
+    ],
+    [
+      2,
+      3,
       "language",
       "TypeScript"
     ],
     [
-      3,
-      7,
+      4,
+      5,
       "language",
-      "TypeScript"
+      "Python"
+    ],
+    [
+      4,
+      6,
+      "language",
+      "Python"
     ],
     [
       5,
-      7,
+      6,
       "language",
-      "TypeScript"
+      "Python"
     ]
   ],
   "featured": [
@@ -1697,31 +1721,31 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.1
+        "percent": 75.1
       },
       {
         "name": "Python",
-        "percent": 12.4
+        "percent": 8.7
       },
       {
         "name": "Go",
-        "percent": 9.7
+        "percent": 6.8
       },
       {
         "name": "JavaScript",
-        "percent": 5
+        "percent": 3.9
       },
       {
         "name": "MDX",
-        "percent": 2.7
+        "percent": 1.9
       },
       {
         "name": "GLSL",
-        "percent": 2
+        "percent": 1.4
       },
       {
         "name": "CSS",
-        "percent": 1.3
+        "percent": 0.9
       },
       {
         "name": "Rust",
@@ -1729,7 +1753,7 @@
       },
       {
         "name": "Other",
-        "percent": 1.2
+        "percent": 0.9
       }
     ]
   },
@@ -1737,30 +1761,72 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-10-09T05:41:46Z",
-      "description": "",
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
-      "language": "GLSL",
-      "name": "active-theory",
-      "pushedAt": "2026-10-09T06:43:40Z",
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-09T12:34:14Z",
       "release": null,
-      "stars": 0,
+      "stars": 2,
       "topics": [],
-      "url": "https://github.com/itssourov13/active-theory"
+      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-09-17T15:59:42Z",
-      "description": "Personal website . Build with Next js.",
+      "createdAt": "2026-07-21T08:14:31Z",
+      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
       "forks": 0,
       "language": "TypeScript",
-      "name": "personal-website-test",
-      "pushedAt": "2026-10-08T21:27:51Z",
+      "name": "hackerai",
+      "pushedAt": "2026-10-09T12:20:31Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-05-23T09:39:25Z",
+      "description": "A simple Python-based smart planner that decides whether commuting is possible based on distance, weather conditions, and available transport options like bike, car, or ride-share apps.",
+      "forks": 0,
+      "language": "Python",
+      "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+      "pushedAt": "2026-10-09T11:06:39Z",
       "release": null,
       "stars": 2,
       "topics": [],
-      "url": "https://github.com/itssourov13/personal-website-test"
+      "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-27T01:59:12Z",
+      "description": "",
+      "forks": 0,
+      "language": "Python",
+      "name": "VercStorm",
+      "pushedAt": "2026-10-09T11:05:43Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/VercStorm"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-26T22:51:23Z",
+      "description": "",
+      "forks": 0,
+      "language": "Python",
+      "name": "VercelStrike",
+      "pushedAt": "2026-10-09T11:05:11Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/VercelStrike"
     },
     {
       "activity": "active",
@@ -1770,57 +1836,11 @@
       "forks": 0,
       "language": "JavaScript",
       "name": "arven",
-      "pushedAt": "2026-10-07T21:56:55Z",
+      "pushedAt": "2026-10-09T11:03:12Z",
       "release": null,
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/arven"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-06T11:07:24Z",
-      "description": "A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Next.js, React, Three.js, GSAP, and WebGL.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "rise-of-ai",
-      "pushedAt": "2026-10-06T11:09:45Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/rise-of-ai"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-05T16:00:03Z",
-      "description": "Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketchbook — built with Astro.",
-      "forks": 0,
-      "language": "Astro",
-      "name": "sketchbook",
-      "pushedAt": "2026-10-06T08:01:58Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "astro"
-      ],
-      "url": "https://github.com/itssourov13/sketchbook"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-16T16:39:38Z",
-      "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website-demo",
-      "pushedAt": "2026-09-30T21:37:51Z",
-      "release": null,
-      "stars": 2,
-      "topics": [
-        "nextjs"
-      ],
-      "url": "https://github.com/itssourov13/personal-website-demo"
     }
   ],
   "media": {
@@ -1856,24 +1876,24 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "active-theory",
-    "personal-website-test",
-    "arven",
-    "rise-of-ai",
-    "sketchbook",
-    "personal-website-demo"
+    "hackerai-main",
+    "hackerai",
+    "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+    "VercStorm",
+    "VercelStrike",
+    "arven"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 20,
+    "activeRepos90d": 21,
     "followers": 3,
     "momentum": {
-      "last30": 135,
+      "last30": 150,
       "prev30": 46
     },
     "publicRepos": 26,
-    "totalContributions": 240,
-    "totalStars": 41
+    "totalContributions": 255,
+    "totalStars": 40
   },
   "status": "ok",
   "world": {

@@ -2,6 +2,213 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "defaultBranch": "main",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/hackerai-main",
+      "languages": {
+        "CSS": 12261,
+        "Dockerfile": 15996,
+        "HTML": 4249,
+        "JavaScript": 98140,
+        "Rust": 115957,
+        "Shell": 2647,
+        "TypeScript": 12939851
+      },
+      "name": "hackerai-main",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-09T12:34:14Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-09T12:32:10Z",
+      "url": "https://github.com/itssourov13/hackerai-main",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-07-21T08:14:31Z",
+      "defaultBranch": "main",
+      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/hackerai",
+      "languages": {
+        "CSS": 4107,
+        "JavaScript": 1127,
+        "TypeScript": 343969
+      },
+      "name": "hackerai",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-09T12:20:31Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-09T12:17:54Z",
+      "url": "https://github.com/itssourov13/hackerai",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-05-23T09:39:25Z",
+      "defaultBranch": "main",
+      "description": "A simple Python-based smart planner that decides whether commuting is possible based on distance, weather conditions, and available transport options like bike, car, or ride-share apps.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+      "languages": {
+        "Python": 436
+      },
+      "license": "MIT",
+      "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-10-09T11:06:39Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-09T11:06:43Z",
+      "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-07-27T01:59:12Z",
+      "defaultBranch": "main",
+      "description": "",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/VercStorm",
+      "languages": {
+        "HTML": 12827,
+        "Python": 86645
+      },
+      "name": "VercStorm",
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-10-09T11:05:43Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-09T11:05:47Z",
+      "url": "https://github.com/itssourov13/VercStorm",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-07-26T22:51:23Z",
+      "defaultBranch": "main",
+      "description": "",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/VercelStrike",
+      "languages": {
+        "Python": 75306,
+        "Shell": 154
+      },
+      "license": "MIT",
+      "name": "VercelStrike",
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-10-09T11:05:11Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-09T11:05:15Z",
+      "url": "https://github.com/itssourov13/VercelStrike",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-07T19:39:09Z",
+      "defaultBranch": "main",
+      "description": "Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GSAP, Lenis, and Three.js.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/arven",
+      "languages": {
+        "CSS": 45763,
+        "HTML": 39156,
+        "JavaScript": 58725
+      },
+      "license": "Apache-2.0",
+      "name": "arven",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-09T11:03:12Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-09T11:03:15Z",
+      "url": "https://github.com/itssourov13/arven",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-06T11:07:24Z",
+      "defaultBranch": "main",
+      "description": "A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Next.js, React, Three.js, GSAP, and WebGL.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/rise-of-ai",
+      "languages": {
+        "CSS": 11488,
+        "JavaScript": 309,
+        "TypeScript": 332290
+      },
+      "license": "MIT",
+      "name": "rise-of-ai",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-09T10:53:34Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-09T10:53:38Z",
+      "url": "https://github.com/itssourov13/rise-of-ai",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-05T16:00:03Z",
+      "defaultBranch": "main",
+      "description": "Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketchbook — built with Astro.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/sketchbook",
+      "languages": {
+        "Astro": 40456,
+        "CSS": 26633,
+        "JavaScript": 23642,
+        "TypeScript": 2321
+      },
+      "license": "MIT",
+      "name": "sketchbook",
+      "primaryLanguage": "Astro",
+      "pushedAt": "2026-10-09T10:52:55Z",
+      "stars": 1,
+      "topics": [
+        "astro"
+      ],
+      "updatedAt": "2026-10-09T10:53:01Z",
+      "url": "https://github.com/itssourov13/sketchbook",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-03T11:00:40Z",
+      "defaultBranch": "main",
+      "description": "itssourov13 -  is a ✨ _special_ ✨ repository because its `README.md` appears on  GitHub profile.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/itssourov13",
+      "languages": {
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
+      },
+      "name": "itssourov13",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-09T07:28:01Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-09T07:28:05Z",
+      "url": "https://github.com/itssourov13/itssourov13",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-10-09T05:41:46Z",
       "defaultBranch": "main",
       "description": "",
@@ -21,29 +228,6 @@
       "topics": [],
       "updatedAt": "2026-10-09T06:01:49Z",
       "url": "https://github.com/itssourov13/active-theory",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  is a ✨ _special_ ✨ repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-08T22:09:46Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-08T22:09:50Z",
-      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
@@ -68,75 +252,6 @@
       "topics": [],
       "updatedAt": "2026-10-05T14:27:32Z",
       "url": "https://github.com/itssourov13/personal-website-test",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-07T19:39:09Z",
-      "defaultBranch": "main",
-      "description": "Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GSAP, Lenis, and Three.js.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/arven",
-      "languages": {
-        "CSS": 45763,
-        "HTML": 39156,
-        "JavaScript": 58725
-      },
-      "name": "arven",
-      "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-10-07T21:56:55Z",
-      "stars": 1,
-      "topics": [],
-      "updatedAt": "2026-10-07T22:05:35Z",
-      "url": "https://github.com/itssourov13/arven",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-06T11:07:24Z",
-      "defaultBranch": "main",
-      "description": "A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Next.js, React, Three.js, GSAP, and WebGL.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/rise-of-ai",
-      "languages": {
-        "CSS": 11488,
-        "JavaScript": 309,
-        "TypeScript": 332290
-      },
-      "name": "rise-of-ai",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-06T11:09:45Z",
-      "stars": 1,
-      "topics": [],
-      "updatedAt": "2026-10-06T11:12:26Z",
-      "url": "https://github.com/itssourov13/rise-of-ai",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-05T16:00:03Z",
-      "defaultBranch": "main",
-      "description": "Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketchbook — built with Astro.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/sketchbook",
-      "languages": {
-        "Astro": 40456,
-        "CSS": 26633,
-        "JavaScript": 23642,
-        "TypeScript": 2321
-      },
-      "name": "sketchbook",
-      "primaryLanguage": "Astro",
-      "pushedAt": "2026-10-06T08:01:58Z",
-      "stars": 1,
-      "topics": [
-        "astro"
-      ],
-      "updatedAt": "2026-10-06T08:19:02Z",
-      "url": "https://github.com/itssourov13/sketchbook",
       "visibility": "public"
     },
     {
@@ -269,32 +384,6 @@
     },
     {
       "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "defaultBranch": "main",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/hackerai-main",
-      "languages": {
-        "CSS": 6932,
-        "Dockerfile": 13367,
-        "HTML": 4249,
-        "JavaScript": 28125,
-        "Rust": 76935,
-        "Shell": 2647,
-        "TypeScript": 7126773
-      },
-      "name": "hackerai-main",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-09-17T12:46:22Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-05T14:27:26Z",
-      "url": "https://github.com/itssourov13/hackerai-main",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
       "createdAt": "2026-08-30T05:44:38Z",
       "defaultBranch": "main",
       "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations. Built around a Go-based security spine with modular Python/Rust tooling, evidence collection, orchestration, and reporting.",
@@ -409,70 +498,6 @@
     },
     {
       "archived": false,
-      "createdAt": "2026-07-26T22:51:23Z",
-      "defaultBranch": "main",
-      "description": "",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/VercelStrike",
-      "languages": {
-        "Python": 75306,
-        "Shell": 154
-      },
-      "name": "VercelStrike",
-      "primaryLanguage": "Python",
-      "pushedAt": "2026-07-27T02:23:50Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-05T14:27:19Z",
-      "url": "https://github.com/itssourov13/VercelStrike",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-07-27T01:59:12Z",
-      "defaultBranch": "main",
-      "description": "",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/VercStorm",
-      "languages": {
-        "HTML": 12827,
-        "Python": 86645
-      },
-      "name": "VercStorm",
-      "primaryLanguage": "Python",
-      "pushedAt": "2026-07-27T02:01:07Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-05T14:27:19Z",
-      "url": "https://github.com/itssourov13/VercStorm",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-07-21T08:14:31Z",
-      "defaultBranch": "main",
-      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/hackerai",
-      "languages": {
-        "CSS": 4107,
-        "JavaScript": 1127,
-        "TypeScript": 343969
-      },
-      "name": "hackerai",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-07-21T10:51:18Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-05T14:27:19Z",
-      "url": "https://github.com/itssourov13/hackerai",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
       "createdAt": "2026-07-16T06:06:52Z",
       "defaultBranch": "main",
       "description": "A modern offline-first Study Planner mobile app built with Expo, React Native, TypeScript, and NativeWind. Features task management, study scheduling, progress tracking, and local storage for a seamless learning experience.",
@@ -507,26 +532,6 @@
       "topics": [],
       "updatedAt": "2026-10-05T14:27:15Z",
       "url": "https://github.com/itssourov13/awesome",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-05-23T09:39:25Z",
-      "defaultBranch": "main",
-      "description": "A simple Python-based smart planner that decides whether commuting is possible based on distance, weather conditions, and available transport options like bike, car, or ride-share apps.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
-      "languages": {
-        "Python": 436
-      },
-      "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
-      "primaryLanguage": "Python",
-      "pushedAt": "2026-05-23T09:47:22Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-05T14:27:14Z",
-      "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
       "visibility": "public"
     },
     {

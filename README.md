@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, active-theory, personal-website-test, arven, rise-of-ai, sketchbook, personal-website-demo" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, hackerai, -Travel-Weather-Planner-Smart-Commute-Decision-System-Python-, VercStorm, VercelStrike, arven" width="100%">
 
 ## After hours
 
@@ -29,24 +29,24 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="26 public repositories, 20 pushed in the last 90 days, 41 stars received, 3 followers; 135 contributions in the last 30 days against 46 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="26 public repositories, 21 pushed in the last 90 days, 40 stars received, 3 followers; 150 contributions in the last 30 days against 46 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 240 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 255 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.1%, Python 12.4%, Go 9.7%, JavaScript 5%, MDX 2.7%, GLSL 2%, CSS 1.3%, Rust 0.6%, Other 1.2%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 75.1%, Python 8.7%, Go 6.8%, JavaScript 3.9%, MDX 1.9%, GLSL 1.4%, CSS 0.9%, Rust 0.6%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [active-theory](https://github.com/itssourov13/active-theory) | — | GLSL | Active | 2026-10-09 |
-| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-08 |
-| [arven](https://github.com/itssourov13/arven) | Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GS… | JavaScript | Active | 2026-10-07 |
-| [rise-of-ai](https://github.com/itssourov13/rise-of-ai) | A cinematic 3D interactive journey through the evolution of artificial intelligence, built with Nex… | TypeScript | Active | 2026-10-06 |
-| [sketchbook](https://github.com/itssourov13/sketchbook) | Sketchbook - A poetic writing space for poems, prose, fragments, notes, and a tactile visual sketch…<br>`astro` | Astro | Active | 2026-10-06 |
-| [personal-website-demo](https://github.com/itssourov13/personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-09-30 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-09 |
+| [hackerai](https://github.com/itssourov13/hackerai) | The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter. | TypeScript | Active | 2026-10-09 |
+| [-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-](https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-) | A simple Python-based smart planner that decides whether commuting is possible based on distance, w… | Python | Active | 2026-10-09 |
+| [VercStorm](https://github.com/itssourov13/VercStorm) | — | Python | Active | 2026-10-09 |
+| [VercelStrike](https://github.com/itssourov13/VercelStrike) | — | Python | Active | 2026-10-09 |
+| [arven](https://github.com/itssourov13/arven) | Cinematic luxury real-estate landing page for a fictional Dubai waterfront residence, powered by GS… | JavaScript | Active | 2026-10-09 |
 
 <sub>Selected automatically from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 
