@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-10T07:14:30.164Z",
+  "collectedAt": "2026-10-10T15:26:25.007Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 94
+        "total": 95
       }
     ],
-    "total": 264,
+    "total": 265,
     "weeks": [
       [
         [
@@ -1639,7 +1639,7 @@
           4
         ],
         [
-          6,
+          7,
           2
         ]
       ]
@@ -1659,7 +1659,7 @@
       "Python"
     ],
     [
-      4,
+      2,
       5,
       "language",
       "TypeScript"
@@ -1747,15 +1747,31 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-10T12:41:10Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-10T06:56:50Z",
       "description": "An immersive architectural website concept for STELE Residences, featuring premium residential design, interactive drone-flight exploration, and a simulated sales cockpit.",
       "forks": 0,
       "language": "JavaScript",
       "name": "stele-residences",
-      "pushedAt": "2026-10-10T07:02:26Z",
+      "pushedAt": "2026-10-10T08:22:52Z",
       "release": null,
       "stars": 0,
-      "topics": [],
+      "topics": [
+        "landing-page"
+      ],
       "url": "https://github.com/itssourov13/stele-residences"
     },
     {
@@ -1785,20 +1801,6 @@
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-10-09T12:34:14Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1862,10 +1864,10 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "hackerai-main",
     "stele-residences",
     "active-theory",
     "hackerai",
-    "hackerai-main",
     "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
     "VercStorm"
   ],
@@ -1874,11 +1876,11 @@
     "activeRepos90d": 22,
     "followers": 3,
     "momentum": {
-      "last30": 159,
+      "last30": 160,
       "prev30": 46
     },
     "publicRepos": 27,
-    "totalContributions": 264,
+    "totalContributions": 265,
     "totalStars": 41
   },
   "status": "ok",

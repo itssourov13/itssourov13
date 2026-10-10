@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, stele-residences, active-theory, hackerai, hackerai-main, -Travel-Weather-Planner-Smart-Commute-Decision-System-Python-, VercStorm" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, stele-residences, active-theory, hackerai, -Travel-Weather-Planner-Smart-Commute-Decision-System-Python-, VercStorm" width="100%">
 
 ## After hours
 
@@ -29,9 +29,9 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="27 public repositories, 22 pushed in the last 90 days, 41 stars received, 3 followers; 159 contributions in the last 30 days against 46 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="27 public repositories, 22 pushed in the last 90 days, 41 stars received, 3 followers; 160 contributions in the last 30 days against 46 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 264 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 265 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
@@ -41,10 +41,10 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [stele-residences](https://github.com/itssourov13/stele-residences) | An immersive architectural website concept for STELE Residences, featuring premium residential desi… | JavaScript | Active | 2026-10-10 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-10 |
+| [stele-residences](https://github.com/itssourov13/stele-residences) | An immersive architectural website concept for STELE Residences, featuring premium residential desi…<br>`landing-page` | JavaScript | Active | 2026-10-10 |
 | [active-theory](https://github.com/itssourov13/active-theory) | — | GLSL | Active | 2026-10-10 |
 | [hackerai](https://github.com/itssourov13/hackerai) | The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter. | TypeScript | Active | 2026-10-09 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-09 |
 | [-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-](https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-) | A simple Python-based smart planner that decides whether commuting is possible based on distance, w… | Python | Active | 2026-10-09 |
 | [VercStorm](https://github.com/itssourov13/VercStorm) | — | Python | Active | 2026-10-09 |
 
