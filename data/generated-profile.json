@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-09T21:44:44.617Z",
+  "collectedAt": "2026-10-10T07:14:30.164Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 85
+        "total": 94
       }
     ],
-    "total": 255,
+    "total": 264,
     "weeks": [
       [
         [
@@ -1635,8 +1635,12 @@
           3
         ],
         [
-          18,
+          21,
           4
+        ],
+        [
+          6,
+          2
         ]
       ]
     ]
@@ -1644,12 +1648,6 @@
   "edges": [
     [
       0,
-      5,
-      "language",
-      "Python"
-    ],
-    [
-      0,
       6,
       "language",
       "Python"
@@ -1661,22 +1659,10 @@
       "Python"
     ],
     [
-      2,
       4,
+      5,
       "language",
       "TypeScript"
-    ],
-    [
-      5,
-      6,
-      "language",
-      "Python"
-    ],
-    [
-      5,
-      7,
-      "language",
-      "Python"
     ],
     [
       6,
@@ -1721,19 +1707,19 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 75.1
+        "percent": 73.9
       },
       {
         "name": "Python",
-        "percent": 8.7
+        "percent": 8.5
       },
       {
         "name": "Go",
-        "percent": 6.8
+        "percent": 6.7
       },
       {
         "name": "JavaScript",
-        "percent": 3.9
+        "percent": 4.9
       },
       {
         "name": "MDX",
@@ -1741,11 +1727,11 @@
       },
       {
         "name": "GLSL",
-        "percent": 1.4
+        "percent": 1.3
       },
       {
         "name": "CSS",
-        "percent": 0.9
+        "percent": 1.3
       },
       {
         "name": "Rust",
@@ -1761,6 +1747,34 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-10T06:56:50Z",
+      "description": "An immersive architectural website concept for STELE Residences, featuring premium residential design, interactive drone-flight exploration, and a simulated sales cockpit.",
+      "forks": 0,
+      "language": "JavaScript",
+      "name": "stele-residences",
+      "pushedAt": "2026-10-10T07:02:26Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/stele-residences"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-09T05:41:46Z",
+      "description": "",
+      "forks": 0,
+      "language": "GLSL",
+      "name": "active-theory",
+      "pushedAt": "2026-10-10T05:05:10Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/active-theory"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-21T08:14:31Z",
       "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
       "forks": 0,
@@ -1771,20 +1785,6 @@
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-09T05:41:46Z",
-      "description": "",
-      "forks": 0,
-      "language": "GLSL",
-      "name": "active-theory",
-      "pushedAt": "2026-10-09T19:44:55Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/active-theory"
     },
     {
       "activity": "active",
@@ -1827,20 +1827,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/VercStorm"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T22:51:23Z",
-      "description": "",
-      "forks": 0,
-      "language": "Python",
-      "name": "VercelStrike",
-      "pushedAt": "2026-10-09T11:05:11Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/VercelStrike"
     }
   ],
   "media": {
@@ -1876,23 +1862,23 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai",
+    "stele-residences",
     "active-theory",
+    "hackerai",
     "hackerai-main",
     "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
-    "VercStorm",
-    "VercelStrike"
+    "VercStorm"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 21,
+    "activeRepos90d": 22,
     "followers": 3,
     "momentum": {
-      "last30": 150,
+      "last30": 159,
       "prev30": 46
     },
-    "publicRepos": 26,
-    "totalContributions": 255,
+    "publicRepos": 27,
+    "totalContributions": 264,
     "totalStars": 41
   },
   "status": "ok",

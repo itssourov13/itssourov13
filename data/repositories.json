@@ -2,25 +2,25 @@
   "repos": [
     {
       "archived": false,
-      "createdAt": "2026-07-21T08:14:31Z",
+      "createdAt": "2026-10-10T06:56:50Z",
       "defaultBranch": "main",
-      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
+      "description": "An immersive architectural website concept for STELE Residences, featuring premium residential design, interactive drone-flight exploration, and a simulated sales cockpit.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/hackerai",
+      "fullName": "itssourov13/stele-residences",
       "languages": {
-        "CSS": 4107,
-        "JavaScript": 1127,
-        "TypeScript": 343969
+        "CSS": 80467,
+        "HTML": 10852,
+        "JavaScript": 211391
       },
       "license": "MIT",
-      "name": "hackerai",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-09T20:06:30Z",
-      "stars": 1,
+      "name": "stele-residences",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-10T07:02:26Z",
+      "stars": 0,
       "topics": [],
-      "updatedAt": "2026-10-09T20:06:34Z",
-      "url": "https://github.com/itssourov13/hackerai",
+      "updatedAt": "2026-10-10T07:02:30Z",
+      "url": "https://github.com/itssourov13/stele-residences",
       "visibility": "public"
     },
     {
@@ -34,15 +34,15 @@
       "languages": {
         "GLSL": 267420,
         "HTML": 7786,
-        "JavaScript": 51368,
+        "JavaScript": 61105,
         "Python": 12679
       },
       "name": "active-theory",
       "primaryLanguage": "GLSL",
-      "pushedAt": "2026-10-09T19:44:55Z",
+      "pushedAt": "2026-10-10T05:05:10Z",
       "stars": 1,
       "topics": [],
-      "updatedAt": "2026-10-09T19:48:03Z",
+      "updatedAt": "2026-10-10T05:05:14Z",
       "url": "https://github.com/itssourov13/active-theory",
       "visibility": "public"
     },
@@ -62,11 +62,34 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-09T16:18:25Z",
+      "pushedAt": "2026-10-10T05:02:12Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-09T16:18:30Z",
+      "updatedAt": "2026-10-10T05:02:16Z",
       "url": "https://github.com/itssourov13/itssourov13",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-07-21T08:14:31Z",
+      "defaultBranch": "main",
+      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/hackerai",
+      "languages": {
+        "CSS": 4107,
+        "JavaScript": 1127,
+        "TypeScript": 343969
+      },
+      "license": "MIT",
+      "name": "hackerai",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-09T20:06:30Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-09T20:06:34Z",
+      "url": "https://github.com/itssourov13/hackerai",
       "visibility": "public"
     },
     {
