@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-11T15:46:57.718Z",
+  "collectedAt": "2026-10-11T20:59:05.163Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 95
+        "total": 97
       }
     ],
-    "total": 265,
+    "total": 267,
     "weeks": [
       [
         [
@@ -1615,19 +1615,13 @@
       ],
       [
         [
-          0,
-          0
+          2,
+          1
         ]
       ]
     ]
   },
   "edges": [
-    [
-      0,
-      6,
-      "language",
-      "Python"
-    ],
     [
       0,
       7,
@@ -1636,15 +1630,21 @@
     ],
     [
       2,
-      5,
+      3,
       "language",
       "TypeScript"
     ],
     [
+      2,
       6,
-      7,
       "language",
-      "Python"
+      "TypeScript"
+    ],
+    [
+      3,
+      6,
+      "language",
+      "TypeScript"
     ]
   ],
   "featured": [
@@ -1652,7 +1652,7 @@
       "activity": "recent",
       "archived": false,
       "createdAt": "2026-08-13T05:40:40Z",
-      "description": "PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and security research. Generates structured, deduplicated candidate wordlists from target profiles with configurable patterns, PINs, checkpoints, statistics, and multiple output formats.",
+      "description": "PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and security research. ",
       "forks": 0,
       "language": "Python",
       "name": "passhunter",
@@ -1666,7 +1666,7 @@
       "activity": "recent",
       "archived": false,
       "createdAt": "2026-08-30T05:44:38Z",
-      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations. Built around a Go-based security spine with modular Python/Rust tooling, evidence collection, orchestration, and reporting.",
+      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
       "forks": 0,
       "language": "Go",
       "name": "cyberos",
@@ -1683,30 +1683,30 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 73.9
+        "percent": 74.2
       },
       {
         "name": "Python",
-        "percent": 8.5
+        "percent": 8.3
       },
       {
         "name": "Go",
-        "percent": 6.7
+        "percent": 6.5
       },
       {
         "name": "JavaScript",
-        "percent": 4.9
+        "percent": 4.8
       },
       {
         "name": "MDX",
-        "percent": 1.9
-      },
-      {
-        "name": "GLSL",
-        "percent": 1.3
+        "percent": 1.8
       },
       {
         "name": "CSS",
+        "percent": 1.6
+      },
+      {
+        "name": "GLSL",
         "percent": 1.3
       },
       {
@@ -1715,11 +1715,25 @@
       },
       {
         "name": "Other",
-        "percent": 0.9
+        "percent": 1
       }
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-11T16:39:14Z",
+      "description": "",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "birthday-present",
+      "pushedAt": "2026-10-11T20:53:46Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/birthday-present"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1791,20 +1805,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-27T01:59:12Z",
-      "description": "",
-      "forks": 0,
-      "language": "Python",
-      "name": "VercStorm",
-      "pushedAt": "2026-10-09T11:05:43Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/VercStorm"
     }
   ],
   "media": {
@@ -1840,23 +1840,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "birthday-present",
     "hackerai-main",
     "stele-residences",
     "active-theory",
     "hackerai",
-    "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
-    "VercStorm"
+    "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 22,
+    "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 160,
+      "last30": 162,
       "prev30": 44
     },
-    "publicRepos": 27,
-    "totalContributions": 265,
+    "publicRepos": 28,
+    "totalContributions": 267,
     "totalStars": 41
   },
   "status": "ok",

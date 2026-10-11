@@ -2,6 +2,51 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-10-11T16:39:14Z",
+      "defaultBranch": "main",
+      "description": "",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/birthday-present",
+      "languages": {
+        "CSS": 64313,
+        "HTML": 19752,
+        "TypeScript": 516849
+      },
+      "name": "birthday-present",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-11T20:53:46Z",
+      "stars": 0,
+      "topics": [],
+      "updatedAt": "2026-10-11T17:57:25Z",
+      "url": "https://github.com/itssourov13/birthday-present",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-03T11:00:40Z",
+      "defaultBranch": "main",
+      "description": "itssourov13 -  is a ✨ _special_ ✨ repository because its `README.md` appears on  GitHub profile.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/itssourov13",
+      "languages": {
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
+      },
+      "name": "itssourov13",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-11T15:47:00Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-11T15:47:04Z",
+      "url": "https://github.com/itssourov13/itssourov13",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "defaultBranch": "main",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
@@ -24,29 +69,6 @@
       "topics": [],
       "updatedAt": "2026-10-09T12:32:10Z",
       "url": "https://github.com/itssourov13/hackerai-main",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  is a ✨ _special_ ✨ repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-11T07:17:05Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-11T07:17:09Z",
-      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
@@ -412,7 +434,7 @@
       "archived": false,
       "createdAt": "2026-08-30T05:44:38Z",
       "defaultBranch": "main",
-      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations. Built around a Go-based security spine with modular Python/Rust tooling, evidence collection, orchestration, and reporting.",
+      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
       "fork": false,
       "forks": 0,
       "fullName": "itssourov13/cyberos",
@@ -431,7 +453,7 @@
       "pushedAt": "2026-08-30T05:55:49Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-05T14:27:25Z",
+      "updatedAt": "2026-10-11T19:00:41Z",
       "url": "https://github.com/itssourov13/cyberos",
       "visibility": "public"
     },
@@ -481,7 +503,7 @@
       "archived": false,
       "createdAt": "2026-08-13T05:40:40Z",
       "defaultBranch": "main",
-      "description": "PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and security research. Generates structured, deduplicated candidate wordlists from target profiles with configurable patterns, PINs, checkpoints, statistics, and multiple output formats.",
+      "description": "PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and security research. ",
       "fork": false,
       "forks": 0,
       "fullName": "itssourov13/passhunter",
@@ -493,7 +515,7 @@
       "pushedAt": "2026-08-13T15:25:55Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-05T14:27:22Z",
+      "updatedAt": "2026-10-11T18:50:21Z",
       "url": "https://github.com/itssourov13/passhunter",
       "visibility": "public"
     },
@@ -526,7 +548,7 @@
       "archived": false,
       "createdAt": "2026-07-16T06:06:52Z",
       "defaultBranch": "main",
-      "description": "A modern offline-first Study Planner mobile app built with Expo, React Native, TypeScript, and NativeWind. Features task management, study scheduling, progress tracking, and local storage for a seamless learning experience.",
+      "description": "Study planner pro - An offline-first study planner built with React Native and Expo, featuring task management, study scheduling, goal tracking, and progress statistics.",
       "fork": false,
       "forks": 0,
       "fullName": "itssourov13/study-planner-apk",
@@ -539,7 +561,7 @@
       "pushedAt": "2026-07-16T12:37:12Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-05T14:27:16Z",
+      "updatedAt": "2026-10-11T18:59:07Z",
       "url": "https://github.com/itssourov13/study-planner-apk",
       "visibility": "public"
     },
