@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-11T20:59:05.163Z",
+  "collectedAt": "2026-10-12T07:26:56.714Z",
   "contributions": {
     "monthly": [
       {
@@ -1617,6 +1617,10 @@
         [
           2,
           1
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1658,7 +1662,7 @@
       "name": "passhunter",
       "pushedAt": "2026-08-13T15:25:55Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/passhunter"
     },
@@ -1672,7 +1676,7 @@
       "name": "cyberos",
       "pushedAt": "2026-08-30T05:55:49Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/cyberos"
     }
@@ -1730,7 +1734,7 @@
       "name": "birthday-present",
       "pushedAt": "2026-10-11T20:53:46Z",
       "release": null,
-      "stars": 0,
+      "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/birthday-present"
     },
@@ -1744,7 +1748,7 @@
       "name": "hackerai-main",
       "pushedAt": "2026-10-11T13:02:14Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
     },
@@ -1758,7 +1762,7 @@
       "name": "stele-residences",
       "pushedAt": "2026-10-10T08:22:52Z",
       "release": null,
-      "stars": 0,
+      "stars": 1,
       "topics": [
         "landing-page"
       ],
@@ -1774,7 +1778,7 @@
       "name": "active-theory",
       "pushedAt": "2026-10-10T05:05:10Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/active-theory"
     },
@@ -1788,7 +1792,7 @@
       "name": "hackerai",
       "pushedAt": "2026-10-09T20:06:30Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai"
     },
@@ -1802,7 +1806,7 @@
       "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
       "pushedAt": "2026-10-09T11:06:39Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
     }
@@ -1852,12 +1856,12 @@
     "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 162,
-      "prev30": 44
+      "last30": 151,
+      "prev30": 49
     },
     "publicRepos": 28,
     "totalContributions": 267,
-    "totalStars": 41
+    "totalStars": 66
   },
   "status": "ok",
   "world": {
