@@ -2,6 +2,27 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-10-12T08:45:10Z",
+      "defaultBranch": "main",
+      "description": "A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and a heartfelt letter.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/birthday-present-preview",
+      "languages": {
+        "HTML": 52018,
+        "JavaScript": 2021929
+      },
+      "name": "birthday-present-preview",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-12T10:49:35Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-12T10:49:40Z",
+      "url": "https://github.com/itssourov13/birthday-present-preview",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-10-03T11:00:40Z",
       "defaultBranch": "main",
       "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
@@ -16,10 +37,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-11T20:59:07Z",
+      "pushedAt": "2026-10-12T07:27:00Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-11T22:09:03Z",
+      "updatedAt": "2026-10-12T07:27:05Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
@@ -39,9 +60,9 @@
       "name": "birthday-present",
       "primaryLanguage": "TypeScript",
       "pushedAt": "2026-10-11T20:53:46Z",
-      "stars": 1,
+      "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-11T22:09:10Z",
+      "updatedAt": "2026-10-12T10:25:25Z",
       "url": "https://github.com/itssourov13/birthday-present",
       "visibility": "public"
     },
@@ -88,11 +109,11 @@
       "name": "stele-residences",
       "primaryLanguage": "JavaScript",
       "pushedAt": "2026-10-10T08:22:52Z",
-      "stars": 1,
+      "stars": 2,
       "topics": [
         "landing-page"
       ],
-      "updatedAt": "2026-10-11T22:09:22Z",
+      "updatedAt": "2026-10-12T10:25:27Z",
       "url": "https://github.com/itssourov13/stele-residences",
       "visibility": "public"
     },
