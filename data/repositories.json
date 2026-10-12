@@ -9,61 +9,17 @@
       "forks": 0,
       "fullName": "itssourov13/birthday-present-preview",
       "languages": {
-        "HTML": 52018,
-        "JavaScript": 2021929
+        "CSS": 22018,
+        "HTML": 58505,
+        "JavaScript": 2025997
       },
       "name": "birthday-present-preview",
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-10-12T10:49:35Z",
-      "stars": 1,
-      "topics": [],
-      "updatedAt": "2026-10-12T10:49:40Z",
-      "url": "https://github.com/itssourov13/birthday-present-preview",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-12T07:27:00Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-12T07:27:05Z",
-      "url": "https://github.com/itssourov13/itssourov13",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-11T16:39:14Z",
-      "defaultBranch": "main",
-      "description": "",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/birthday-present",
-      "languages": {
-        "CSS": 64313,
-        "HTML": 19752,
-        "TypeScript": 516849
-      },
-      "name": "birthday-present",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-11T20:53:46Z",
+      "pushedAt": "2026-10-12T18:58:58Z",
       "stars": 2,
       "topics": [],
-      "updatedAt": "2026-10-12T10:25:25Z",
-      "url": "https://github.com/itssourov13/birthday-present",
+      "updatedAt": "2026-10-12T18:59:02Z",
+      "url": "https://github.com/itssourov13/birthday-present-preview",
       "visibility": "public"
     },
     {
@@ -85,11 +41,34 @@
       },
       "name": "hackerai-main",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-11T13:02:14Z",
+      "pushedAt": "2026-10-12T15:40:02Z",
       "stars": 3,
       "topics": [],
       "updatedAt": "2026-10-11T22:09:15Z",
       "url": "https://github.com/itssourov13/hackerai-main",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-03T11:00:40Z",
+      "defaultBranch": "main",
+      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/itssourov13",
+      "languages": {
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
+      },
+      "name": "itssourov13",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-12T10:51:49Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-12T10:51:54Z",
+      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
@@ -109,11 +88,11 @@
       "name": "stele-residences",
       "primaryLanguage": "JavaScript",
       "pushedAt": "2026-10-10T08:22:52Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [
         "landing-page"
       ],
-      "updatedAt": "2026-10-12T10:25:27Z",
+      "updatedAt": "2026-10-12T11:02:34Z",
       "url": "https://github.com/itssourov13/stele-residences",
       "visibility": "public"
     },
@@ -134,9 +113,9 @@
       "name": "active-theory",
       "primaryLanguage": "GLSL",
       "pushedAt": "2026-10-10T05:05:10Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-11T22:09:41Z",
+      "updatedAt": "2026-10-12T11:02:35Z",
       "url": "https://github.com/itssourov13/active-theory",
       "visibility": "public"
     },
@@ -157,9 +136,9 @@
       "name": "hackerai",
       "primaryLanguage": "TypeScript",
       "pushedAt": "2026-10-09T20:06:30Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-11T22:09:47Z",
+      "updatedAt": "2026-10-12T11:02:36Z",
       "url": "https://github.com/itssourov13/hackerai",
       "visibility": "public"
     },
@@ -244,9 +223,9 @@
       "name": "arven",
       "primaryLanguage": "JavaScript",
       "pushedAt": "2026-10-09T11:03:12Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-11T22:10:57Z",
+      "updatedAt": "2026-10-12T11:02:40Z",
       "url": "https://github.com/itssourov13/arven",
       "visibility": "public"
     },
@@ -267,9 +246,9 @@
       "name": "rise-of-ai",
       "primaryLanguage": "TypeScript",
       "pushedAt": "2026-10-09T10:53:34Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-11T22:11:02Z",
+      "updatedAt": "2026-10-12T11:02:39Z",
       "url": "https://github.com/itssourov13/rise-of-ai",
       "visibility": "public"
     },
@@ -291,11 +270,11 @@
       "name": "sketchbook",
       "primaryLanguage": "Astro",
       "pushedAt": "2026-10-09T10:52:55Z",
-      "stars": 2,
+      "stars": 3,
       "topics": [
         "astro"
       ],
-      "updatedAt": "2026-10-11T22:11:08Z",
+      "updatedAt": "2026-10-12T11:02:38Z",
       "url": "https://github.com/itssourov13/sketchbook",
       "visibility": "public"
     },

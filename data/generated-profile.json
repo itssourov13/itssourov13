@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-12T10:51:46.979Z",
+  "collectedAt": "2026-10-12T19:07:18.943Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 103
+        "total": 109
       }
     ],
-    "total": 273,
+    "total": 279,
     "weeks": [
       [
         [
@@ -1619,34 +1619,28 @@
           1
         ],
         [
-          6,
-          2
+          12,
+          3
         ]
       ]
     ]
   },
   "edges": [
     [
+      0,
+      7,
+      "language",
+      "Python"
+    ],
+    [
       2,
-      5,
+      4,
       "language",
       "JavaScript"
     ],
     [
       3,
-      4,
-      "language",
-      "TypeScript"
-    ],
-    [
-      3,
-      7,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      7,
+      6,
       "language",
       "TypeScript"
     ]
@@ -1687,19 +1681,19 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 67.4
+        "percent": 66.8
       },
       {
         "name": "JavaScript",
-        "percent": 13.3
+        "percent": 13.6
       },
       {
         "name": "Python",
-        "percent": 7.5
+        "percent": 7.7
       },
       {
         "name": "Go",
-        "percent": 5.9
+        "percent": 6
       },
       {
         "name": "MDX",
@@ -1707,7 +1701,7 @@
       },
       {
         "name": "CSS",
-        "percent": 1.4
+        "percent": 1.3
       },
       {
         "name": "GLSL",
@@ -1719,7 +1713,7 @@
       },
       {
         "name": "Other",
-        "percent": 0.9
+        "percent": 1
       }
     ]
   },
@@ -1732,25 +1726,11 @@
       "forks": 0,
       "language": "JavaScript",
       "name": "birthday-present-preview",
-      "pushedAt": "2026-10-12T10:49:35Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/birthday-present-preview"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-11T16:39:14Z",
-      "description": "",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "birthday-present",
-      "pushedAt": "2026-10-11T20:53:46Z",
+      "pushedAt": "2026-10-12T18:58:58Z",
       "release": null,
       "stars": 2,
       "topics": [],
-      "url": "https://github.com/itssourov13/birthday-present"
+      "url": "https://github.com/itssourov13/birthday-present-preview"
     },
     {
       "activity": "active",
@@ -1760,7 +1740,7 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-10-11T13:02:14Z",
+      "pushedAt": "2026-10-12T15:40:02Z",
       "release": null,
       "stars": 3,
       "topics": [],
@@ -1776,7 +1756,7 @@
       "name": "stele-residences",
       "pushedAt": "2026-10-10T08:22:52Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [
         "landing-page"
       ],
@@ -1792,7 +1772,7 @@
       "name": "active-theory",
       "pushedAt": "2026-10-10T05:05:10Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/active-theory"
     },
@@ -1806,9 +1786,23 @@
       "name": "hackerai",
       "pushedAt": "2026-10-09T20:06:30Z",
       "release": null,
-      "stars": 2,
+      "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-05-23T09:39:25Z",
+      "description": "A simple Python-based smart planner that decides whether commuting is possible based on distance, weather conditions, and available transport options like bike, car, or ride-share apps.",
+      "forks": 0,
+      "language": "Python",
+      "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
+      "pushedAt": "2026-10-09T11:06:39Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
     }
   ],
   "media": {
@@ -1845,23 +1839,23 @@
     "passhunter",
     "cyberos",
     "birthday-present-preview",
-    "birthday-present",
     "hackerai-main",
     "stele-residences",
     "active-theory",
-    "hackerai"
+    "hackerai",
+    "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 24,
+    "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 157,
+      "last30": 163,
       "prev30": 49
     },
-    "publicRepos": 29,
-    "totalContributions": 273,
-    "totalStars": 69
+    "publicRepos": 28,
+    "totalContributions": 279,
+    "totalStars": 74
   },
   "status": "ok",
   "world": {
