@@ -29,9 +29,9 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="28 public repositories, 23 pushed in the last 90 days, 74 stars received, 3 followers; 176 contributions in the last 30 days against 46 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="28 public repositories, 23 pushed in the last 90 days, 74 stars received, 3 followers; 177 contributions in the last 30 days against 46 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 293 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 294 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
