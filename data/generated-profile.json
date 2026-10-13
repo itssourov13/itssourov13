@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-12T19:07:18.943Z",
+  "collectedAt": "2026-10-13T07:47:51.100Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 109
+        "total": 123
       }
     ],
-    "total": 279,
+    "total": 293,
     "weeks": [
       [
         [
@@ -1006,11 +1006,11 @@
         ],
         [
           13,
-          3
+          4
         ],
         [
           4,
-          1
+          2
         ]
       ],
       [
@@ -1242,7 +1242,7 @@
         ],
         [
           8,
-          2
+          3
         ],
         [
           0,
@@ -1264,7 +1264,7 @@
         ],
         [
           8,
-          2
+          3
         ],
         [
           0,
@@ -1286,7 +1286,7 @@
       [
         [
           10,
-          2
+          3
         ],
         [
           3,
@@ -1366,7 +1366,7 @@
         ],
         [
           4,
-          1
+          2
         ],
         [
           0,
@@ -1384,7 +1384,7 @@
         ],
         [
           9,
-          2
+          3
         ],
         [
           6,
@@ -1396,7 +1396,7 @@
         ],
         [
           9,
-          2
+          3
         ],
         [
           2,
@@ -1448,7 +1448,7 @@
         ],
         [
           4,
-          1
+          2
         ],
         [
           0,
@@ -1490,7 +1490,7 @@
         ],
         [
           11,
-          3
+          4
         ]
       ],
       [
@@ -1508,11 +1508,11 @@
         ],
         [
           4,
-          1
+          2
         ],
         [
           8,
-          2
+          3
         ],
         [
           2,
@@ -1526,7 +1526,7 @@
       [
         [
           5,
-          1
+          2
         ],
         [
           0,
@@ -1534,7 +1534,7 @@
         ],
         [
           10,
-          2
+          3
         ],
         [
           6,
@@ -1542,7 +1542,7 @@
         ],
         [
           10,
-          2
+          3
         ],
         [
           0,
@@ -1586,7 +1586,7 @@
       [
         [
           12,
-          3
+          4
         ],
         [
           21,
@@ -1594,15 +1594,15 @@
         ],
         [
           14,
-          3
+          4
         ],
         [
           5,
-          1
+          2
         ],
         [
           12,
-          3
+          4
         ],
         [
           21,
@@ -1620,7 +1620,11 @@
         ],
         [
           12,
-          3
+          4
+        ],
+        [
+          14,
+          4
         ]
       ]
     ]
@@ -1634,12 +1638,12 @@
     ],
     [
       2,
-      4,
+      5,
       "language",
       "JavaScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
@@ -1681,11 +1685,11 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 66.8
+        "percent": 66.7
       },
       {
         "name": "JavaScript",
-        "percent": 13.6
+        "percent": 13.7
       },
       {
         "name": "Python",
@@ -1726,11 +1730,25 @@
       "forks": 0,
       "language": "JavaScript",
       "name": "birthday-present-preview",
-      "pushedAt": "2026-10-12T18:58:58Z",
+      "pushedAt": "2026-10-13T04:37:44Z",
       "release": null,
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/birthday-present-preview"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-09T05:41:46Z",
+      "description": "",
+      "forks": 0,
+      "language": "GLSL",
+      "name": "active-theory",
+      "pushedAt": "2026-10-12T19:10:22Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/active-theory"
     },
     {
       "activity": "active",
@@ -1761,20 +1779,6 @@
         "landing-page"
       ],
       "url": "https://github.com/itssourov13/stele-residences"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-09T05:41:46Z",
-      "description": "",
-      "forks": 0,
-      "language": "GLSL",
-      "name": "active-theory",
-      "pushedAt": "2026-10-10T05:05:10Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/active-theory"
     },
     {
       "activity": "active",
@@ -1839,9 +1843,9 @@
     "passhunter",
     "cyberos",
     "birthday-present-preview",
+    "active-theory",
     "hackerai-main",
     "stele-residences",
-    "active-theory",
     "hackerai",
     "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
   ],
@@ -1850,11 +1854,11 @@
     "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 163,
-      "prev30": 49
+      "last30": 176,
+      "prev30": 46
     },
     "publicRepos": 28,
-    "totalContributions": 279,
+    "totalContributions": 293,
     "totalStars": 74
   },
   "status": "ok",
