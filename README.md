@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, birthday-present-preview, active-theory, hackerai-main, stele-residences, hackerai, -Travel-Weather-Planner-Smart-Commute-Decision-System-Python-" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, birthday-present-preview, active-theory, stele-residences, hackerai, -Travel-Weather-Planner-Smart-Commute-Decision-System-Python-" width="100%">
 
 ## After hours
 
@@ -41,9 +41,9 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-13 |
 | [birthday-present-preview](https://github.com/itssourov13/birthday-present-preview) | A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and… | JavaScript | Active | 2026-10-13 |
 | [active-theory](https://github.com/itssourov13/active-theory) | — | GLSL | Active | 2026-10-12 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-12 |
 | [stele-residences](https://github.com/itssourov13/stele-residences) | An immersive architectural website concept for STELE Residences, featuring premium residential desi…<br>`landing-page` | JavaScript | Active | 2026-10-10 |
 | [hackerai](https://github.com/itssourov13/hackerai) | The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter. | TypeScript | Active | 2026-10-09 |
 | [-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-](https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-) | A simple Python-based smart planner that decides whether commuting is possible based on distance, w… | Python | Active | 2026-10-09 |
