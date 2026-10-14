@@ -2,24 +2,25 @@
   "repos": [
     {
       "archived": false,
-      "createdAt": "2026-10-13T05:02:41Z",
+      "createdAt": "2026-10-03T11:00:40Z",
       "defaultBranch": "main",
-      "description": "Just for a sicrect person",
+      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/personal-present",
+      "fullName": "itssourov13/itssourov13",
       "languages": {
-        "CSS": 37297,
-        "HTML": 62788,
-        "JavaScript": 2066249
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
       },
-      "name": "personal-present",
-      "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-10-14T13:25:36Z",
-      "stars": 1,
+      "name": "itssourov13",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-14T14:33:35Z",
+      "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-14T13:25:43Z",
-      "url": "https://github.com/itssourov13/personal-present",
+      "updatedAt": "2026-10-14T14:33:59Z",
+      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
@@ -70,29 +71,6 @@
       ],
       "updatedAt": "2026-10-14T07:20:41Z",
       "url": "https://github.com/itssourov13/create-present-website",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-14T06:12:53Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-14T06:12:57Z",
-      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
