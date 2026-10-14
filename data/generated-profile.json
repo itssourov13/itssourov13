@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-14T06:12:50.609Z",
+  "collectedAt": "2026-10-14T14:33:31.846Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 138
+        "total": 148
       }
     ],
-    "total": 308,
+    "total": 318,
     "weeks": [
       [
         [
@@ -1286,7 +1286,7 @@
       [
         [
           10,
-          3
+          2
         ],
         [
           3,
@@ -1526,7 +1526,7 @@
       [
         [
           5,
-          2
+          1
         ],
         [
           0,
@@ -1534,7 +1534,7 @@
         ],
         [
           10,
-          3
+          2
         ],
         [
           6,
@@ -1542,7 +1542,7 @@
         ],
         [
           10,
-          3
+          2
         ],
         [
           0,
@@ -1598,7 +1598,7 @@
         ],
         [
           5,
-          2
+          1
         ],
         [
           12,
@@ -1627,19 +1627,13 @@
           4
         ],
         [
-          10,
-          3
+          20,
+          4
         ]
       ]
     ]
   },
   "edges": [
-    [
-      0,
-      7,
-      "language",
-      "Python"
-    ],
     [
       2,
       5,
@@ -1647,10 +1641,16 @@
       "JavaScript"
     ],
     [
-      3,
-      6,
+      2,
+      7,
       "language",
-      "TypeScript"
+      "JavaScript"
+    ],
+    [
+      5,
+      7,
+      "language",
+      "JavaScript"
     ]
   ],
   "featured": [
@@ -1689,23 +1689,27 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 66.7
+        "percent": 59.7
       },
       {
         "name": "JavaScript",
-        "percent": 13.7
+        "percent": 20.8
       },
       {
         "name": "Python",
-        "percent": 7.7
+        "percent": 6.9
       },
       {
         "name": "Go",
-        "percent": 6
+        "percent": 5.4
+      },
+      {
+        "name": "HTML",
+        "percent": 2.5
       },
       {
         "name": "MDX",
-        "percent": 1.7
+        "percent": 1.5
       },
       {
         "name": "CSS",
@@ -1713,19 +1717,60 @@
       },
       {
         "name": "GLSL",
-        "percent": 1.2
-      },
-      {
-        "name": "HTML",
-        "percent": 0.7
+        "percent": 1.1
       },
       {
         "name": "Other",
-        "percent": 1
+        "percent": 0.9
       }
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-13T05:02:41Z",
+      "description": "Just for a sicrect person",
+      "forks": 0,
+      "language": "JavaScript",
+      "name": "personal-present",
+      "pushedAt": "2026-10-14T13:25:36Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-present"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-14T12:03:20Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-14T06:18:49Z",
+      "description": "Create Present - Open-source gift website for creating beautiful, personalized digital gifts for birthdays, anniversaries, proposals, and every special moment—all for free. 🎁",
+      "forks": 0,
+      "language": "HTML",
+      "name": "create-present-website",
+      "pushedAt": "2026-10-14T07:20:36Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "html",
+        "web-development"
+      ],
+      "url": "https://github.com/itssourov13/create-present-website"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1739,20 +1784,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/birthday-present-preview"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-10-13T14:20:58Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1783,34 +1814,6 @@
         "landing-page"
       ],
       "url": "https://github.com/itssourov13/stele-residences"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-21T08:14:31Z",
-      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai",
-      "pushedAt": "2026-10-09T20:06:30Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-05-23T09:39:25Z",
-      "description": "A simple Python-based smart planner that decides whether commuting is possible based on distance, weather conditions, and available transport options like bike, car, or ride-share apps.",
-      "forks": 0,
-      "language": "Python",
-      "name": "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-",
-      "pushedAt": "2026-10-09T11:06:39Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
     }
   ],
   "media": {
@@ -1846,24 +1849,24 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "birthday-present-preview",
+    "personal-present",
     "hackerai-main",
+    "create-present-website",
+    "birthday-present-preview",
     "active-theory",
-    "stele-residences",
-    "hackerai",
-    "-Travel-Weather-Planner-Smart-Commute-Decision-System-Python-"
+    "stele-residences"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 23,
+    "activeRepos90d": 24,
     "followers": 3,
     "momentum": {
-      "last30": 190,
+      "last30": 200,
       "prev30": 47
     },
-    "publicRepos": 28,
-    "totalContributions": 308,
-    "totalStars": 74
+    "publicRepos": 30,
+    "totalContributions": 318,
+    "totalStars": 76
   },
   "status": "ok",
   "world": {

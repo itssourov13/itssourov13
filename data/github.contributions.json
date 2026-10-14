@@ -1,6 +1,6 @@
 {
   "calendar": {
-    "total": 308,
+    "total": 318,
     "weeks": [
       [
         {
@@ -1810,7 +1810,7 @@
         {
           "count": 10,
           "date": "2026-07-26",
-          "level": 3,
+          "level": 2,
           "weekday": 0
         },
         {
@@ -2162,7 +2162,7 @@
         {
           "count": 5,
           "date": "2026-09-20",
-          "level": 2,
+          "level": 1,
           "weekday": 0
         },
         {
@@ -2174,7 +2174,7 @@
         {
           "count": 10,
           "date": "2026-09-22",
-          "level": 3,
+          "level": 2,
           "weekday": 2
         },
         {
@@ -2186,7 +2186,7 @@
         {
           "count": 10,
           "date": "2026-09-24",
-          "level": 3,
+          "level": 2,
           "weekday": 4
         },
         {
@@ -2268,7 +2268,7 @@
         {
           "count": 5,
           "date": "2026-10-07",
-          "level": 2,
+          "level": 1,
           "weekday": 3
         },
         {
@@ -2310,9 +2310,9 @@
           "weekday": 2
         },
         {
-          "count": 10,
+          "count": 20,
           "date": "2026-10-14",
-          "level": 3,
+          "level": 4,
           "weekday": 3
         }
       ]

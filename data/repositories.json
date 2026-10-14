@@ -2,47 +2,24 @@
   "repos": [
     {
       "archived": false,
-      "createdAt": "2026-10-12T08:45:10Z",
+      "createdAt": "2026-10-13T05:02:41Z",
       "defaultBranch": "main",
-      "description": "A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and a heartfelt letter.",
+      "description": "Just for a sicrect person",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/birthday-present-preview",
+      "fullName": "itssourov13/personal-present",
       "languages": {
-        "CSS": 29437,
-        "HTML": 62201,
-        "JavaScript": 2051041
+        "CSS": 37297,
+        "HTML": 62788,
+        "JavaScript": 2066249
       },
-      "name": "birthday-present-preview",
+      "name": "personal-present",
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-10-14T04:22:18Z",
-      "stars": 2,
+      "pushedAt": "2026-10-14T13:25:36Z",
+      "stars": 1,
       "topics": [],
-      "updatedAt": "2026-10-14T04:22:22Z",
-      "url": "https://github.com/itssourov13/birthday-present-preview",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-13T21:52:59Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-13T21:53:03Z",
-      "url": "https://github.com/itssourov13/itssourov13",
+      "updatedAt": "2026-10-14T13:25:43Z",
+      "url": "https://github.com/itssourov13/personal-present",
       "visibility": "public"
     },
     {
@@ -64,11 +41,80 @@
       },
       "name": "hackerai-main",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-13T14:20:58Z",
+      "pushedAt": "2026-10-14T12:03:20Z",
       "stars": 3,
       "topics": [],
       "updatedAt": "2026-10-11T22:09:15Z",
       "url": "https://github.com/itssourov13/hackerai-main",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-14T06:18:49Z",
+      "defaultBranch": "main",
+      "description": "Create Present - Open-source gift website for creating beautiful, personalized digital gifts for birthdays, anniversaries, proposals, and every special moment—all for free. 🎁",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/create-present-website",
+      "languages": {
+        "HTML": 411626,
+        "JavaScript": 28087
+      },
+      "name": "create-present-website",
+      "primaryLanguage": "HTML",
+      "pushedAt": "2026-10-14T07:20:36Z",
+      "stars": 1,
+      "topics": [
+        "html",
+        "web-development"
+      ],
+      "updatedAt": "2026-10-14T07:20:41Z",
+      "url": "https://github.com/itssourov13/create-present-website",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-03T11:00:40Z",
+      "defaultBranch": "main",
+      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/itssourov13",
+      "languages": {
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
+      },
+      "name": "itssourov13",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-14T06:12:53Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-14T06:12:57Z",
+      "url": "https://github.com/itssourov13/itssourov13",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-12T08:45:10Z",
+      "defaultBranch": "main",
+      "description": "A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and a heartfelt letter.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/birthday-present-preview",
+      "languages": {
+        "CSS": 29437,
+        "HTML": 62201,
+        "JavaScript": 2051041
+      },
+      "name": "birthday-present-preview",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-14T04:22:18Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-14T04:22:22Z",
+      "url": "https://github.com/itssourov13/birthday-present-preview",
       "visibility": "public"
     },
     {
