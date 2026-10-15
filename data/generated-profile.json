@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-14T20:45:22.676Z",
+  "collectedAt": "2026-10-15T05:56:44.611Z",
   "contributions": {
     "monthly": [
       {
@@ -1629,6 +1629,10 @@
         [
           27,
           4
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1636,13 +1640,13 @@
   "edges": [
     [
       2,
-      7,
+      3,
       "language",
       "TypeScript"
     ],
     [
-      4,
-      6,
+      5,
+      7,
       "language",
       "JavaScript"
     ]
@@ -1723,6 +1727,22 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-09-16T16:39:38Z",
+      "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-demo",
+      "pushedAt": "2026-10-14T22:12:14Z",
+      "release": null,
+      "stars": 3,
+      "topics": [
+        "nextjs"
+      ],
+      "url": "https://github.com/itssourov13/personal-website-demo"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1794,20 +1814,6 @@
         "landing-page"
       ],
       "url": "https://github.com/itssourov13/stele-residences"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-21T08:14:31Z",
-      "description": "The ultimate AI-powered developer workspace for building, coding, chatting, and deploying smarter.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai",
-      "pushedAt": "2026-10-09T20:06:30Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai"
     }
   ],
   "media": {
@@ -1843,20 +1849,20 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "personal-website-demo",
     "hackerai-main",
     "create-present-website",
     "birthday-present-preview",
     "active-theory",
-    "stele-residences",
-    "hackerai"
+    "stele-residences"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 207,
-      "prev30": 47
+      "last30": 201,
+      "prev30": 53
     },
     "publicRepos": 29,
     "totalContributions": 325,
