@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-test, hackerai-main, claude-personal-website-demo, create-present-website, birthday-present-preview, active-theory" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-test, hackerai-main, claude-personal-website-demo, personal-website, create-present-website, birthday-present-preview" width="100%">
 
 ## After hours
 
@@ -29,24 +29,24 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="29 public repositories, 23 pushed in the last 90 days, 75 stars received, 3 followers; 205 contributions in the last 30 days against 57 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="30 public repositories, 24 pushed in the last 90 days, 76 stars received, 3 followers; 213 contributions in the last 30 days against 57 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 333 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 341 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.4%, JavaScript 13.6%, Python 7.5%, Go 5.9%, HTML 2.5%, MDX 1.7%, CSS 1.3%, GLSL 1.2%, Other 0.9%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66%, JavaScript 13.4%, Python 7.4%, Go 5.8%, HTML 2.4%, MDX 1.7%, CSS 1.3%, GLSL 1.2%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-15 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-15 |
-| [claude-personal-website-demo](https://github.com/itssourov13/claude-personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-10-14 |
+| [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-16 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-16 |
+| [claude-personal-website-demo](https://github.com/itssourov13/claude-personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-10-16 |
+| [personal-website](https://github.com/itssourov13/personal-website) | Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, researc…<br>`nextjs` `personal-website` | TypeScript | Active | 2026-10-14 |
 | [create-present-website](https://github.com/itssourov13/create-present-website) | Create Present - Open-source gift website for creating beautiful, personalized digital gifts for bi…<br>`html` `web-development` | HTML | Active | 2026-10-14 |
 | [birthday-present-preview](https://github.com/itssourov13/birthday-present-preview) | A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and… | JavaScript | Active | 2026-10-14 |
-| [active-theory](https://github.com/itssourov13/active-theory) | — | GLSL | Active | 2026-10-12 |
 
 <sub>Selected automatically from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 

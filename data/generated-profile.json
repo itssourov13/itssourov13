@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-16T05:55:19.824Z",
+  "collectedAt": "2026-10-16T14:00:46.468Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 163
+        "total": 171
       }
     ],
-    "total": 333,
+    "total": 341,
     "weeks": [
       [
         [
@@ -1635,8 +1635,8 @@
           0
         ],
         [
-          8,
-          2
+          16,
+          3
         ]
       ]
     ]
@@ -1655,10 +1655,28 @@
       "TypeScript"
     ],
     [
+      2,
+      5,
+      "language",
+      "TypeScript"
+    ],
+    [
       3,
       4,
       "language",
       "TypeScript"
+    ],
+    [
+      3,
+      5,
+      "language",
+      "TypeScript"
+    ],
+    [
+      4,
+      5,
+      "topic",
+      "nextjs"
     ]
   ],
   "featured": [
@@ -1697,23 +1715,23 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.4
+        "percent": 66
       },
       {
         "name": "JavaScript",
-        "percent": 13.6
+        "percent": 13.4
       },
       {
         "name": "Python",
-        "percent": 7.5
+        "percent": 7.4
       },
       {
         "name": "Go",
-        "percent": 5.9
+        "percent": 5.8
       },
       {
         "name": "HTML",
-        "percent": 2.5
+        "percent": 2.4
       },
       {
         "name": "MDX",
@@ -1742,7 +1760,7 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "personal-website-test",
-      "pushedAt": "2026-10-15T21:28:34Z",
+      "pushedAt": "2026-10-16T12:53:58Z",
       "release": null,
       "stars": 3,
       "topics": [],
@@ -1756,7 +1774,7 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-10-15T11:40:25Z",
+      "pushedAt": "2026-10-16T11:33:48Z",
       "release": null,
       "stars": 3,
       "topics": [],
@@ -1770,13 +1788,30 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "claude-personal-website-demo",
-      "pushedAt": "2026-10-14T22:12:14Z",
+      "pushedAt": "2026-10-16T08:58:27Z",
       "release": null,
       "stars": 3,
       "topics": [
         "nextjs"
       ],
       "url": "https://github.com/itssourov13/claude-personal-website-demo"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-22T12:45:11Z",
+      "description": "Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, research, photography, and life.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website",
+      "pushedAt": "2026-10-14T15:20:31Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "nextjs",
+        "personal-website"
+      ],
+      "url": "https://github.com/itssourov13/personal-website"
     },
     {
       "activity": "active",
@@ -1808,20 +1843,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/birthday-present-preview"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-09T05:41:46Z",
-      "description": "",
-      "forks": 0,
-      "language": "GLSL",
-      "name": "active-theory",
-      "pushedAt": "2026-10-12T19:10:22Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/active-theory"
     }
   ],
   "media": {
@@ -1860,21 +1881,21 @@
     "personal-website-test",
     "hackerai-main",
     "claude-personal-website-demo",
+    "personal-website",
     "create-present-website",
-    "birthday-present-preview",
-    "active-theory"
+    "birthday-present-preview"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 23,
+    "activeRepos90d": 24,
     "followers": 3,
     "momentum": {
-      "last30": 205,
+      "last30": 213,
       "prev30": 57
     },
-    "publicRepos": 29,
-    "totalContributions": 333,
-    "totalStars": 75
+    "publicRepos": 30,
+    "totalContributions": 341,
+    "totalStars": 76
   },
   "status": "ok",
   "world": {
