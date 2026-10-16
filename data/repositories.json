@@ -2,6 +2,30 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-09-17T15:59:42Z",
+      "defaultBranch": "main",
+      "description": "Personal website . Build with Next js.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/personal-website-test",
+      "languages": {
+        "CSS": 5367,
+        "JavaScript": 3748,
+        "MDX": 5774,
+        "TypeScript": 192576
+      },
+      "license": "MIT",
+      "name": "personal-website-test",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-15T21:28:34Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-11T22:11:14Z",
+      "url": "https://github.com/itssourov13/personal-website-test",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-10-03T11:00:40Z",
       "defaultBranch": "main",
       "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
@@ -16,10 +40,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-15T14:13:27Z",
+      "pushedAt": "2026-10-15T20:23:12Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-15T14:13:32Z",
+      "updatedAt": "2026-10-15T20:23:16Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
@@ -56,7 +80,7 @@
       "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/personal-website-demo",
+      "fullName": "itssourov13/claude-personal-website-demo",
       "languages": {
         "CSS": 4946,
         "JavaScript": 3573,
@@ -64,15 +88,15 @@
         "TypeScript": 83700
       },
       "license": "MIT",
-      "name": "personal-website-demo",
+      "name": "claude-personal-website-demo",
       "primaryLanguage": "TypeScript",
       "pushedAt": "2026-10-14T22:12:14Z",
       "stars": 3,
       "topics": [
         "nextjs"
       ],
-      "updatedAt": "2026-10-11T22:11:20Z",
-      "url": "https://github.com/itssourov13/personal-website-demo",
+      "updatedAt": "2026-10-16T01:11:34Z",
+      "url": "https://github.com/itssourov13/claude-personal-website-demo",
       "visibility": "public"
     },
     {
@@ -326,30 +350,6 @@
       ],
       "updatedAt": "2026-10-12T11:02:38Z",
       "url": "https://github.com/itssourov13/sketchbook",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-09-17T15:59:42Z",
-      "defaultBranch": "main",
-      "description": "Personal website . Build with Next js.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/personal-website-test",
-      "languages": {
-        "CSS": 5367,
-        "JavaScript": 3748,
-        "MDX": 5774,
-        "TypeScript": 192576
-      },
-      "license": "MIT",
-      "name": "personal-website-test",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-08T21:27:51Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-11T22:11:14Z",
-      "url": "https://github.com/itssourov13/personal-website-test",
       "visibility": "public"
     },
     {

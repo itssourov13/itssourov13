@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-15T20:23:09.426Z",
+  "collectedAt": "2026-10-16T05:55:19.824Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 155
+        "total": 163
       }
     ],
-    "total": 325,
+    "total": 333,
     "weeks": [
       [
         [
@@ -1633,6 +1633,10 @@
         [
           0,
           0
+        ],
+        [
+          8,
+          2
         ]
       ]
     ]
@@ -1645,10 +1649,16 @@
       "TypeScript"
     ],
     [
-      5,
-      7,
+      2,
+      4,
       "language",
-      "JavaScript"
+      "TypeScript"
+    ],
+    [
+      3,
+      4,
+      "language",
+      "TypeScript"
     ]
   ],
   "featured": [
@@ -1727,6 +1737,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-09-17T15:59:42Z",
+      "description": "Personal website . Build with Next js.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-test",
+      "pushedAt": "2026-10-15T21:28:34Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-test"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1745,14 +1769,14 @@
       "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
       "forks": 0,
       "language": "TypeScript",
-      "name": "personal-website-demo",
+      "name": "claude-personal-website-demo",
       "pushedAt": "2026-10-14T22:12:14Z",
       "release": null,
       "stars": 3,
       "topics": [
         "nextjs"
       ],
-      "url": "https://github.com/itssourov13/personal-website-demo"
+      "url": "https://github.com/itssourov13/claude-personal-website-demo"
     },
     {
       "activity": "active",
@@ -1798,22 +1822,6 @@
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/active-theory"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-10T06:56:50Z",
-      "description": "An immersive architectural website concept for STELE Residences, featuring premium residential design, interactive drone-flight exploration, and a simulated sales cockpit.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "stele-residences",
-      "pushedAt": "2026-10-10T08:22:52Z",
-      "release": null,
-      "stars": 3,
-      "topics": [
-        "landing-page"
-      ],
-      "url": "https://github.com/itssourov13/stele-residences"
     }
   ],
   "media": {
@@ -1849,23 +1857,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "personal-website-test",
     "hackerai-main",
-    "personal-website-demo",
+    "claude-personal-website-demo",
     "create-present-website",
     "birthday-present-preview",
-    "active-theory",
-    "stele-residences"
+    "active-theory"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 201,
-      "prev30": 53
+      "last30": 205,
+      "prev30": 57
     },
     "publicRepos": 29,
-    "totalContributions": 325,
+    "totalContributions": 333,
     "totalStars": 75
   },
   "status": "ok",
