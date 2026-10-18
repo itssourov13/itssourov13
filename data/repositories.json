@@ -2,28 +2,25 @@
   "repos": [
     {
       "archived": false,
-      "createdAt": "2026-09-22T12:45:11Z",
+      "createdAt": "2026-10-03T11:00:40Z",
       "defaultBranch": "main",
-      "description": "Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, research, photography, and life.",
+      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/personal-website",
+      "fullName": "itssourov13/itssourov13",
       "languages": {
-        "CSS": 7897,
-        "JavaScript": 6755,
-        "MDX": 5796,
-        "TypeScript": 407478
+        "CSS": 7952,
+        "HTML": 824,
+        "JavaScript": 462,
+        "TypeScript": 280830
       },
-      "name": "personal-website",
+      "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-18T13:16:48Z",
-      "stars": 1,
-      "topics": [
-        "nextjs",
-        "personal-website"
-      ],
-      "updatedAt": "2026-10-16T12:54:37Z",
-      "url": "https://github.com/itssourov13/personal-website",
+      "pushedAt": "2026-10-18T13:21:48Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-18T13:21:52Z",
+      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {
@@ -50,29 +47,6 @@
       "topics": [],
       "updatedAt": "2026-10-11T22:09:15Z",
       "url": "https://github.com/itssourov13/hackerai-main",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-03T11:00:40Z",
-      "defaultBranch": "main",
-      "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/itssourov13",
-      "languages": {
-        "CSS": 7952,
-        "HTML": 824,
-        "JavaScript": 462,
-        "TypeScript": 280830
-      },
-      "name": "itssourov13",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-18T06:00:17Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-18T06:00:21Z",
-      "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
     {

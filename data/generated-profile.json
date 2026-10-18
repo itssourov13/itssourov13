@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-18T13:21:45.818Z",
+  "collectedAt": "2026-10-18T19:27:57.847Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 172
+        "total": 180
       }
     ],
-    "total": 342,
+    "total": 350,
     "weeks": [
       [
         [
@@ -1615,8 +1615,8 @@
       ],
       [
         [
-          1,
-          1
+          9,
+          2
         ]
       ]
     ]
@@ -1635,26 +1635,8 @@
       "TypeScript"
     ],
     [
-      2,
-      5,
-      "topic",
-      "nextjs"
-    ],
-    [
       3,
       4,
-      "language",
-      "TypeScript"
-    ],
-    [
-      3,
-      5,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      5,
       "language",
       "TypeScript"
     ]
@@ -1695,23 +1677,23 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 66
+        "percent": 65.4
       },
       {
         "name": "JavaScript",
-        "percent": 13.4
+        "percent": 13.6
       },
       {
         "name": "Python",
-        "percent": 7.4
+        "percent": 7.5
       },
       {
         "name": "Go",
-        "percent": 5.8
+        "percent": 5.9
       },
       {
         "name": "HTML",
-        "percent": 2.4
+        "percent": 2.5
       },
       {
         "name": "MDX",
@@ -1732,23 +1714,6 @@
     ]
   },
   "latest": [
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-22T12:45:11Z",
-      "description": "Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, research, photography, and life.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website",
-      "pushedAt": "2026-10-18T13:16:48Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "nextjs",
-        "personal-website"
-      ],
-      "url": "https://github.com/itssourov13/personal-website"
-    },
     {
       "activity": "active",
       "archived": false,
@@ -1823,6 +1788,20 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/birthday-present-preview"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-09T05:41:46Z",
+      "description": "",
+      "forks": 0,
+      "language": "GLSL",
+      "name": "active-theory",
+      "pushedAt": "2026-10-12T19:10:22Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/active-theory"
     }
   ],
   "media": {
@@ -1858,24 +1837,24 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "personal-website",
     "hackerai-main",
     "personal-website-test",
     "claude-personal-website-demo",
     "create-present-website",
-    "birthday-present-preview"
+    "birthday-present-preview",
+    "active-theory"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 24,
+    "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 204,
+      "last30": 212,
       "prev30": 52
     },
-    "publicRepos": 30,
-    "totalContributions": 342,
-    "totalStars": 76
+    "publicRepos": 29,
+    "totalContributions": 350,
+    "totalStars": 75
   },
   "status": "ok",
   "world": {
