@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, personal-website-test, claude-personal-website-demo, personal-website, create-present-website, birthday-present-preview" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website, hackerai-main, personal-website-test, claude-personal-website-demo, create-present-website, birthday-present-preview" width="100%">
 
 ## After hours
 
@@ -29,9 +29,9 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="30 public repositories, 24 pushed in the last 90 days, 76 stars received, 3 followers; 203 contributions in the last 30 days against 52 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="30 public repositories, 24 pushed in the last 90 days, 76 stars received, 3 followers; 204 contributions in the last 30 days against 52 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 341 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 342 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
@@ -41,10 +41,10 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-17 |
+| [personal-website](https://github.com/itssourov13/personal-website) | Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, researc…<br>`nextjs` `personal-website` | TypeScript | Active | 2026-10-18 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-18 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-16 |
 | [claude-personal-website-demo](https://github.com/itssourov13/claude-personal-website-demo) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-10-16 |
-| [personal-website](https://github.com/itssourov13/personal-website) | Sourov Mondol’s personal website — engineering, programming, cybersecurity, ideas, writing, researc…<br>`nextjs` `personal-website` | TypeScript | Active | 2026-10-14 |
 | [create-present-website](https://github.com/itssourov13/create-present-website) | Create Present - Open-source gift website for creating beautiful, personalized digital gifts for bi…<br>`html` `web-development` | HTML | Active | 2026-10-14 |
 | [birthday-present-preview](https://github.com/itssourov13/birthday-present-preview) | A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and… | JavaScript | Active | 2026-10-14 |
 
