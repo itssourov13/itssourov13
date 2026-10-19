@@ -93,12 +93,21 @@ export interface ContributionCalendar {
   weeks: ContributionDay[][];
 }
 
+/** Providers kept in sync with the live GitHub profile (normalized keys; "x" covers Twitter/X). */
+export type SyncedSocialKey = 'linkedin' | 'x' | 'facebook' | 'instagram';
+export type SocialLinks = Partial<Record<SyncedSocialKey, string>>;
+
 export interface CollectedData {
   collectedAt: string;
   fixture?: boolean;
   user: GithubUser;
   repos: ProjectRecord[];
   contributions: ContributionCalendar | null;
+  /**
+   * Live social links from GitHub. `null`/absent = never fetched (profile.config.yml applies);
+   * `{}` = fetched successfully and none are public (the synced providers are hidden).
+   */
+  socials?: SocialLinks | null;
 }
 
 export interface OutputFile {

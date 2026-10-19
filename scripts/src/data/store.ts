@@ -1,14 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SCHEMA_VERSION } from '../constants.ts';
-import type { CollectedData, ContributionCalendar, GithubUser, ProjectRecord } from '../types.ts';
+import type { CollectedData, ContributionCalendar, GithubUser, ProjectRecord, SocialLinks, SyncedSocialKey } from '../types.ts';
 import { stableStringify } from '../util/json.ts';
 import { writeFileEnsured } from '../util/fs.ts';
+import { SYNCED_SOCIAL_KEYS, validateSocialUrl } from './socials.ts';
 
 export const FILES = {
   snapshot: 'github.snapshot.json',
   repos: 'repositories.json',
   contributions: 'github.contributions.json',
+  socials: 'github.socials.json',
 } as const;
 
 type Obj = Record<string, unknown>;
@@ -44,6 +46,19 @@ function validateCalendar(v: unknown): ContributionCalendar {
   return v as unknown as ContributionCalendar;
 }
 
+/** Stored social links: only synced providers, each a URL that still passes validation (fail closed). */
+function validateSocials(v: unknown): SocialLinks {
+  if (!isObj(v)) throw new Error(`${FILES.socials}: accounts is invalid`);
+  const out: SocialLinks = {};
+  for (const k of Object.keys(v)) {
+    if (!(SYNCED_SOCIAL_KEYS as readonly string[]).includes(k)) throw new Error(`${FILES.socials}: unknown provider "${k.slice(0, 30)}"`);
+    const url = isStr(v[k]) ? validateSocialUrl(k as SyncedSocialKey, v[k]) : null;
+    if (!url) throw new Error(`${FILES.socials}: invalid URL for ${k}`);
+    out[k as SyncedSocialKey] = url;
+  }
+  return out;
+}
+
 function readJson(file: string): unknown {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
@@ -64,12 +79,21 @@ export function loadCollected(dataDir: string): CollectedData | null {
     const c = readJson(contribFile);
     if (isObj(c) && c.calendar) contributions = validateCalendar(c.calendar);
   }
+  // Optional: checkouts that predate social sync have no such file → null (profile.config.yml applies).
+  const socialsFile = path.join(dataDir, FILES.socials);
+  let socials: SocialLinks | null = null;
+  if (fs.existsSync(socialsFile)) {
+    const s = readJson(socialsFile);
+    if (!isObj(s)) throw new Error(`${FILES.socials}: invalid`);
+    socials = validateSocials(s.accounts);
+  }
   return {
     collectedAt: snap.collectedAt,
     fixture: snap.fixture === true ? true : undefined,
     user: validateUser(snap.user),
     repos: reposRaw.repos.map(validateProject),
     contributions,
+    socials,
   };
 }
 
@@ -84,10 +108,12 @@ export function saveCollected(dataDir: string, next: CollectedData): { changed: 
   } catch {
     prev = null;
   }
-  const strip = (d: CollectedData) => stableStringify({ ...d, collectedAt: '' });
+  const strip = (d: CollectedData) => stableStringify({ ...d, socials: d.socials ?? null, collectedAt: '' });
   if (prev && strip(prev) === strip(next)) return { changed: false };
   writeFileEnsured(path.join(dataDir, FILES.snapshot), stableStringify({ schemaVersion: SCHEMA_VERSION, collectedAt: next.collectedAt, fixture: next.fixture, user: next.user }));
   writeFileEnsured(path.join(dataDir, FILES.repos), stableStringify({ schemaVersion: SCHEMA_VERSION, repos: next.repos }));
   writeFileEnsured(path.join(dataDir, FILES.contributions), stableStringify({ schemaVersion: SCHEMA_VERSION, calendar: next.contributions }));
+  // Never written until a fetch has succeeded once; `{}` (successfully none) is written and kept.
+  if (next.socials) writeFileEnsured(path.join(dataDir, FILES.socials), stableStringify({ schemaVersion: SCHEMA_VERSION, accounts: next.socials }));
   return { changed: true };
 }

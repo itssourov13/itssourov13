@@ -12,6 +12,7 @@
 - **No loops:** commits pushed with `GITHUB_TOKEN` do not trigger workflows, so `update-profile` calls the deploy workflow explicitly (`workflow_call`).
 - **Empty-diff avoidance:** `store.ts` leaves data files untouched when only `collectedAt` would change.
 - **Failure handling:** a failed collection with existing data keeps last-known-good (`--allow-stale`, used by `npm run update`) and logs a warning. Corrupt stored data fails closed.
+- **Social links:** `update` also reads the public `GET /users/itssourov13/social_accounts` (no token needed, no extra secret or workflow) and stores the result in `data/github.socials.json`. A successful answer is authoritative, including an empty list (accounts removed on GitHub disappear). A failed or invalid answer keeps the stored links, or the `profile.config.yml` values if nothing was ever stored. `generate` and `check:generated` only read the stored file and stay offline.
 - **Contributions** need GraphQL, which requires the token. Without it the previous calendar is kept.
 - **Schedules** can be delayed or skipped under load; GitHub may disable scheduled workflows in repositories with no recent activity — re-enable from the Actions tab.
 - **Secrets:** only `GITHUB_TOKEN` is used. Nothing logs headers or tokens. `npm run check:secrets` scans generated output.

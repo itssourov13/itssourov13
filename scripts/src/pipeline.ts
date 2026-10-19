@@ -10,6 +10,7 @@ import {
   languageTotals,
   selectLatest,
 } from './data/normalize.ts';
+import { withLiveSocials } from './data/socials.ts';
 import { buildWorldData } from './data/worldData.ts';
 import { renderCard } from './generators/cards.ts';
 import { renderCinematicCaption, renderCinematicScene } from './generators/cinematic.ts';
@@ -32,10 +33,12 @@ export interface BuildResult {
 
 /** Pure, deterministic: same config + data + media state → identical files. */
 export function buildOutputs(
-  config: ProfileConfig,
+  baseConfig: ProfileConfig,
   data: CollectedData | null,
   media: MediaState,
 ): BuildResult {
+  // Live social links (if collected) are merged once here, so the README and the world JSON agree.
+  const config = withLiveSocials(baseConfig, data);
   const warnings = [...media.warnings];
   const files: OutputFile[] = [];
   const add = (p: string, content: string) => files.push({ path: p, content });

@@ -6,7 +6,7 @@ One repository, three layers, one source of truth (`profile.config.yml`).
 GitHub REST + GraphQL (itssourov13)
         │  scripts/src/api/*        timeouts, retries, strict response parsing
         ▼
-data/github.snapshot.json · repositories.json · github.contributions.json   (cached, committed)
+data/github.snapshot.json · repositories.json · github.contributions.json · github.socials.json   (cached, committed)
         │  scripts/src/pipeline.ts  pure + deterministic: config + data + media state → files
         ▼
 README.md · assets/generated/*.svg · data/generated-profile.json
@@ -35,6 +35,7 @@ GitHub profile README              world/ (React + R3F) — reads only generated
 4. **The browser never calls GitHub.** The world loads one static JSON file.
 5. **README media is static** (SVG/PNG/GIF). Interactivity lives in `world/`.
 6. **Dependency-light scripts**: only `yaml` at runtime; no image libraries (media is validated, not transcoded).
+7. **Live social links are data, merged in one place.** `collect` stores the public GitHub social accounts (`linkedin`, `x`, `facebook`, `instagram`) in `data/github.socials.json`; `buildOutputs` merges them over `profile.config.yml` once (`withLiveSocials`), so the README and `generated-profile.json` can never disagree. `null` (never fetched) → the config applies; `{}` (fetched, none public) → synced providers are hidden; a failed fetch keeps the stored links. The file is optional, so older checkouts keep working.
 
 ## Contract: `data/generated-profile.json`
 

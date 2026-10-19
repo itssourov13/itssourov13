@@ -13,7 +13,10 @@ profile:
   bio:
     - Cybersecurity, software engineering and research — building security tooling and learning in public.
 
-socials: # empty string = hidden; all values must be https URLs
+# empty string = hidden; all values must be https URLs.
+# github/blog/portfolio are manual. linkedin/x/facebook/instagram are only fallbacks: once the scheduled
+# update has read your GitHub profile (Settings -> Public profile -> Social accounts), the live values win.
+socials:
   github: https://github.com/itssourov13
   linkedin: https://www.linkedin.com/in/mdsourov-mondol630
   x: https://x.com/md_sourov630

@@ -2,7 +2,8 @@
 
 Edit `profile.config.yml`, then `npm run generate` (and commit). `npm run validate:config` explains any mistake.
 
-- **Identity/bio/socials:** `profile`, `socials` (https only; empty string hides an entry).
+- **Identity/bio/socials:** `profile`, `socials` (https only; an empty string hides a manual entry, while synced providers are overridden after the first successful live sync).
+- **Social links sync automatically:** `linkedin`, `x` (GitHub's `twitter` is mapped to it), `facebook` and `instagram` are read from your GitHub profile (Settings → Public profile → Social accounts) by every `update` run. After a successful sync the live profile wins: changed URLs replace the old ones and an account you remove on GitHub disappears from the README and the 3D world. The values in `socials` only apply until the first successful sync, or if GitHub has never been reachable. `github`, `blog`, `portfolio` and `profile.website` are never overwritten. Other providers (Mastodon, YouTube, …) are ignored. To change a synced link, change it on GitHub, not in this file.
 - **Featured work:** `featured_repositories` (exact repo names, order preserved). Unknown names are skipped with a warning — never invented. Add `onyx` etc. only once it exists on GitHub.
 - **Latest list:** `project_rules` (limit, forks, archived). The profile repository is always excluded from Latest.
 - **Sections:** `content.show_*` flags.

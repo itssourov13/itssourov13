@@ -1,4 +1,11 @@
-import type { ContributionCalendar, ContributionDay, GithubUser, ProjectRecord } from '../types.ts';
+import { normalizeSocialProvider, validateSocialUrl } from '../data/socials.ts';
+import type {
+  ContributionCalendar,
+  ContributionDay,
+  GithubUser,
+  ProjectRecord,
+  SocialLinks,
+} from '../types.ts';
 import { safeRepoSlug } from '../util/escape.ts';
 import { ApiShapeError } from './http.ts';
 
@@ -129,4 +136,37 @@ export function parseContributionResponse(raw: unknown): ContributionCalendar {
     });
   });
   return { total, weeks };
+}
+
+export interface ParsedSocialAccounts {
+  /** Supported providers only, keyed by normalized provider. An empty object is a valid answer. */
+  links: SocialLinks;
+  /** Sanitized names of providers that are not synchronised (reported, never fatal). */
+  ignoredProviders: string[];
+}
+
+/**
+ * Parse `GET /users/{login}/social_accounts`. Unknown providers are ignored. Anything that makes
+ * the response untrustworthy (not a list, malformed entry, bad URL for a supported provider)
+ * throws, so the caller keeps its last-known-good links instead of erasing them.
+ * Several accounts for one provider (or "twitter" next to "x"): the first one listed wins.
+ */
+export function parseSocialAccounts(raw: unknown): ParsedSocialAccounts {
+  if (!Array.isArray(raw)) throw new ApiShapeError('social accounts response is not an array');
+  const links: SocialLinks = {};
+  const ignored = new Set<string>();
+  raw.forEach((item, i) => {
+    const what = `social_accounts[${i}]`;
+    const o = asObj(item, what);
+    const provider = reqStr(o, 'provider', what);
+    const key = normalizeSocialProvider(provider);
+    if (!key) {
+      ignored.add(provider.toLowerCase().replace(/[^a-z0-9_-]/g, '?').slice(0, 30));
+      return;
+    }
+    const url = validateSocialUrl(key, reqStr(o, 'url', what));
+    if (!url) throw new ApiShapeError(`${what}.url is not a valid https ${key} URL`);
+    links[key] ??= url;
+  });
+  return { links, ignoredProviders: [...ignored].sort() };
 }
