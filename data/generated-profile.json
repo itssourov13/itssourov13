@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-19T06:17:24.246Z",
+  "collectedAt": "2026-10-19T16:31:32.646Z",
   "contributions": {
     "monthly": [
       {
@@ -44,14 +44,14 @@
       },
       {
         "month": "2026-09",
-        "total": 69
+        "total": 75
       },
       {
         "month": "2026-10",
-        "total": 192
+        "total": 208
       }
     ],
-    "total": 362,
+    "total": 384,
     "weeks": [
       [
         [
@@ -976,7 +976,7 @@
         ],
         [
           13,
-          2
+          3
         ],
         [
           4,
@@ -1481,11 +1481,11 @@
           1
         ],
         [
-          8,
+          11,
           2
         ],
         [
-          2,
+          4,
           1
         ],
         [
@@ -1503,7 +1503,7 @@
           0
         ],
         [
-          10,
+          11,
           2
         ],
         [
@@ -1594,7 +1594,7 @@
         ],
         [
           19,
-          3
+          4
         ],
         [
           27,
@@ -1605,8 +1605,8 @@
           0
         ],
         [
-          16,
-          3
+          19,
+          4
         ],
         [
           0,
@@ -1619,28 +1619,46 @@
           2
         ],
         [
-          11,
-          2
+          24,
+          4
         ]
       ]
     ]
   },
   "edges": [
     [
-      4,
-      5,
+      2,
+      3,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      2,
       6,
       "language",
       "TypeScript"
     ],
     [
-      5,
+      2,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
+      3,
       6,
+      "language",
+      "TypeScript"
+    ],
+    [
+      3,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
+      6,
+      7,
       "language",
       "TypeScript"
     ]
@@ -1681,11 +1699,11 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.4
+        "percent": 65.6
       },
       {
         "name": "JavaScript",
-        "percent": 13.7
+        "percent": 13.6
       },
       {
         "name": "Python",
@@ -1693,7 +1711,7 @@
       },
       {
         "name": "Go",
-        "percent": 5.9
+        "percent": 5.8
       },
       {
         "name": "HTML",
@@ -1718,6 +1736,34 @@
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-19T13:32:10Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-19T11:46:05Z",
+      "description": "",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-pentest",
+      "pushedAt": "2026-10-19T12:35:27Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-pentest"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1753,20 +1799,6 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-10-18T11:19:10Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
       "createdAt": "2026-09-17T15:59:42Z",
       "description": "Personal website . Build with Next js.",
       "forks": 0,
@@ -1793,23 +1825,6 @@
         "nextjs"
       ],
       "url": "https://github.com/itssourov13/claude-personal-website-demo"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-14T06:18:49Z",
-      "description": "Create Present - Open-source gift website for creating beautiful, personalized digital gifts for birthdays, anniversaries, proposals, and every special moment—all for free. 🎁",
-      "forks": 0,
-      "language": "HTML",
-      "name": "create-present-website",
-      "pushedAt": "2026-10-14T07:20:36Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "html",
-        "web-development"
-      ],
-      "url": "https://github.com/itssourov13/create-present-website"
     }
   ],
   "media": {
@@ -1845,23 +1860,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "hackerai-main",
+    "personal-website-pentest",
     "hackergf-ai",
     "blog",
-    "hackerai-main",
     "personal-website-test",
-    "claude-personal-website-demo",
-    "create-present-website"
+    "claude-personal-website-demo"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 23,
+    "activeRepos90d": 24,
     "followers": 3,
     "momentum": {
-      "last30": 224,
-      "prev30": 49
+      "last30": 241,
+      "prev30": 54
     },
-    "publicRepos": 29,
-    "totalContributions": 362,
+    "publicRepos": 30,
+    "totalContributions": 384,
     "totalStars": 75
   },
   "status": "ok",
