@@ -9,7 +9,10 @@ const TICK_MS = 2000;
  * Binds the pure quality controller to React. State is updated only when the level actually changes
  * (rare); timers are cleaned up on unmount. In manual mode the user's level is used verbatim.
  */
-export function useAdaptiveQuality(ceiling: QualityLevel, adaptive: boolean): { level: QualityLevel; onDecline: () => void } {
+export function useAdaptiveQuality(
+  ceiling: QualityLevel,
+  adaptive: boolean,
+): { level: QualityLevel; onDecline: () => void } {
   const [level, setLevel] = useState<QualityLevel>(ceiling);
   const state = useRef<QState>(initQuality(ceiling, performance.now()));
 

@@ -45,21 +45,52 @@ function Lines({ data, color, opacity }: { data: Float32Array; color: string; op
  * are batched into three <lineSegments> (spokes, topic/language links, selected links) regardless of count.
  * Click selects; clicking the selected node again opens the repository. The same actions exist in the DOM list.
  */
-export function ProjectConstellation({ projects, positions, edges, selected, hovered, onSelect, onHover, ambient, coarse }: Props) {
+export function ProjectConstellation({
+  projects,
+  positions,
+  edges,
+  selected,
+  hovered,
+  onSelect,
+  onHover,
+  ambient,
+  coarse,
+}: Props) {
   const nodes = useRef<(THREE.Group | null)[]>([]);
   const selIndex = projects.findIndex((p) => p.name === selected);
 
   const spokes = useMemo(() => segments(positions.map((p) => [CORE, p])), [positions]);
-  const topic = useMemo(() => segments(edges.filter((e) => e.kind === 'topic').map((e) => [positions[e.a]!, positions[e.b]!])), [edges, positions]);
-  const language = useMemo(() => segments(edges.filter((e) => e.kind === 'language').map((e) => [positions[e.a]!, positions[e.b]!])), [edges, positions]);
-  const related = useMemo(() => segments(edges.filter((e) => e.a === selIndex || e.b === selIndex).map((e) => [positions[e.a]!, positions[e.b]!])), [edges, positions, selIndex]);
+  const topic = useMemo(
+    () =>
+      segments(
+        edges.filter((e) => e.kind === 'topic').map((e) => [positions[e.a]!, positions[e.b]!]),
+      ),
+    [edges, positions],
+  );
+  const language = useMemo(
+    () =>
+      segments(
+        edges.filter((e) => e.kind === 'language').map((e) => [positions[e.a]!, positions[e.b]!]),
+      ),
+    [edges, positions],
+  );
+  const related = useMemo(
+    () =>
+      segments(
+        edges
+          .filter((e) => e.a === selIndex || e.b === selIndex)
+          .map((e) => [positions[e.a]!, positions[e.b]!]),
+      ),
+    [edges, positions, selIndex],
+  );
 
   // Scale is written imperatively (no React state per frame). Subtle "breathing" only when ambient.
   const applyScales = (t: number) => {
     projects.forEach((p, i) => {
       const g = nodes.current[i];
       if (!g) return;
-      const base = (p.name === selected ? 1.35 : p.name === hovered ? 1.15 : 1) * (coarse ? 1.25 : 1);
+      const base =
+        (p.name === selected ? 1.35 : p.name === hovered ? 1.15 : 1) * (coarse ? 1.25 : 1);
       g.scale.setScalar(ambient ? base * (1 + 0.03 * Math.sin(t * 1.3 + i)) : base);
     });
   };
@@ -84,12 +115,21 @@ export function ProjectConstellation({ projects, positions, edges, selected, hov
         const hot = on || p.name === hovered;
         const showLabel = on || (hot && !coarse);
         return (
-          <group key={p.name} position={positions[i]} ref={(g) => { nodes.current[i] = g; }}>
+          <group
+            key={p.name}
+            position={positions[i]}
+            ref={(g) => {
+              nodes.current[i] = g;
+            }}
+          >
             <mesh
               geometry={GEO.node}
               dispose={null}
               castShadow
-              onPointerOver={(e) => { e.stopPropagation(); onHover(p.name); }}
+              onPointerOver={(e) => {
+                e.stopPropagation();
+                onHover(p.name);
+              }}
               onPointerOut={() => onHover(null)}
               onClick={(e) => {
                 e.stopPropagation();
@@ -97,12 +137,30 @@ export function ProjectConstellation({ projects, positions, edges, selected, hov
                 else onSelect(p.name);
               }}
             >
-              <meshStandardMaterial color="#1b1f26" emissive={ACTIVITY_COLOR[p.activity]} emissiveIntensity={hot ? 1.6 : 0.7} metalness={0.5} roughness={0.35} />
+              <meshStandardMaterial
+                color="#1b1f26"
+                emissive={ACTIVITY_COLOR[p.activity]}
+                emissiveIntensity={hot ? 1.6 : 0.7}
+                metalness={0.5}
+                roughness={0.35}
+              />
             </mesh>
-            {on && <mesh geometry={GEO.halo} dispose={null} rotation-x={Math.PI / 2}><meshBasicMaterial color={AMBER_HI} /></mesh>}
+            {on && (
+              <mesh geometry={GEO.halo} dispose={null} rotation-x={Math.PI / 2}>
+                <meshBasicMaterial color={AMBER_HI} />
+              </mesh>
+            )}
             {showLabel && (
-              <Html center position={[0, 1.05, 0]} distanceFactor={10} style={{ pointerEvents: 'none' }}>
-                <div className="node-label"><strong>{p.name}</strong>{p.language && <span>{p.language}</span>}</div>
+              <Html
+                center
+                position={[0, 1.05, 0]}
+                distanceFactor={10}
+                style={{ pointerEvents: 'none' }}
+              >
+                <div className="node-label">
+                  <strong>{p.name}</strong>
+                  {p.language && <span>{p.language}</span>}
+                </div>
               </Html>
             )}
           </group>

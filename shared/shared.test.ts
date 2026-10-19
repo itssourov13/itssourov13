@@ -41,7 +41,10 @@ describe('buildRelationships', () => {
 
 describe('momentum', () => {
   const series = (n: number, f: (i: number) => number) =>
-    Array.from({ length: n }, (_, i) => ({ date: new Date(Date.UTC(2026, 0, 1) + i * 86_400_000).toISOString().slice(0, 10), count: f(i) }));
+    Array.from({ length: n }, (_, i) => ({
+      date: new Date(Date.UTC(2026, 0, 1) + i * 86_400_000).toISOString().slice(0, 10),
+      count: f(i),
+    }));
   it('compares the last 30 days with the 30 before', () => {
     const m = momentum(series(90, (i) => (i >= 60 ? 2 : i >= 30 ? 1 : 0)))!;
     expect(m).toEqual({ last30: 60, prev30: 30 });

@@ -5,10 +5,25 @@ export const AMBER = '#d98a4e';
 export const AMBER_HI = '#f0a65a';
 export const COOL = '#5fa8c9';
 export const INK = '#10141a';
-export const LANG_COLORS = ['#e8a15c', '#5fa8c9', '#8fb08a', '#d9c7a0', '#a98bb5', '#7a8aa0', '#c46a4a', '#4f9d9a', '#6b7280'];
+export const LANG_COLORS = [
+  '#e8a15c',
+  '#5fa8c9',
+  '#8fb08a',
+  '#d9c7a0',
+  '#a98bb5',
+  '#7a8aa0',
+  '#c46a4a',
+  '#4f9d9a',
+  '#6b7280',
+];
 export const LEVEL_COLORS = ['#1b2027', '#5b3a22', '#8f5a30', '#c17a3e', '#f0a65a'];
 /** Node colour encodes real activity (see shared/activity.ts); the DOM panel states the same value in text. */
-export const ACTIVITY_COLOR: Record<Activity, string> = { active: AMBER_HI, recent: AMBER, quiet: COOL, dormant: '#6b7280' };
+export const ACTIVITY_COLOR: Record<Activity, string> = {
+  active: AMBER_HI,
+  recent: AMBER,
+  quiet: COOL,
+  dormant: '#6b7280',
+};
 
 export const BASE = import.meta.env.BASE_URL;
 

@@ -36,7 +36,12 @@ export function ResearchLab({ items, ambient }: Props) {
     [items, n],
   );
 
-  const place = (mesh: THREE.InstancedMesh, i: number, local: [number, number, number], scale: [number, number, number]) => {
+  const place = (
+    mesh: THREE.InstancedMesh,
+    i: number,
+    local: [number, number, number],
+    scale: [number, number, number],
+  ) => {
     const r = racks[i]!;
     const fx = Math.sin(r.yaw);
     const fz = Math.cos(r.yaw);
@@ -74,19 +79,42 @@ export function ResearchLab({ items, ambient }: Props) {
   if (n === 0) return null;
   return (
     <group>
-      <mesh geometry={GEO.box} dispose={null} position={[0, 0.04, RADIUS * 0.96]} scale={[16, 0.08, 7]} receiveShadow>
+      <mesh
+        geometry={GEO.box}
+        dispose={null}
+        position={[0, 0.04, RADIUS * 0.96]}
+        scale={[16, 0.08, 7]}
+        receiveShadow
+      >
         <meshStandardMaterial color="#0d1218" metalness={0.4} roughness={0.5} />
       </mesh>
-      <instancedMesh ref={bodies} args={[GEO.box, undefined, n]} dispose={null} castShadow receiveShadow>
+      <instancedMesh
+        ref={bodies}
+        args={[GEO.box, undefined, n]}
+        dispose={null}
+        castShadow
+        receiveShadow
+      >
         <meshStandardMaterial color="#161b22" metalness={0.6} roughness={0.4} />
       </instancedMesh>
       <instancedMesh ref={screens} args={[GEO.plane, undefined, n]} dispose={null}>
         <meshStandardMaterial color="#0b0d10" emissive={COOL} emissiveIntensity={0.28} />
       </instancedMesh>
-      <instancedMesh ref={scans} args={[GEO.plane, undefined, n]} dispose={null} frustumCulled={false}>
+      <instancedMesh
+        ref={scans}
+        args={[GEO.plane, undefined, n]}
+        dispose={null}
+        frustumCulled={false}
+      >
         <meshBasicMaterial color={AMBER_HI} transparent opacity={0.55} depthWrite={false} />
       </instancedMesh>
-      <pointLight position={[0, 4, RADIUS - 3]} color={AMBER} intensity={14} distance={14} decay={2} />
+      <pointLight
+        position={[0, 4, RADIUS - 3]}
+        color={AMBER}
+        intensity={14}
+        distance={14}
+        decay={2}
+      />
     </group>
   );
 }

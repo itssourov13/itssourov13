@@ -10,21 +10,34 @@ describe('quality controller', () => {
     expect(run(initQuality('high', T0), { type: 'decline', now: T0 + 10_000 }).level).toBe('high');
   });
   it('steps down after two declines in the window', () => {
-    const s = run(initQuality('high', T0), { type: 'decline', now: T0 + 10_000 }, { type: 'decline', now: T0 + 12_000 });
+    const s = run(
+      initQuality('high', T0),
+      { type: 'decline', now: T0 + 10_000 },
+      { type: 'decline', now: T0 + 12_000 },
+    );
     expect(s.level).toBe('medium');
   });
   it('does not step down during the cooldown after a change', () => {
-    const s = run(initQuality('high', T0), { type: 'decline', now: T0 + 1_000 }, { type: 'decline', now: T0 + 2_000 });
+    const s = run(
+      initQuality('high', T0),
+      { type: 'decline', now: T0 + 1_000 },
+      { type: 'decline', now: T0 + 2_000 },
+    );
     expect(s.level).toBe('high'); // < COOLDOWN_MS since init
     expect(COOLDOWN_MS).toBeGreaterThan(2_000);
   });
   it('never goes below low', () => {
     let s = initQuality('low', T0);
-    for (let i = 0; i < 10; i++) s = reduceQuality(s, { type: 'decline', now: T0 + 10_000 + i * 100 });
+    for (let i = 0; i < 10; i++)
+      s = reduceQuality(s, { type: 'decline', now: T0 + 10_000 + i * 100 });
     expect(s.level).toBe('low');
   });
   it('recovers one level after a stable period, never above the ceiling', () => {
-    let s = run(initQuality('high', T0), { type: 'decline', now: T0 + 10_000 }, { type: 'decline', now: T0 + 12_000 });
+    let s = run(
+      initQuality('high', T0),
+      { type: 'decline', now: T0 + 10_000 },
+      { type: 'decline', now: T0 + 12_000 },
+    );
     expect(s.level).toBe('medium');
     s = reduceQuality(s, { type: 'tick', now: T0 + 12_000 + STABLE_MS - 1 });
     expect(s.level).toBe('medium');
@@ -34,13 +47,21 @@ describe('quality controller', () => {
     expect(s.level).toBe('high');
   });
   it('declines reset the stability timer', () => {
-    let s = run(initQuality('high', T0), { type: 'decline', now: T0 + 10_000 }, { type: 'decline', now: T0 + 12_000 });
+    let s = run(
+      initQuality('high', T0),
+      { type: 'decline', now: T0 + 10_000 },
+      { type: 'decline', now: T0 + 12_000 },
+    );
     s = reduceQuality(s, { type: 'decline', now: T0 + 20_000 });
     s = reduceQuality(s, { type: 'tick', now: T0 + 12_000 + STABLE_MS });
     expect(s.level).toBe('medium');
   });
   it('detects ping-pong and locks the failing level out for the session', () => {
-    let s = run(initQuality('high', T0), { type: 'decline', now: T0 + 10_000 }, { type: 'decline', now: T0 + 12_000 });
+    let s = run(
+      initQuality('high', T0),
+      { type: 'decline', now: T0 + 10_000 },
+      { type: 'decline', now: T0 + 12_000 },
+    );
     const upAt = T0 + 12_000 + STABLE_MS;
     s = reduceQuality(s, { type: 'tick', now: upAt });
     expect(s.level).toBe('high');

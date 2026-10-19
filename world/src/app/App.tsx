@@ -20,7 +20,10 @@ import { SceneBoundary } from '../ui/SceneBoundary.tsx';
 // Heavy 3D code (three.js, R3F) is a separate chunk, fetched only after the profile JSON succeeded.
 const WorldScene = lazy(() => import('../scene/WorldScene.tsx'));
 
-type Load = { status: 'loading' } | { status: 'error'; message: string } | { status: 'ready'; profile: WorldProfile };
+type Load =
+  | { status: 'loading' }
+  | { status: 'error'; message: string }
+  | { status: 'ready'; profile: WorldProfile };
 
 export default function App() {
   const [load, setLoad] = useState<Load>({ status: 'loading' });
@@ -31,7 +34,11 @@ export default function App() {
     loadProfile(ac.signal).then(
       (profile) => setLoad({ status: 'ready', profile }),
       (err: unknown) => {
-        if (!ac.signal.aborted) setLoad({ status: 'error', message: err instanceof Error ? err.message : 'Unknown error' });
+        if (!ac.signal.aborted)
+          setLoad({
+            status: 'error',
+            message: err instanceof Error ? err.message : 'Unknown error',
+          });
       },
     );
     return () => ac.abort();
@@ -43,8 +50,14 @@ export default function App() {
       <main className="center">
         <h1>Data unavailable</h1>
         <p>{load.message}</p>
-        <p><button type="button" className="btn" onClick={() => setAttempt((a) => a + 1)}>Try again</button></p>
-        <p><a href="https://github.com/itssourov13">github.com/itssourov13</a></p>
+        <p>
+          <button type="button" className="btn" onClick={() => setAttempt((a) => a + 1)}>
+            Try again
+          </button>
+        </p>
+        <p>
+          <a href="https://github.com/itssourov13">github.com/itssourov13</a>
+        </p>
       </main>
     );
   }
@@ -53,13 +66,20 @@ export default function App() {
 
 function World({ profile }: { profile: WorldProfile }) {
   const [prefs, setPrefs] = useState<Preferences>(() => loadPreferences());
-  const update = useCallback((patch: Partial<Preferences>) => setPrefs((p) => ({ ...p, ...patch })), []);
+  const update = useCallback(
+    (patch: Partial<Preferences>) => setPrefs((p) => ({ ...p, ...patch })),
+    [],
+  );
   useEffect(() => savePreferences(prefs), [prefs]);
 
   const systemReduced = useMediaQuery('(prefers-reduced-motion: reduce)');
   const coarse = useMediaQuery('(pointer: coarse)');
   const narrow = useMediaQuery('(max-width: 720px)');
-  const reduced = resolveReduced(prefs.reduceMotion, systemReduced, profile.world.reducedMotionDefault);
+  const reduced = resolveReduced(
+    prefs.reduceMotion,
+    systemReduced,
+    profile.world.reducedMotionDefault,
+  );
   const ambient = resolveAmbient(reduced, prefs.pauseAmbient);
 
   const setting: QualitySetting = prefs.quality ?? profile.world.quality;
@@ -73,7 +93,10 @@ function World({ profile }: { profile: WorldProfile }) {
   const [stopId, setStopId] = useState('overview');
   const [nonce, setNonce] = useState(0);
   const [selectedRaw, setSelected] = useState<string | null>(null);
-  const selected = sanitizeSelection(selectedRaw, projects.map((p) => p.name));
+  const selected = sanitizeSelection(
+    selectedRaw,
+    projects.map((p) => p.name),
+  );
   const [hovered, setHovered] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState('');
   const [webgl] = useState(() => hasWebGL());
@@ -83,29 +106,52 @@ function World({ profile }: { profile: WorldProfile }) {
   const idle = useIdleFlag(sceneActive);
   const portraitReady = idle || stopId === 'portrait';
 
-  const goTo = useCallback((id: string) => {
-    setStopId(id);
-    setNonce((n) => n + 1);
-    setAnnouncement(`Camera: ${stops.find((s) => s.id === id)?.label ?? id}`);
-  }, [stops]);
+  const goTo = useCallback(
+    (id: string) => {
+      setStopId(id);
+      setNonce((n) => n + 1);
+      setAnnouncement(`Camera: ${stops.find((s) => s.id === id)?.label ?? id}`);
+    },
+    [stops],
+  );
 
   // Selection from the 3D scene (no camera move) and from the DOM list (also frames the constellation).
-  const select3d = useCallback((name: string | null) => {
-    setSelected(name);
-    const p = projects.find((x) => x.name === name);
-    setAnnouncement(p ? `Selected project ${p.name}${p.language ? `, ${p.language}` : ''}, ${ACTIVITY_LABELS[p.activity]}` : 'Selection cleared');
-  }, [projects]);
-  const selectDom = useCallback((name: string | null) => {
-    select3d(name);
-    if (name && stopId !== 'projects' && sceneActive) goTo('projects');
-  }, [select3d, stopId, sceneActive, goTo]);
+  const select3d = useCallback(
+    (name: string | null) => {
+      setSelected(name);
+      const p = projects.find((x) => x.name === name);
+      setAnnouncement(
+        p
+          ? `Selected project ${p.name}${p.language ? `, ${p.language}` : ''}, ${ACTIVITY_LABELS[p.activity]}`
+          : 'Selection cleared',
+      );
+    },
+    [projects],
+  );
+  const selectDom = useCallback(
+    (name: string | null) => {
+      select3d(name);
+      if (name && stopId !== 'projects' && sceneActive) goTo('projects');
+    },
+    [select3d, stopId, sceneActive, goTo],
+  );
 
-  const notice = sceneActive ? undefined : failed ? 'The 3D scene could not start. Showing the summary instead.' : lost ? 'The 3D view stopped (graphics context lost). Showing the summary — reload to try again.' : '3D graphics are not available in this browser. Showing the summary instead.';
+  const notice = sceneActive
+    ? undefined
+    : failed
+      ? 'The 3D scene could not start. Showing the summary instead.'
+      : lost
+        ? 'The 3D view stopped (graphics context lost). Showing the summary — reload to try again.'
+        : '3D graphics are not available in this browser. Showing the summary instead.';
 
   return (
     <>
       {sceneActive && (
-        <div className="stage" role="img" aria-label="Interactive 3D visualization of GitHub projects and activity. Everything shown here is also available as text in the details panel.">
+        <div
+          className="stage"
+          role="img"
+          aria-label="Interactive 3D visualization of GitHub projects and activity. Everything shown here is also available as text in the details panel."
+        >
           <SceneBoundary onError={() => setFailed(true)}>
             <Suspense fallback={<SceneLoading />}>
               <WorldScene

@@ -7,7 +7,11 @@ export interface Preferences {
 }
 
 export const PREFS_KEY = 'itssourov13-world:prefs:v1';
-export const DEFAULT_PREFS: Preferences = { quality: null, reduceMotion: null, pauseAmbient: false };
+export const DEFAULT_PREFS: Preferences = {
+  quality: null,
+  reduceMotion: null,
+  pauseAmbient: false,
+};
 const QUALITIES = ['auto', 'low', 'medium', 'high'];
 
 /** Schema-safe: every field is validated individually; anything unexpected falls back to its default. */
@@ -15,7 +19,10 @@ export function parsePreferences(raw: unknown): Preferences {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return { ...DEFAULT_PREFS };
   const o = raw as Record<string, unknown>;
   return {
-    quality: typeof o.quality === 'string' && QUALITIES.includes(o.quality) ? (o.quality as QualitySetting) : null,
+    quality:
+      typeof o.quality === 'string' && QUALITIES.includes(o.quality)
+        ? (o.quality as QualitySetting)
+        : null,
     reduceMotion: typeof o.reduceMotion === 'boolean' ? o.reduceMotion : null,
     pauseAmbient: o.pauseAmbient === true,
   };
@@ -40,7 +47,10 @@ export function loadPreferences(storage: StorageLike | null = defaultStorage()):
   }
 }
 
-export function savePreferences(prefs: Preferences, storage: StorageLike | null = defaultStorage()): void {
+export function savePreferences(
+  prefs: Preferences,
+  storage: StorageLike | null = defaultStorage(),
+): void {
   try {
     storage?.setItem(PREFS_KEY, JSON.stringify(prefs));
   } catch {

@@ -4,7 +4,9 @@
   "private": true,
   "description": "SOUROV // DIGITAL SECURITY PROFILE ENGINE — self-updating GitHub profile README + 3D companion for itssourov13",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "collect": "tsx scripts/src/index.ts collect --allow-stale",
     "generate": "tsx scripts/src/index.ts generate",

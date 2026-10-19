@@ -1,10 +1,10 @@
 # Automation
 
-| Workflow | Trigger | What it does |
-| --- | --- | --- |
-| `ci.yml` | PR, push to `main` | `npm ci` → lint → typecheck → tests → `npm run check` → world build. Read-only token. |
-| `update-profile.yml` | schedule (01:23, 09:23, 17:23 UTC), manual | Collect GitHub data → regenerate → validate → commit **only if files changed** → deploy the world if so. |
-| `deploy-world.yml` | push touching `world/**` or `data/generated-profile.json`, manual, called by update | Builds `world/` with `WORLD_BASE=/<repo>/` and deploys to GitHub Pages. |
+| Workflow             | Trigger                                                                             | What it does                                                                                             |
+| -------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `ci.yml`             | PR, push to `main`                                                                  | `npm ci` → lint → typecheck → tests → `npm run check` → world build. Read-only token.                    |
+| `update-profile.yml` | schedule (01:23, 09:23, 17:23 UTC), manual                                          | Collect GitHub data → regenerate → validate → commit **only if files changed** → deploy the world if so. |
+| `deploy-world.yml`   | push touching `world/**` or `data/generated-profile.json`, manual, called by update | Builds `world/` with `WORLD_BASE=/<repo>/` and deploys to GitHub Pages.                                  |
 
 ## Behaviour worth knowing
 
@@ -26,12 +26,12 @@
 
 ## Deployment triggers (audited)
 
-| Change | Triggers `deploy-world`? |
-| --- | --- |
-| `world/**`, `shared/**` (imported by the world), `package.json`, `package-lock.json`, `assets/source/**`, `data/generated-profile.json`, the workflow itself (push to `main`) | yes |
-| README-only / `assets/generated/**` / docs / `scripts/**` / `profile.config.yml` | no |
-| Scheduled update that changed `data/generated-profile.json` | yes — `update-profile` calls the deploy workflow (`world_changed` output) because `GITHUB_TOKEN` pushes do not trigger workflows |
-| Scheduled update that changed only README/cards/other data files | no |
+| Change                                                                                                                                                                        | Triggers `deploy-world`?                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `world/**`, `shared/**` (imported by the world), `package.json`, `package-lock.json`, `assets/source/**`, `data/generated-profile.json`, the workflow itself (push to `main`) | yes                                                                                                                              |
+| README-only / `assets/generated/**` / docs / `scripts/**` / `profile.config.yml`                                                                                              | no                                                                                                                               |
+| Scheduled update that changed `data/generated-profile.json`                                                                                                                   | yes — `update-profile` calls the deploy workflow (`world_changed` output) because `GITHUB_TOKEN` pushes do not trigger workflows |
+| Scheduled update that changed only README/cards/other data files                                                                                                              | no                                                                                                                               |
 
 Permissions are unchanged: `contents: write` only on the update job; `pages: write` + `id-token: write` only on deploy. No workflow writes back to a branch that triggers itself (bot pushes use `GITHUB_TOKEN`).
 

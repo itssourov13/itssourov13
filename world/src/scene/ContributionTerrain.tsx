@@ -12,7 +12,10 @@ const C = new THREE.Color();
 /** Real contribution calendar as one InstancedMesh (≤ ~371 cells, 1 draw call). Static: never animated. */
 export function ContributionTerrain({ weeks }: { weeks: [number, number][][] }) {
   const ref = useRef<THREE.InstancedMesh>(null);
-  const cells = useMemo(() => weeks.flatMap((w, i) => w.map(([count, level], j) => ({ i, j, count, level }))), [weeks]);
+  const cells = useMemo(
+    () => weeks.flatMap((w, i) => w.map(([count, level], j) => ({ i, j, count, level }))),
+    [weeks],
+  );
   const max = useMemo(() => Math.max(1, ...cells.map((c) => c.count)), [cells]);
 
   useLayoutEffect(() => {
@@ -31,7 +34,13 @@ export function ContributionTerrain({ weeks }: { weeks: [number, number][][] }) 
   }, [cells, max, weeks.length]);
 
   return (
-    <instancedMesh ref={ref} args={[GEO.box, undefined, cells.length]} dispose={null} castShadow receiveShadow>
+    <instancedMesh
+      ref={ref}
+      args={[GEO.box, undefined, cells.length]}
+      dispose={null}
+      castShadow
+      receiveShadow
+    >
       <meshStandardMaterial roughness={0.55} metalness={0.15} />
     </instancedMesh>
   );

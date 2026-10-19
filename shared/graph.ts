@@ -19,7 +19,8 @@ export function buildRelationships(nodes: GraphNode[]): Relationship[] {
       const nb = nodes[b]!;
       const shared = na.topics.find((t) => nb.topics.includes(t));
       if (shared) out.push({ a, b, kind: 'topic', label: shared });
-      else if (na.language && na.language === nb.language) out.push({ a, b, kind: 'language', label: na.language });
+      else if (na.language && na.language === nb.language)
+        out.push({ a, b, kind: 'language', label: na.language });
     }
   }
   return out;

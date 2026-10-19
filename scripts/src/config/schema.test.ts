@@ -6,7 +6,14 @@ import { ConfigError, validateConfig } from './schema.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const base = () => ({
-  profile: { username: 'itssourov13', profile_url: 'https://github.com/itssourov13', display_name: 'Md Sourov Mondol', short_name: 'Sourov', headline: 'Security', bio: ['hi'] },
+  profile: {
+    username: 'itssourov13',
+    profile_url: 'https://github.com/itssourov13',
+    display_name: 'Md Sourov Mondol',
+    short_name: 'Sourov',
+    headline: 'Security',
+    bio: ['hi'],
+  },
   world: { url: 'https://itssourov13.github.io/itssourov13/' },
 });
 
@@ -27,7 +34,10 @@ describe('config validation', () => {
     expect(() => validateConfig(c)).toThrow(ConfigError);
   });
   it('rejects non-https and credentialed URLs', () => {
-    const c = { ...base(), socials: { x: 'http://x.com/a', linkedin: 'https://u:p@linkedin.com/a' } };
+    const c = {
+      ...base(),
+      socials: { x: 'http://x.com/a', linkedin: 'https://u:p@linkedin.com/a' },
+    };
     try {
       validateConfig(c);
       expect.unreachable();

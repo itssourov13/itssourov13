@@ -38,11 +38,23 @@ export function Timeline({ projects, selected, hovered, onSelect, onHover, coars
               position-y={0.6}
               scale={coarse ? [1.3, on ? 1.4 : 1, 1.3] : [1, on ? 1.4 : 1, 1]}
               castShadow
-              onPointerOver={(e) => { e.stopPropagation(); onHover(p.name); }}
+              onPointerOver={(e) => {
+                e.stopPropagation();
+                onHover(p.name);
+              }}
               onPointerOut={() => onHover(null)}
-              onClick={(e) => { e.stopPropagation(); onSelect(p.name); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelect(p.name);
+              }}
             >
-              <meshStandardMaterial color="#1b1f26" emissive={ACTIVITY_COLOR[p.activity]} emissiveIntensity={hot ? 1.1 : 0.3} metalness={0.4} roughness={0.4} />
+              <meshStandardMaterial
+                color="#1b1f26"
+                emissive={ACTIVITY_COLOR[p.activity]}
+                emissiveIntensity={hot ? 1.1 : 0.3}
+                metalness={0.4}
+                roughness={0.4}
+              />
             </mesh>
             {p.release && (
               <mesh geometry={GEO.marker} dispose={null} position-y={on ? 1.9 : 1.6}>
@@ -50,8 +62,16 @@ export function Timeline({ projects, selected, hovered, onSelect, onHover, coars
               </mesh>
             )}
             {(on || (hot && !coarse)) && (
-              <Html center position={[0, 2.3, 0]} distanceFactor={12} style={{ pointerEvents: 'none' }}>
-                <div className="node-label small">{p.createdAt.slice(0, 10)} · {p.name}{p.release ? ` · ${p.release}` : ''}</div>
+              <Html
+                center
+                position={[0, 2.3, 0]}
+                distanceFactor={12}
+                style={{ pointerEvents: 'none' }}
+              >
+                <div className="node-label small">
+                  {p.createdAt.slice(0, 10)} · {p.name}
+                  {p.release ? ` · ${p.release}` : ''}
+                </div>
               </Html>
             )}
           </group>

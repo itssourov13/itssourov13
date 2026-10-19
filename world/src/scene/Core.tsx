@@ -33,7 +33,13 @@ export function Core({ languages, ambient }: Props) {
     <group position={[0, 1.8, 0]}>
       <mesh ref={nucleus}>
         <icosahedronGeometry args={[0.8, 2]} />
-        <meshStandardMaterial color={AMBER_HI} emissive={AMBER} emissiveIntensity={1.2} roughness={0.3} metalness={0.2} />
+        <meshStandardMaterial
+          color={AMBER_HI}
+          emissive={AMBER}
+          emissiveIntensity={1.2}
+          roughness={0.3}
+          metalness={0.2}
+        />
       </mesh>
       <mesh ref={shell}>
         <icosahedronGeometry args={[1.35, 1]} />
@@ -57,7 +63,11 @@ export function Core({ languages, ambient }: Props) {
           return (
             <mesh key={l.name} position={[Math.cos(a) * 2.2, 0, Math.sin(a) * 2.2]}>
               <sphereGeometry args={[0.07 + Math.sqrt(l.percent) * 0.02, 12, 10]} />
-              <meshStandardMaterial color={LANG_COLORS[i % LANG_COLORS.length]} emissive={LANG_COLORS[i % LANG_COLORS.length]} emissiveIntensity={0.7} />
+              <meshStandardMaterial
+                color={LANG_COLORS[i % LANG_COLORS.length]}
+                emissive={LANG_COLORS[i % LANG_COLORS.length]}
+                emissiveIntensity={0.7}
+              />
             </mesh>
           );
         })}
