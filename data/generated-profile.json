@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-18T19:27:57.847Z",
+  "collectedAt": "2026-10-19T06:17:24.246Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 180
+        "total": 192
       }
     ],
-    "total": 350,
+    "total": 362,
     "weeks": [
       [
         [
@@ -1615,7 +1615,11 @@
       ],
       [
         [
-          9,
+          10,
+          2
+        ],
+        [
+          11,
           2
         ]
       ]
@@ -1623,20 +1627,20 @@
   },
   "edges": [
     [
-      2,
-      3,
+      4,
+      5,
       "language",
       "TypeScript"
     ],
     [
-      2,
       4,
+      6,
       "language",
       "TypeScript"
     ],
     [
-      3,
-      4,
+      5,
+      6,
       "language",
       "TypeScript"
     ]
@@ -1681,7 +1685,7 @@
       },
       {
         "name": "JavaScript",
-        "percent": 13.6
+        "percent": 13.7
       },
       {
         "name": "Python",
@@ -1714,6 +1718,38 @@
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-20T08:21:33Z",
+      "description": "Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create, research, and solve problems with powerful AI.",
+      "forks": 0,
+      "language": "JavaScript",
+      "name": "hackergf-ai",
+      "pushedAt": "2026-10-19T04:44:44Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackergf-ai"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-12T05:23:11Z",
+      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
+      "forks": 0,
+      "language": "MDX",
+      "name": "blog",
+      "pushedAt": "2026-10-18T21:36:56Z",
+      "release": null,
+      "stars": 3,
+      "topics": [
+        "mdx",
+        "typescript",
+        "website"
+      ],
+      "url": "https://github.com/itssourov13/blog"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1774,34 +1810,6 @@
         "web-development"
       ],
       "url": "https://github.com/itssourov13/create-present-website"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-12T08:45:10Z",
-      "description": "A self-hostable interactive birthday gift experience with 3D animations, memories, mini-games, and a heartfelt letter.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "birthday-present-preview",
-      "pushedAt": "2026-10-14T04:22:18Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/birthday-present-preview"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-09T05:41:46Z",
-      "description": "",
-      "forks": 0,
-      "language": "GLSL",
-      "name": "active-theory",
-      "pushedAt": "2026-10-12T19:10:22Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/active-theory"
     }
   ],
   "media": {
@@ -1837,23 +1845,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "hackergf-ai",
+    "blog",
     "hackerai-main",
     "personal-website-test",
     "claude-personal-website-demo",
-    "create-present-website",
-    "birthday-present-preview",
-    "active-theory"
+    "create-present-website"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 23,
     "followers": 3,
     "momentum": {
-      "last30": 212,
-      "prev30": 52
+      "last30": 224,
+      "prev30": 49
     },
     "publicRepos": 29,
-    "totalContributions": 350,
+    "totalContributions": 362,
     "totalStars": 75
   },
   "status": "ok",
