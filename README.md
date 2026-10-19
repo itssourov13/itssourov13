@@ -66,7 +66,7 @@
 
 <p align="center"><a href="https://itssourov13.github.io/itssourov13/"><b>↗ Open the 3D World</b></a></p>
 
-<p align="center"><b>Connect</b> &nbsp;·&nbsp; <a href="https://github.com/itssourov13">GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/mdsourov-mondol630">LinkedIn</a> &nbsp;·&nbsp; <a href="https://x.com/md_sourov630">X</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/md.sourov.mondol630">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/md.sourov.mondol630">Instagram</a> &nbsp;·&nbsp; <a href="https://itssourov13.vercel.app/">Website</a></p>
+<p align="center"><b>Connect</b> &nbsp;·&nbsp; <a href="https://github.com/itssourov13">GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/itssourov13">LinkedIn</a> &nbsp;·&nbsp; <a href="https://x.com/itssourov13">X</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/itssourov13">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/itssourov13">Instagram</a> &nbsp;·&nbsp; <a href="https://itssourov13.vercel.app/">Website</a></p>
 
 <img src="assets/generated/footer.svg" alt="Md Sourov Mondol — digital security profile" width="100%">
 

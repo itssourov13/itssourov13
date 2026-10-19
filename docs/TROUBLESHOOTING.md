@@ -10,6 +10,7 @@
 | World shows blank page on Pages | Pages source must be "GitHub Actions"; check `WORLD_BASE` matches the repo name; open the browser console. |
 | World shows "Data unavailable" | `data/generated-profile.json` was not deployed. Run `npm run generate`, rebuild. |
 | `Rate limit` error | Unauthenticated calls are limited to 60/hour. Use a token (Actions provides one). |
+| A social link is stale, or a removed account still shows | Synced from your GitHub profile on every `update` run. Run **Update profile** manually and read the log: `Social accounts unavailable, keeping …` means GitHub could not be read (the last-known-good value is kept). A link is also dropped if it is not an https URL on the provider's own domain. |
 | Scheduled run did not happen | GitHub can delay/skip schedules, or disable them after inactivity; run it manually. |
 | Slow / hot on phone | Set quality to Low in the Display panel. |
 

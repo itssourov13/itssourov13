@@ -2,7 +2,15 @@ import { API_ROOT, MAX_REPO_PAGES } from '../constants.ts';
 import type { ContributionCalendar, GithubUser, ProjectRecord } from '../types.ts';
 import { HttpError, requestJson, ApiShapeError } from './http.ts';
 import type { RequestOptions } from './http.ts';
-import { parseContributionResponse, parseLanguages, parseRelease, parseRepo, parseUser } from './parse.ts';
+import type { ParsedSocialAccounts } from './parse.ts';
+import {
+  parseContributionResponse,
+  parseLanguages,
+  parseRelease,
+  parseRepo,
+  parseSocialAccounts,
+  parseUser,
+} from './parse.ts';
 
 const CONTRIBUTIONS_QUERY = `query($login: String!) {
   user(login: $login) {
@@ -28,6 +36,11 @@ export class GithubApi {
 
   async getUser(login: string): Promise<GithubUser> {
     return parseUser(await requestJson(`${API_ROOT}/users/${encodeURIComponent(login)}`, this.opts));
+  }
+
+  /** Public social accounts from the profile. A successful `[]` is a real answer, not an error. */
+  async getSocialAccounts(login: string): Promise<ParsedSocialAccounts> {
+    return parseSocialAccounts(await requestJson(`${API_ROOT}/users/${encodeURIComponent(login)}/social_accounts`, this.opts));
   }
 
   /** All public repositories owned by `login`, paginated 100 at a time (bounded by MAX_REPO_PAGES). */

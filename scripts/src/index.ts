@@ -30,7 +30,7 @@ async function collect(allowStale: boolean): Promise<void> {
   const token = process.env.GITHUB_TOKEN || undefined;
   log.info(`Collecting data for ${config.profile.username} (${token ? 'authenticated' : 'unauthenticated'})`);
   try {
-    const next = await collectFromGithub(config, new GithubApi({ token }), previous?.contributions ?? null);
+    const next = await collectFromGithub(config, new GithubApi({ token }), previous?.contributions ?? null, undefined, previous?.socials ?? null);
     const { changed } = saveCollected(dataDir, next);
     log.info(changed ? 'Data updated.' : 'No data changes.');
   } catch (err) {

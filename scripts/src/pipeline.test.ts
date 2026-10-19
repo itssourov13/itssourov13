@@ -4,6 +4,7 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { fixtureData } from '../fixtures/index.ts';
 import { validateConfig } from './config/schema.ts';
+import type { CollectedData } from './types.ts';
 import type { MediaState } from './data/media.ts';
 import { inspectMedia } from './data/media.ts';
 import { buildOutputs, diffOutputs, writeOutputs } from './pipeline.ts';
@@ -263,5 +264,104 @@ describe('media handling', () => {
     const media = inspectMedia(tmp(), { ...mediaCfg, profile_image: '../outside.png' });
     expect(media.profileImage).toBeUndefined();
     expect(media.warnings.join()).toContain('outside the repository');
+  });
+});
+
+describe('live social sync in generated output', () => {
+  const manual = {
+    github: 'https://github.com/itssourov13',
+    blog: 'https://blog.example/',
+    portfolio: 'https://portfolio.example/',
+  };
+  const stale = {
+    linkedin: 'https://www.linkedin.com/in/old-handle',
+    x: 'https://x.com/old_handle',
+    facebook: 'https://www.facebook.com/old.handle',
+    instagram: 'https://www.instagram.com/old.handle',
+  };
+  const cfg = { ...config, socials: { ...manual, ...stale } };
+  const build = (socials: CollectedData['socials'], c = cfg) => {
+    const { files } = buildOutputs(c, { ...fixtureData(), socials }, noMedia);
+    const readme = files.find((f) => f.path === 'README.md')!.content;
+    const world = JSON.parse(files.find((f) => f.path === 'data/generated-profile.json')!.content);
+    return { files, readme, world, worldSocials: world.profile.socials as Record<string, string> };
+  };
+  /** [label, url] pairs from the README "Connect" line. */
+  const connect = (readme: string) => {
+    const line = readme.split('\n').find((l) => l.includes('<b>Connect</b>')) ?? '';
+    return [...line.matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map((m) => [m[2]!, m[1]!]);
+  };
+
+  it('replaces outdated URLs in both the README and the world JSON, from the same data', () => {
+    const live = {
+      linkedin: 'https://www.linkedin.com/in/new-handle',
+      x: 'https://x.com/new_handle',
+      facebook: 'https://www.facebook.com/new.handle',
+      instagram: 'https://www.instagram.com/new.handle',
+    };
+    const { readme, worldSocials } = build(live);
+    expect(worldSocials).toEqual({ ...manual, ...live });
+    for (const url of Object.values(stale)) {
+      expect(readme).not.toContain(url);
+      expect(JSON.stringify(worldSocials)).not.toContain(url);
+    }
+    // Every social URL in the world JSON is rendered in the README (and vice versa), under the right label.
+    const links = connect(readme);
+    expect(links).toContainEqual(['LinkedIn', live.linkedin]);
+    expect(links).toContainEqual(['X', live.x]);
+    expect(links).toContainEqual(['Facebook', live.facebook]);
+    expect(links).toContainEqual(['Instagram', live.instagram]);
+    expect(links.map(([, u]) => u).sort()).toEqual(Object.values(worldSocials).sort());
+  });
+  it('removes a provider that was deleted from the live profile everywhere, and keeps manual links', () => {
+    const { readme, worldSocials } = build({ linkedin: 'https://www.linkedin.com/in/new-handle' });
+    expect(Object.keys(worldSocials).sort()).toEqual(['blog', 'github', 'linkedin', 'portfolio']);
+    expect(readme).not.toContain('x.com/old_handle');
+    expect(readme).not.toContain('facebook.com');
+    expect(readme).not.toContain('instagram.com');
+    expect(connect(readme).map(([l]) => l)).toEqual(['GitHub', 'LinkedIn', 'Blog', 'Portfolio']);
+  });
+  it('treats a successful empty result as "no accounts" (all synced providers hidden)', () => {
+    const { readme, worldSocials } = build({});
+    expect(worldSocials).toEqual(manual);
+    expect(connect(readme).map(([l]) => l)).toEqual(['GitHub', 'Blog', 'Portfolio']);
+  });
+  it('keeps using profile.config.yml until a fetch has succeeded, byte-identical to the legacy output', () => {
+    const legacy = buildOutputs(cfg, fixtureData(), noMedia).files; // no `socials` property at all
+    const never = buildOutputs(cfg, { ...fixtureData(), socials: null }, noMedia).files;
+    expect(never).toEqual(legacy);
+    const { worldSocials, readme } = build(null);
+    expect(worldSocials).toEqual({ ...manual, ...stale });
+    expect(readme).toContain(stale.linkedin);
+  });
+  it('does not touch anything else: only README.md and data/generated-profile.json differ', () => {
+    const before = buildOutputs(cfg, fixtureData(), noMedia).files;
+    const after = build({ linkedin: 'https://www.linkedin.com/in/new-handle' }).files;
+    expect(after.map((f) => f.path)).toEqual(before.map((f) => f.path));
+    const changed = after.filter((f, i) => f.content !== before[i]!.content).map((f) => f.path);
+    expect(changed).toEqual(['README.md', 'data/generated-profile.json']);
+  });
+  it('is deterministic and offline: no network access during generation', () => {
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = (() => {
+      throw new Error('network access during generate');
+    }) as unknown as typeof fetch;
+    try {
+      const a = build({ x: 'https://x.com/new_handle' }).files;
+      const b = build({ x: 'https://x.com/new_handle' }).files;
+      expect(a).toEqual(b);
+    } finally {
+      globalThis.fetch = realFetch;
+    }
+  });
+  it('writes outputs that pass the sync, link and secret checks', () => {
+    const root = tmp();
+    const { files } = build({ linkedin: 'https://www.linkedin.com/in/new-handle' });
+    writeOutputs(root, files);
+    fs.mkdirSync(path.join(root, 'docs'), { recursive: true });
+    fs.writeFileSync(path.join(root, 'docs/ARCHITECTURE.md'), '# x');
+    expect(diffOutputs(root, files)).toEqual([]);
+    expect(checkLinks(root)).toEqual([]);
+    expect(checkSecrets(root)).toEqual([]);
   });
 });

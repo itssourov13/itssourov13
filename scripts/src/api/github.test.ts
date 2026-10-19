@@ -43,6 +43,28 @@ describe('GithubApi', () => {
     expect(await api.getLatestRelease('itssourov13', 'x')).toBeNull();
     expect(seen.every((u) => u.startsWith('https://api.github.com/'))).toBe(true);
   });
+  it('fetches social accounts from the documented endpoint and normalizes providers', async () => {
+    const seen: string[] = [];
+    const fetchImpl = (async (url: string) => (seen.push(url), json([{ provider: 'twitter', url: 'https://x.com/md_sourov630' }, { provider: 'mastodon', url: 'https://example.social/@a' }]))) as unknown as typeof fetch;
+    const res = await new GithubApi({ fetchImpl, sleep: noSleep, token: 'ghp_' + 'a'.repeat(36) }).getSocialAccounts('itssourov13');
+    expect(seen).toEqual(['https://api.github.com/users/itssourov13/social_accounts']);
+    expect(res.links).toEqual({ x: 'https://x.com/md_sourov630' });
+    expect(res.ignoredProviders).toEqual(['mastodon']);
+  });
+  it('distinguishes a successful empty list from an API failure', async () => {
+    const ok = new GithubApi({ fetchImpl: (async () => json([])) as unknown as typeof fetch, sleep: noSleep });
+    expect((await ok.getSocialAccounts('itssourov13')).links).toEqual({});
+    let calls = 0;
+    const down = new GithubApi({ fetchImpl: (async () => (calls++, new Response('x', { status: 503 }))) as unknown as typeof fetch, sleep: noSleep });
+    await expect(down.getSocialAccounts('itssourov13')).rejects.toThrow(/Server error 503/);
+    expect(calls).toBe(4); // 1 attempt + 3 retries via the shared HTTP utility
+    const missing = new GithubApi({ fetchImpl: (async () => new Response('{}', { status: 404 })) as unknown as typeof fetch, sleep: noSleep });
+    await expect(missing.getSocialAccounts('itssourov13')).rejects.toThrow(/HTTP 404/);
+  });
+  it('rejects a 200 response that is not a social-accounts list', async () => {
+    const api = new GithubApi({ fetchImpl: (async () => json({ message: 'unexpected' })) as unknown as typeof fetch, sleep: noSleep });
+    await expect(api.getSocialAccounts('itssourov13')).rejects.toThrow(/Unexpected GitHub API response/);
+  });
   it('parses the GraphQL contribution calendar and reports GraphQL errors', async () => {
     const ok = { data: { user: { contributionsCollection: { contributionCalendar: { totalContributions: 3, weeks: [{ contributionDays: [{ date: '2026-01-01', contributionCount: 3, contributionLevel: 'SECOND_QUARTILE', weekday: 4 }] }] } } } } };
     const api = new GithubApi({ token: 't', sleep: noSleep, fetchImpl: (async () => json(ok)) as unknown as typeof fetch });
