@@ -4,7 +4,15 @@ import { Html, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import { BASE } from './palette.ts';
 
-function Frame({ children, caption, coarse }: { children?: ReactNode; caption: string; coarse: boolean }) {
+function Frame({
+  children,
+  caption,
+  coarse,
+}: {
+  children?: ReactNode;
+  caption: string;
+  coarse: boolean;
+}) {
   return (
     <group position={[-14, 2.2, 0]} rotation-y={Math.PI / 2}>
       <mesh position-z={-0.06}>
@@ -39,7 +47,10 @@ function Portrait({ file, alt, coarse }: { file: string; alt: string; coarse: bo
   );
 }
 
-class Boundary extends Component<{ children: ReactNode; fallback: ReactNode }, { failed: boolean }> {
+class Boundary extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { failed: boolean }
+> {
   override state = { failed: false };
   static getDerivedStateFromError() {
     return { failed: true };
@@ -53,7 +64,17 @@ class Boundary extends Component<{ children: ReactNode; fallback: ReactNode }, {
  * Portrait frame. The texture is only requested when `enabled` (idle or when the Portrait stop is
  * visited), and a missing/corrupt file degrades to an empty frame — never an error or a broken scene.
  */
-export function MediaWall({ file, alt, enabled, coarse }: { file: string; alt: string; enabled: boolean; coarse: boolean }) {
+export function MediaWall({
+  file,
+  alt,
+  enabled,
+  coarse,
+}: {
+  file: string;
+  alt: string;
+  enabled: boolean;
+  coarse: boolean;
+}) {
   const empty = <Frame caption="Portrait unavailable" coarse={coarse} />;
   if (!enabled) return <Frame caption={alt} coarse={coarse} />;
   return (

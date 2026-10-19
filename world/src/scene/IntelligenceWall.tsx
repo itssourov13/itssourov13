@@ -14,7 +14,13 @@ const P = new THREE.Vector3();
 const Q = new THREE.Quaternion();
 const S = new THREE.Vector3();
 const C = new THREE.Color();
-const FRAME: [number, number, number][] = [[-11, 1.2, 0], [11, 1.2, 0], [11, 9.8, 0], [-11, 9.8, 0], [-11, 1.2, 0]];
+const FRAME: [number, number, number][] = [
+  [-11, 1.2, 0],
+  [11, 1.2, 0],
+  [11, 9.8, 0],
+  [-11, 9.8, 0],
+  [-11, 1.2, 0],
+];
 
 /**
  * Visual context for real GitHub data: language columns (height ∝ share) and the monthly contribution
@@ -42,7 +48,14 @@ export function IntelligenceWall({ languages, monthly, coarse }: Props) {
   const trend = useMemo(() => {
     if (!monthly || monthly.length < 2) return null;
     const max = Math.max(1, ...monthly.map((m) => m.total));
-    return monthly.map((m, i) => [1.5 + (i / (monthly.length - 1)) * 8.5, 2.2 + (m.total / max) * 5, 0.06] as [number, number, number]);
+    return monthly.map(
+      (m, i) =>
+        [1.5 + (i / (monthly.length - 1)) * 8.5, 2.2 + (m.total / max) * 5, 0.06] as [
+          number,
+          number,
+          number,
+        ],
+    );
   }, [monthly]);
 
   if (items.length === 0 && !trend) return null;
@@ -52,16 +65,32 @@ export function IntelligenceWall({ languages, monthly, coarse }: Props) {
         <meshStandardMaterial color="#0e1217" metalness={0.5} roughness={0.35} />
       </mesh>
       <Line points={FRAME} color={COOL} lineWidth={1} transparent opacity={0.5} />
-      <Line points={[[-10, 2.15, 0.02], [10, 2.15, 0.02]]} color={AMBER} lineWidth={1} transparent opacity={0.35} />
+      <Line
+        points={[
+          [-10, 2.15, 0.02],
+          [10, 2.15, 0.02],
+        ]}
+        color={AMBER}
+        lineWidth={1}
+        transparent
+        opacity={0.35}
+      />
       {items.length > 0 && (
         <instancedMesh ref={bars} args={[GEO.box, undefined, items.length]} dispose={null}>
-          <meshStandardMaterial emissiveIntensity={0.35} roughness={0.4} metalness={0.2} emissive="#2a2118" />
+          <meshStandardMaterial
+            emissiveIntensity={0.35}
+            roughness={0.4}
+            metalness={0.2}
+            emissive="#2a2118"
+          />
         </instancedMesh>
       )}
       {trend && <Line points={trend} color={AMBER_HI} lineWidth={2} />}
       {!coarse && (
         <Html position={[-10.5, 10.4, 0]} distanceFactor={14} style={{ pointerEvents: 'none' }}>
-          <div className="node-label small">GitHub intelligence · languages and monthly activity</div>
+          <div className="node-label small">
+            GitHub intelligence · languages and monthly activity
+          </div>
         </Html>
       )}
     </group>

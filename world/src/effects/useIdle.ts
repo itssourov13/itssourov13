@@ -5,7 +5,10 @@ export function useIdleFlag(enabled: boolean, fallbackMs = 3000): boolean {
   const [ready, setReady] = useState(false);
   useEffect(() => {
     if (!enabled || ready) return;
-    const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number; cancelIdleCallback?: (id: number) => void };
+    const w = window as Window & {
+      requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
     if (w.requestIdleCallback) {
       const id = w.requestIdleCallback(() => setReady(true), { timeout: fallbackMs });
       return () => w.cancelIdleCallback?.(id);

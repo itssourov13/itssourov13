@@ -47,7 +47,9 @@ export function CameraRig({ stop, nonce, reduced, controls }: Props) {
   useEffect(() => {
     const c = controls.current;
     if (!c) return;
-    const cancel = () => { run.current.active = false; };
+    const cancel = () => {
+      run.current.active = false;
+    };
     c.addEventListener('start', cancel);
     return () => c.removeEventListener('start', cancel);
   }, [controls]);

@@ -38,7 +38,15 @@ export interface SceneModel {
   links: { key: string; label: string; url: string }[];
 }
 
-const SOCIAL_LABELS: Record<string, string> = { github: 'GitHub', linkedin: 'LinkedIn', x: 'X', facebook: 'Facebook', instagram: 'Instagram', blog: 'Blog', portfolio: 'Portfolio' };
+const SOCIAL_LABELS: Record<string, string> = {
+  github: 'GitHub',
+  linkedin: 'LinkedIn',
+  x: 'X',
+  facebook: 'Facebook',
+  instagram: 'Instagram',
+  blog: 'Blog',
+  portfolio: 'Portfolio',
+};
 export const MAX_LAB = 8;
 
 export function buildSceneModel(profile: WorldProfile, projects: WorldProject[]): SceneModel {
@@ -46,6 +54,10 @@ export function buildSceneModel(profile: WorldProfile, projects: WorldProject[])
     projects,
     positions: nodePositions(projects.length),
     lab: profile.profile.focus.slice(0, MAX_LAB),
-    links: Object.entries(profile.profile.socials).map(([key, url]) => ({ key, label: SOCIAL_LABELS[key] ?? key, url })),
+    links: Object.entries(profile.profile.socials).map(([key, url]) => ({
+      key,
+      label: SOCIAL_LABELS[key] ?? key,
+      url,
+    })),
   };
 }

@@ -35,12 +35,19 @@ export class GithubApi {
   }
 
   async getUser(login: string): Promise<GithubUser> {
-    return parseUser(await requestJson(`${API_ROOT}/users/${encodeURIComponent(login)}`, this.opts));
+    return parseUser(
+      await requestJson(`${API_ROOT}/users/${encodeURIComponent(login)}`, this.opts),
+    );
   }
 
   /** Public social accounts from the profile. A successful `[]` is a real answer, not an error. */
   async getSocialAccounts(login: string): Promise<ParsedSocialAccounts> {
-    return parseSocialAccounts(await requestJson(`${API_ROOT}/users/${encodeURIComponent(login)}/social_accounts`, this.opts));
+    return parseSocialAccounts(
+      await requestJson(
+        `${API_ROOT}/users/${encodeURIComponent(login)}/social_accounts`,
+        this.opts,
+      ),
+    );
   }
 
   /** All public repositories owned by `login`, paginated 100 at a time (bounded by MAX_REPO_PAGES). */
@@ -57,12 +64,25 @@ export class GithubApi {
   }
 
   async getLanguages(owner: string, repo: string): Promise<Record<string, number>> {
-    return parseLanguages(await requestJson(`${API_ROOT}/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/languages`, this.opts));
+    return parseLanguages(
+      await requestJson(
+        `${API_ROOT}/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/languages`,
+        this.opts,
+      ),
+    );
   }
 
-  async getLatestRelease(owner: string, repo: string): Promise<ProjectRecord['latestRelease'] | null> {
+  async getLatestRelease(
+    owner: string,
+    repo: string,
+  ): Promise<ProjectRecord['latestRelease'] | null> {
     try {
-      return parseRelease(await requestJson(`${API_ROOT}/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/releases/latest`, this.opts));
+      return parseRelease(
+        await requestJson(
+          `${API_ROOT}/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/releases/latest`,
+          this.opts,
+        ),
+      );
     } catch (err) {
       if (err instanceof HttpError && err.status === 404) return null;
       throw err;
@@ -71,7 +91,8 @@ export class GithubApi {
 
   /** Requires an authenticated token (GraphQL does not allow anonymous access). */
   async getContributions(login: string): Promise<ContributionCalendar> {
-    if (!this.authenticated) throw new Error('Contribution data requires GITHUB_TOKEN (GraphQL needs authentication)');
+    if (!this.authenticated)
+      throw new Error('Contribution data requires GITHUB_TOKEN (GraphQL needs authentication)');
     const raw = await requestJson(`${API_ROOT}/graphql`, {
       ...this.opts,
       method: 'POST',

@@ -8,7 +8,8 @@ export const DEFAULT_BASE = '/itssourov13/';
 export function resolveBase(value: string | undefined): string {
   const v = (value ?? '').trim();
   if (v === '' || v === '/') return v === '/' ? '/' : DEFAULT_BASE;
-  if (!/^[A-Za-z0-9._\-/]+$/.test(v) || v.includes('..')) throw new Error(`Invalid WORLD_BASE: ${v}`);
+  if (!/^[A-Za-z0-9._\-/]+$/.test(v) || v.includes('..'))
+    throw new Error(`Invalid WORLD_BASE: ${v}`);
   const withLead = v.startsWith('/') ? v : `/${v}`;
   return withLead.endsWith('/') ? withLead : `${withLead}/`;
 }

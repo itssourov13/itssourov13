@@ -3,7 +3,9 @@ import { escapeMd, escapeXml, safeRepoSlug, safeUrl, truncate } from './escape.t
 
 describe('escaping', () => {
   it('escapes XML/HTML metacharacters', () => {
-    expect(escapeXml(`<script>alert("x")</script> & 'y'`)).toBe('&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt; &amp; &#39;y&#39;');
+    expect(escapeXml(`<script>alert("x")</script> & 'y'`)).toBe(
+      '&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt; &amp; &#39;y&#39;',
+    );
   });
   it('neutralizes markdown and HTML in untrusted descriptions', () => {
     const out = escapeMd('x | y <img src=x onerror=1> [link](http://evil) **b**\nnewline');

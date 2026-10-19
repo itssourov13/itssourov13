@@ -13,7 +13,7 @@ export function Particles({ count, ambient }: { count: number; ambient: boolean 
   const ref = useRef<THREE.Points>(null);
   const positions = useMemo(() => {
     let s = 1337;
-    const rnd = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+    const rnd = () => (s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296;
     const a = new Float32Array(MAX_PARTICLES * 3);
     for (let i = 0; i < MAX_PARTICLES; i++) {
       a[i * 3] = (rnd() - 0.5) * 50;
@@ -34,7 +34,14 @@ export function Particles({ count, ambient }: { count: number; ambient: boolean 
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial color="#e8a15c" size={0.06} sizeAttenuation transparent opacity={0.5} depthWrite={false} />
+      <pointsMaterial
+        color="#e8a15c"
+        size={0.06}
+        sizeAttenuation
+        transparent
+        opacity={0.5}
+        depthWrite={false}
+      />
     </points>
   );
 }

@@ -16,11 +16,18 @@ function profileAssets(base: string): Plugin {
   const dataPath = path.join(repoRoot, DATA_FILE);
   const mediaSource = (): { file: string; abs: string } | null => {
     try {
-      const j = JSON.parse(fs.readFileSync(dataPath, 'utf8')) as { media?: { profileImage?: { file?: string; sourcePath?: string } | null } };
+      const j = JSON.parse(fs.readFileSync(dataPath, 'utf8')) as {
+        media?: { profileImage?: { file?: string; sourcePath?: string } | null };
+      };
       const img = j.media?.profileImage;
       if (!img?.file || !img.sourcePath || !/^media\/[\w.-]+$/.test(img.file)) return null;
       const abs = path.resolve(repoRoot, img.sourcePath);
-      if (!abs.startsWith(repoRoot + path.sep) || !fs.existsSync(abs) || fs.statSync(abs).size > MAX_MEDIA_BYTES) return null;
+      if (
+        !abs.startsWith(repoRoot + path.sep) ||
+        !fs.existsSync(abs) ||
+        fs.statSync(abs).size > MAX_MEDIA_BYTES
+      )
+        return null;
       return { file: img.file, abs };
     } catch {
       return null;
@@ -45,7 +52,8 @@ function profileAssets(base: string): Plugin {
       });
     },
     generateBundle() {
-      if (fs.existsSync(dataPath)) this.emitFile({ type: 'asset', fileName: DATA_FILE, source: fs.readFileSync(dataPath) });
+      if (fs.existsSync(dataPath))
+        this.emitFile({ type: 'asset', fileName: DATA_FILE, source: fs.readFileSync(dataPath) });
       const m = mediaSource();
       if (m) this.emitFile({ type: 'asset', fileName: m.file, source: fs.readFileSync(m.abs) });
     },

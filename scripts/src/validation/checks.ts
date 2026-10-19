@@ -22,7 +22,8 @@ export function checkLinks(root: string, readmeRel = 'README.md'): string[] {
   const problems: string[] = [];
   for (const ref of findLocalRefs(fs.readFileSync(readme, 'utf8'))) {
     const abs = path.resolve(root, ref);
-    if (!abs.startsWith(path.resolve(root) + path.sep) || !fs.existsSync(abs)) problems.push(`broken local reference: ${ref}`);
+    if (!abs.startsWith(path.resolve(root) + path.sep) || !fs.existsSync(abs))
+      problems.push(`broken local reference: ${ref}`);
   }
   return problems;
 }
@@ -41,11 +42,16 @@ export function scanForSecrets(text: string): string[] {
 }
 
 export function checkSecrets(root: string): string[] {
-  const targets = [path.join(root, 'README.md'), ...walkFiles(path.join(root, 'assets/generated')), ...walkFiles(path.join(root, 'data'))];
+  const targets = [
+    path.join(root, 'README.md'),
+    ...walkFiles(path.join(root, 'assets/generated')),
+    ...walkFiles(path.join(root, 'data')),
+  ];
   const problems: string[] = [];
   for (const file of targets) {
     if (!fs.existsSync(file)) continue;
-    for (const hit of scanForSecrets(fs.readFileSync(file, 'utf8'))) problems.push(`${hit} pattern in ${toPosix(path.relative(root, file))}`);
+    for (const hit of scanForSecrets(fs.readFileSync(file, 'utf8')))
+      problems.push(`${hit} pattern in ${toPosix(path.relative(root, file))}`);
   }
   return problems;
 }

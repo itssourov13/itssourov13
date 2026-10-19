@@ -23,5 +23,11 @@ updates:
       - { dependency-name: typescript, update-types: ['version-update:semver-major'] }
       - { dependency-name: eslint, update-types: ['version-update:semver-major'] }
       # three.js 0.x minors can be breaking: patch updates only; bump minors by hand with the R3F/drei peer ranges in mind.
-      - { dependency-name: three, update-types: ['version-update:semver-minor', 'version-update:semver-major'] }
-      - { dependency-name: '@types/three', update-types: ['version-update:semver-minor', 'version-update:semver-major'] }
+      - {
+          dependency-name: three,
+          update-types: ['version-update:semver-minor', 'version-update:semver-major'],
+        }
+      - {
+          dependency-name: '@types/three',
+          update-types: ['version-update:semver-minor', 'version-update:semver-major'],
+        }
