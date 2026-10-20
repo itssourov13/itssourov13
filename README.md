@@ -29,13 +29,13 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 78 stars received, 3 followers; 255 contributions in the last 30 days against 50 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 78 stars received, 3 followers; 264 contributions in the last 30 days against 50 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 403 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 412 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 60.8%, JavaScript 21%, Python 6.4%, Go 5%, HTML 2.2%, MDX 1.4%, CSS 1.3%, GLSL 1%, Other 0.8%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 60.9%, JavaScript 21%, Python 6.4%, Go 5%, HTML 2.2%, MDX 1.4%, CSS 1.3%, GLSL 1%, Other 0.8%" width="100%">
 
 ## Recent work
 
