@@ -2,6 +2,84 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-08-18T16:08:10Z",
+      "defaultBranch": "main",
+      "description": "A modern full-stack developer portfolio with React, TypeScript, Express, PostgreSQL, REST API, and a secure admin dashboard.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/portfolio",
+      "languages": {
+        "CSS": 22722,
+        "HTML": 10908,
+        "JavaScript": 2395974,
+        "Shell": 72,
+        "TypeScript": 1047177
+      },
+      "name": "portfolio",
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-10-20T13:43:11Z",
+      "stars": 1,
+      "topics": [
+        "full-stack",
+        "portfolio",
+        "portfolio-website"
+      ],
+      "updatedAt": "2026-10-20T10:41:12Z",
+      "url": "https://github.com/itssourov13/portfolio",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "defaultBranch": "main",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/hackerai-main",
+      "languages": {
+        "CSS": 12261,
+        "Dockerfile": 15996,
+        "HTML": 4249,
+        "JavaScript": 98140,
+        "Rust": 115957,
+        "Shell": 2647,
+        "TypeScript": 12939851
+      },
+      "name": "hackerai-main",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-20T11:48:26Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-11T22:09:15Z",
+      "url": "https://github.com/itssourov13/hackerai-main",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-19T11:46:05Z",
+      "defaultBranch": "main",
+      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/personal-website-pentest",
+      "languages": {
+        "CSS": 13374,
+        "JavaScript": 11944,
+        "MDX": 5774,
+        "TypeScript": 366448
+      },
+      "license": "MIT",
+      "name": "personal-website-pentest",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-20T07:38:38Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-20T07:57:11Z",
+      "url": "https://github.com/itssourov13/personal-website-pentest",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-10-03T11:00:40Z",
       "defaultBranch": "main",
       "description": "itssourov13 -  It's a special repository because its `README.md` appears on  GitHub profile.",
@@ -16,10 +94,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-19T21:34:59Z",
+      "pushedAt": "2026-10-20T06:06:30Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-19T21:35:03Z",
+      "updatedAt": "2026-10-20T06:06:34Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
@@ -44,56 +122,6 @@
       "topics": [],
       "updatedAt": "2026-10-19T21:25:11Z",
       "url": "https://github.com/itssourov13/cinematic-architecture-web",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-19T11:46:05Z",
-      "defaultBranch": "main",
-      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/personal-website-pentest",
-      "languages": {
-        "CSS": 5367,
-        "JavaScript": 11944,
-        "MDX": 5774,
-        "TypeScript": 358926
-      },
-      "license": "MIT",
-      "name": "personal-website-pentest",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-19T20:06:19Z",
-      "stars": 0,
-      "topics": [],
-      "updatedAt": "2026-10-19T21:29:52Z",
-      "url": "https://github.com/itssourov13/personal-website-pentest",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "defaultBranch": "main",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/hackerai-main",
-      "languages": {
-        "CSS": 12261,
-        "Dockerfile": 15996,
-        "HTML": 4249,
-        "JavaScript": 98140,
-        "Rust": 115957,
-        "Shell": 2647,
-        "TypeScript": 12939851
-      },
-      "name": "hackerai-main",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-19T13:32:10Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-11T22:09:15Z",
-      "url": "https://github.com/itssourov13/hackerai-main",
       "visibility": "public"
     },
     {
@@ -179,7 +207,7 @@
       "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
       "fork": false,
       "forks": 0,
-      "fullName": "itssourov13/claude-personal-website-demo",
+      "fullName": "itssourov13/claude-personal-website",
       "languages": {
         "CSS": 4946,
         "JavaScript": 4378,
@@ -187,15 +215,15 @@
         "TypeScript": 92696
       },
       "license": "MIT",
-      "name": "claude-personal-website-demo",
+      "name": "claude-personal-website",
       "primaryLanguage": "TypeScript",
       "pushedAt": "2026-10-16T08:58:27Z",
       "stars": 3,
       "topics": [
         "nextjs"
       ],
-      "updatedAt": "2026-10-16T08:51:13Z",
-      "url": "https://github.com/itssourov13/claude-personal-website-demo",
+      "updatedAt": "2026-10-20T07:24:11Z",
+      "url": "https://github.com/itssourov13/claude-personal-website",
       "visibility": "public"
     },
     {
