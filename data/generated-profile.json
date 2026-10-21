@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-21T06:06:12.883Z",
+  "collectedAt": "2026-10-21T14:32:11.484Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 242
+        "total": 254
       }
     ],
-    "total": 418,
+    "total": 430,
     "weeks": [
       [
         [
@@ -1627,8 +1627,8 @@
           3
         ],
         [
-          6,
-          1
+          18,
+          3
         ]
       ]
     ]
@@ -1636,7 +1636,7 @@
   "edges": [
     [
       2,
-      3,
+      4,
       "language",
       "TypeScript"
     ],
@@ -1648,15 +1648,15 @@
     ],
     [
       3,
-      7,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
       5,
       "language",
       "JavaScript"
+    ],
+    [
+      4,
+      7,
+      "language",
+      "TypeScript"
     ]
   ],
   "featured": [
@@ -1695,11 +1695,11 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.5
+        "percent": 65.4
       },
       {
         "name": "JavaScript",
-        "percent": 13.7
+        "percent": 13.8
       },
       {
         "name": "Python",
@@ -1740,11 +1740,25 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-10-20T11:48:26Z",
+      "pushedAt": "2026-10-21T11:59:55Z",
       "release": null,
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-19T21:16:29Z",
+      "description": "A cinematic architectural website experiment combining immersive imagery, editorial typography, and scroll-driven motion.",
+      "forks": 0,
+      "language": "JavaScript",
+      "name": "cinematic-architecture-web",
+      "pushedAt": "2026-10-21T09:26:32Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/cinematic-architecture-web"
     },
     {
       "activity": "active",
@@ -1759,20 +1773,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-19T21:16:29Z",
-      "description": "A cinematic architectural website experiment combining immersive imagery, editorial typography, and scroll-driven motion.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "cinematic-architecture-web",
-      "pushedAt": "2026-10-19T21:24:18Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/cinematic-architecture-web"
     },
     {
       "activity": "active",
@@ -1855,8 +1855,8 @@
     "passhunter",
     "cyberos",
     "hackerai-main",
-    "personal-website-pentest",
     "cinematic-architecture-web",
+    "personal-website-pentest",
     "hackergf-ai",
     "blog",
     "personal-website-test"
@@ -1866,11 +1866,11 @@
     "activeRepos90d": 25,
     "followers": 3,
     "momentum": {
-      "last30": 270,
+      "last30": 282,
       "prev30": 48
     },
     "publicRepos": 31,
-    "totalContributions": 418,
+    "totalContributions": 430,
     "totalStars": 80
   },
   "status": "ok",
