@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-20T20:40:10.667Z",
+  "collectedAt": "2026-10-21T06:06:12.883Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 236
+        "total": 242
       }
     ],
-    "total": 412,
+    "total": 418,
     "weeks": [
       [
         [
@@ -1625,6 +1625,10 @@
         [
           22,
           3
+        ],
+        [
+          6,
+          1
         ]
       ]
     ]
@@ -1632,25 +1636,25 @@
   "edges": [
     [
       2,
-      5,
-      "language",
-      "JavaScript"
-    ],
-    [
-      2,
-      6,
-      "language",
-      "JavaScript"
-    ],
-    [
       3,
-      4,
       "language",
       "TypeScript"
     ],
     [
+      2,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
+      3,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
+      4,
       5,
-      6,
       "language",
       "JavaScript"
     ]
@@ -1691,61 +1695,43 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 60.9
+        "percent": 65.5
       },
       {
         "name": "JavaScript",
-        "percent": 21
+        "percent": 13.7
       },
       {
         "name": "Python",
-        "percent": 6.4
+        "percent": 7.4
       },
       {
         "name": "Go",
-        "percent": 5
+        "percent": 5.8
       },
       {
         "name": "HTML",
-        "percent": 2.2
+        "percent": 2.5
       },
       {
         "name": "MDX",
-        "percent": 1.4
+        "percent": 1.6
       },
       {
         "name": "CSS",
-        "percent": 1.3
+        "percent": 1.4
       },
       {
         "name": "GLSL",
-        "percent": 1
+        "percent": 1.2
       },
       {
         "name": "Other",
-        "percent": 0.8
+        "percent": 0.9
       }
     ]
   },
   "latest": [
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-08-18T16:08:10Z",
-      "description": "A modern full-stack developer portfolio with React, TypeScript, Express, PostgreSQL, REST API, and a secure admin dashboard.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "portfolio",
-      "pushedAt": "2026-10-20T18:30:51Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "full-stack",
-        "portfolio",
-        "portfolio-website"
-      ],
-      "url": "https://github.com/itssourov13/portfolio"
-    },
     {
       "activity": "active",
       "archived": false,
@@ -1770,7 +1756,7 @@
       "name": "personal-website-pentest",
       "pushedAt": "2026-10-20T07:38:38Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
     },
@@ -1784,7 +1770,7 @@
       "name": "cinematic-architecture-web",
       "pushedAt": "2026-10-19T21:24:18Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/cinematic-architecture-web"
     },
@@ -1819,6 +1805,20 @@
         "website"
       ],
       "url": "https://github.com/itssourov13/blog"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-17T15:59:42Z",
+      "description": "Personal website . Build with Next js.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-test",
+      "pushedAt": "2026-10-16T12:53:58Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-test"
     }
   ],
   "media": {
@@ -1854,24 +1854,24 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "portfolio",
     "hackerai-main",
     "personal-website-pentest",
     "cinematic-architecture-web",
     "hackergf-ai",
-    "blog"
+    "blog",
+    "personal-website-test"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 26,
+    "activeRepos90d": 25,
     "followers": 3,
     "momentum": {
-      "last30": 264,
-      "prev30": 50
+      "last30": 270,
+      "prev30": 48
     },
-    "publicRepos": 32,
-    "totalContributions": 412,
-    "totalStars": 78
+    "publicRepos": 31,
+    "totalContributions": 418,
+    "totalStars": 80
   },
   "status": "ok",
   "world": {
