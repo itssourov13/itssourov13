@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-21T20:41:17.276Z",
+  "collectedAt": "2026-10-22T06:09:46.816Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 254
+        "total": 256
       }
     ],
-    "total": 430,
+    "total": 432,
     "weeks": [
       [
         [
@@ -1629,6 +1629,10 @@
         [
           18,
           3
+        ],
+        [
+          2,
+          1
         ]
       ]
     ]
@@ -1636,13 +1640,13 @@
   "edges": [
     [
       2,
-      4,
+      3,
       "language",
       "TypeScript"
     ],
     [
       2,
-      7,
+      5,
       "language",
       "TypeScript"
     ],
@@ -1650,13 +1654,13 @@
       3,
       5,
       "language",
-      "JavaScript"
+      "TypeScript"
     ],
     [
       4,
-      7,
+      6,
       "language",
-      "TypeScript"
+      "JavaScript"
     ]
   ],
   "featured": [
@@ -1695,43 +1699,57 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.4
+        "percent": 66.8
       },
       {
         "name": "JavaScript",
-        "percent": 13.8
+        "percent": 12.9
       },
       {
         "name": "Python",
-        "percent": 7.4
+        "percent": 6.8
       },
       {
         "name": "Go",
-        "percent": 5.8
-      },
-      {
-        "name": "HTML",
-        "percent": 2.5
-      },
-      {
-        "name": "MDX",
-        "percent": 1.6
+        "percent": 5.3
       },
       {
         "name": "CSS",
-        "percent": 1.4
+        "percent": 2.4
+      },
+      {
+        "name": "HTML",
+        "percent": 2.3
+      },
+      {
+        "name": "MDX",
+        "percent": 1.5
       },
       {
         "name": "GLSL",
-        "percent": 1.2
+        "percent": 1.1
       },
       {
         "name": "Other",
-        "percent": 0.9
+        "percent": 1
       }
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-22T03:22:45Z",
+      "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "scholar-hub",
+      "pushedAt": "2026-10-22T06:00:46Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/scholar-hub"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1805,20 +1823,6 @@
         "website"
       ],
       "url": "https://github.com/itssourov13/blog"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-17T15:59:42Z",
-      "description": "Personal website . Build with Next js.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website-test",
-      "pushedAt": "2026-10-16T12:53:58Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/personal-website-test"
     }
   ],
   "media": {
@@ -1854,23 +1858,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "scholar-hub",
     "hackerai-main",
     "cinematic-architecture-web",
     "personal-website-pentest",
     "hackergf-ai",
-    "blog",
-    "personal-website-test"
+    "blog"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 25,
+    "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 282,
-      "prev30": 48
+      "last30": 273,
+      "prev30": 59
     },
-    "publicRepos": 31,
-    "totalContributions": 430,
+    "publicRepos": 32,
+    "totalContributions": 432,
     "totalStars": 80
   },
   "status": "ok",
