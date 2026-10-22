@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-22T06:09:46.816Z",
+  "collectedAt": "2026-10-22T14:34:02.100Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 256
+        "total": 261
       }
     ],
-    "total": 432,
+    "total": 437,
     "weeks": [
       [
         [
@@ -1631,7 +1631,7 @@
           3
         ],
         [
-          2,
+          7,
           1
         ]
       ]
@@ -1739,30 +1739,30 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-10-22T03:22:45Z",
-      "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "scholar-hub",
-      "pushedAt": "2026-10-22T06:00:46Z",
-      "release": null,
-      "stars": 0,
-      "topics": [],
-      "url": "https://github.com/itssourov13/scholar-hub"
-    },
-    {
-      "activity": "active",
-      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-10-21T11:59:55Z",
+      "pushedAt": "2026-10-22T12:02:45Z",
       "release": null,
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-22T03:22:45Z",
+      "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "scholar-hub",
+      "pushedAt": "2026-10-22T11:39:11Z",
+      "release": null,
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/itssourov13/scholar-hub"
     },
     {
       "activity": "active",
@@ -1858,8 +1858,8 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "scholar-hub",
     "hackerai-main",
+    "scholar-hub",
     "cinematic-architecture-web",
     "personal-website-pentest",
     "hackergf-ai",
@@ -1870,11 +1870,11 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 273,
+      "last30": 278,
       "prev30": 59
     },
     "publicRepos": 32,
-    "totalContributions": 432,
+    "totalContributions": 437,
     "totalStars": 80
   },
   "status": "ok",

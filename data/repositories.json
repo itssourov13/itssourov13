@@ -2,6 +2,32 @@
   "repos": [
     {
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "defaultBranch": "main",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/hackerai-main",
+      "languages": {
+        "CSS": 12261,
+        "Dockerfile": 15996,
+        "HTML": 4249,
+        "JavaScript": 98140,
+        "Rust": 115957,
+        "Shell": 2647,
+        "TypeScript": 12939851
+      },
+      "name": "hackerai-main",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-22T12:02:45Z",
+      "stars": 3,
+      "topics": [],
+      "updatedAt": "2026-10-11T22:09:15Z",
+      "url": "https://github.com/itssourov13/hackerai-main",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
       "createdAt": "2026-10-22T03:22:45Z",
       "defaultBranch": "main",
       "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
@@ -15,14 +41,14 @@
         "Kotlin": 3951,
         "PLpgSQL": 32784,
         "Python": 3039,
-        "TypeScript": 1633703
+        "TypeScript": 1637642
       },
       "name": "scholar-hub",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-22T06:00:46Z",
+      "pushedAt": "2026-10-22T11:39:11Z",
       "stars": 0,
       "topics": [],
-      "updatedAt": "2026-10-22T04:46:43Z",
+      "updatedAt": "2026-10-22T07:06:01Z",
       "url": "https://github.com/itssourov13/scholar-hub",
       "visibility": "public"
     },
@@ -42,37 +68,11 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-21T20:41:20Z",
+      "pushedAt": "2026-10-22T06:09:49Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-21T20:41:25Z",
+      "updatedAt": "2026-10-22T06:09:53Z",
       "url": "https://github.com/itssourov13/itssourov13",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "defaultBranch": "main",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/hackerai-main",
-      "languages": {
-        "CSS": 12261,
-        "Dockerfile": 15996,
-        "HTML": 4249,
-        "JavaScript": 98140,
-        "Rust": 115957,
-        "Shell": 2647,
-        "TypeScript": 12939851
-      },
-      "name": "hackerai-main",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-21T11:59:55Z",
-      "stars": 3,
-      "topics": [],
-      "updatedAt": "2026-10-11T22:09:15Z",
-      "url": "https://github.com/itssourov13/hackerai-main",
       "visibility": "public"
     },
     {
