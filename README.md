@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, scholar-hub, cinematic-architecture-web, personal-website-pentest, hackergf-ai, blog" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, scholar-hub, hackerai-main, cinematic-architecture-web, personal-website-pentest, hackergf-ai, blog" width="100%">
 
 ## After hours
 
@@ -41,8 +41,8 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-22 |
 | [scholar-hub](https://github.com/itssourov13/scholar-hub) | ScholarHub - is an evolving scholarship discovery and application-management platform. | TypeScript | Active | 2026-10-22 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-22 |
 | [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-10-20 |
 | [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn… | JavaScript | Active | 2026-10-19 |
