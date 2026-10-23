@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-23T06:05:09.233Z",
+  "collectedAt": "2026-10-23T14:17:28.803Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 266
+        "total": 276
       }
     ],
-    "total": 442,
+    "total": 452,
     "weeks": [
       [
         [
@@ -1635,8 +1635,8 @@
           2
         ],
         [
-          2,
-          1
+          12,
+          2
         ]
       ]
     ]
@@ -1761,26 +1761,12 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-09-17T15:59:42Z",
-      "description": "Personal website . Build with Next js.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website-test",
-      "pushedAt": "2026-10-22T21:32:09Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/personal-website-test"
-    },
-    {
-      "activity": "active",
-      "archived": false,
       "createdAt": "2026-10-22T03:22:45Z",
       "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
       "forks": 0,
       "language": "TypeScript",
       "name": "scholar-hub",
-      "pushedAt": "2026-10-22T21:04:28Z",
+      "pushedAt": "2026-10-23T13:28:37Z",
       "release": null,
       "stars": 1,
       "topics": [],
@@ -1794,11 +1780,25 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-10-22T12:02:45Z",
+      "pushedAt": "2026-10-23T11:48:07Z",
       "release": null,
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-17T15:59:42Z",
+      "description": "Personal website . Build with Next js.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-test",
+      "pushedAt": "2026-10-22T21:32:09Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-test"
     },
     {
       "activity": "active",
@@ -1876,9 +1876,9 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "personal-website-test",
     "scholar-hub",
     "hackerai-main",
+    "personal-website-test",
     "cinematic-architecture-web",
     "personal-website-pentest",
     "hackergf-ai"
@@ -1888,11 +1888,11 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 277,
+      "last30": 287,
       "prev30": 65
     },
     "publicRepos": 32,
-    "totalContributions": 442,
+    "totalContributions": 452,
     "totalStars": 81
   },
   "status": "ok",
