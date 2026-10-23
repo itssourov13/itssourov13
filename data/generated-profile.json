@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-22T20:35:57.770Z",
+  "collectedAt": "2026-10-23T06:05:09.233Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 261
+        "total": 266
       }
     ],
-    "total": 437,
+    "total": 442,
     "weeks": [
       [
         [
@@ -1631,7 +1631,11 @@
           3
         ],
         [
-          7,
+          10,
+          2
+        ],
+        [
+          2,
           1
         ]
       ]
@@ -1646,19 +1650,37 @@
     ],
     [
       2,
-      5,
+      4,
+      "language",
+      "TypeScript"
+    ],
+    [
+      2,
+      6,
       "language",
       "TypeScript"
     ],
     [
       3,
-      5,
+      4,
+      "language",
+      "TypeScript"
+    ],
+    [
+      3,
+      6,
       "language",
       "TypeScript"
     ],
     [
       4,
       6,
+      "language",
+      "TypeScript"
+    ],
+    [
+      5,
+      7,
       "language",
       "JavaScript"
     ]
@@ -1739,14 +1761,28 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-09-17T15:59:42Z",
+      "description": "Personal website . Build with Next js.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-test",
+      "pushedAt": "2026-10-22T21:32:09Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-test"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-22T03:22:45Z",
       "description": "ScholarHub - is an evolving scholarship discovery and application-management platform.",
       "forks": 0,
       "language": "TypeScript",
       "name": "scholar-hub",
-      "pushedAt": "2026-10-22T19:21:17Z",
+      "pushedAt": "2026-10-22T21:04:28Z",
       "release": null,
-      "stars": 0,
+      "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/scholar-hub"
     },
@@ -1805,24 +1841,6 @@
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackergf-ai"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-12T05:23:11Z",
-      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
-      "forks": 0,
-      "language": "MDX",
-      "name": "blog",
-      "pushedAt": "2026-10-18T21:36:56Z",
-      "release": null,
-      "stars": 3,
-      "topics": [
-        "mdx",
-        "typescript",
-        "website"
-      ],
-      "url": "https://github.com/itssourov13/blog"
     }
   ],
   "media": {
@@ -1858,24 +1876,24 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "personal-website-test",
     "scholar-hub",
     "hackerai-main",
     "cinematic-architecture-web",
     "personal-website-pentest",
-    "hackergf-ai",
-    "blog"
+    "hackergf-ai"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 278,
-      "prev30": 59
+      "last30": 277,
+      "prev30": 65
     },
     "publicRepos": 32,
-    "totalContributions": 437,
-    "totalStars": 80
+    "totalContributions": 442,
+    "totalStars": 81
   },
   "status": "ok",
   "world": {
