@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-25T13:45:03.324Z",
+  "collectedAt": "2026-10-25T19:42:53.136Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 306
+        "total": 328
       }
     ],
-    "total": 482,
+    "total": 504,
     "weeks": [
       [
         [
@@ -1182,7 +1182,7 @@
         ],
         [
           8,
-          2
+          1
         ],
         [
           0,
@@ -1204,7 +1204,7 @@
         ],
         [
           8,
-          2
+          1
         ],
         [
           0,
@@ -1226,7 +1226,7 @@
       [
         [
           10,
-          2
+          1
         ],
         [
           3,
@@ -1324,7 +1324,7 @@
         ],
         [
           9,
-          2
+          1
         ],
         [
           6,
@@ -1336,7 +1336,7 @@
         ],
         [
           9,
-          2
+          1
         ],
         [
           2,
@@ -1482,7 +1482,7 @@
         ],
         [
           10,
-          2
+          1
         ],
         [
           0,
@@ -1564,11 +1564,11 @@
         ],
         [
           19,
-          3
+          2
         ],
         [
           27,
-          4
+          3
         ],
         [
           0,
@@ -1576,7 +1576,7 @@
         ],
         [
           19,
-          3
+          2
         ],
         [
           0,
@@ -1586,11 +1586,11 @@
       [
         [
           10,
-          2
+          1
         ],
         [
           30,
-          4
+          3
         ],
         [
           22,
@@ -1598,11 +1598,11 @@
         ],
         [
           18,
-          3
+          2
         ],
         [
           10,
-          2
+          1
         ],
         [
           12,
@@ -1615,8 +1615,8 @@
       ],
       [
         [
-          19,
-          3
+          41,
+          4
         ]
       ]
     ]
@@ -1689,7 +1689,7 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.1
+        "percent": 64.8
       },
       {
         "name": "JavaScript",
@@ -1697,7 +1697,7 @@
       },
       {
         "name": "Python",
-        "percent": 7.7
+        "percent": 7.8
       },
       {
         "name": "Go",
@@ -1717,7 +1717,7 @@
       },
       {
         "name": "GLSL",
-        "percent": 1.2
+        "percent": 1.1
       },
       {
         "name": "Other",
@@ -1730,13 +1730,13 @@
       "activity": "active",
       "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
-      "description": "",
+      "description": "Worked for 8s  A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-10-25T13:15:45Z",
+      "pushedAt": "2026-10-25T18:41:20Z",
       "release": null,
-      "stars": 0,
+      "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
     },
@@ -1856,12 +1856,12 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 307,
+      "last30": 329,
       "prev30": 75
     },
     "publicRepos": 32,
-    "totalContributions": 482,
-    "totalStars": 80
+    "totalContributions": 504,
+    "totalStars": 81
   },
   "status": "ok",
   "world": {

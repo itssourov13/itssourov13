@@ -29,19 +29,19 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 80 stars received, 3 followers; 307 contributions in the last 30 days against 75 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 81 stars received, 3 followers; 329 contributions in the last 30 days against 75 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 482 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 504 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.1%, JavaScript 13.8%, Python 7.7%, Go 5.7%, HTML 2.5%, MDX 1.6%, CSS 1.6%, GLSL 1.2%, Other 0.9%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 64.8%, JavaScript 13.8%, Python 7.8%, Go 5.7%, HTML 2.5%, MDX 1.6%, CSS 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | — | Python | Active | 2026-10-25 |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | Worked for 8s A visual portfolio showcasing my software, cybersecurity, web development, and creati… | Python | Active | 2026-10-25 |
 | [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-25 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-22 |
 | [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |

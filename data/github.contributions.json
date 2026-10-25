@@ -1,6 +1,6 @@
 {
   "calendar": {
-    "total": 482,
+    "total": 504,
     "weeks": [
       [
         {
@@ -1658,7 +1658,7 @@
         {
           "count": 8,
           "date": "2026-07-16",
-          "level": 2,
+          "level": 1,
           "weekday": 4
         },
         {
@@ -1690,7 +1690,7 @@
         {
           "count": 8,
           "date": "2026-07-21",
-          "level": 2,
+          "level": 1,
           "weekday": 2
         },
         {
@@ -1722,7 +1722,7 @@
         {
           "count": 10,
           "date": "2026-07-26",
-          "level": 2,
+          "level": 1,
           "weekday": 0
         },
         {
@@ -1866,7 +1866,7 @@
         {
           "count": 9,
           "date": "2026-08-18",
-          "level": 2,
+          "level": 1,
           "weekday": 2
         },
         {
@@ -1884,7 +1884,7 @@
         {
           "count": 9,
           "date": "2026-08-21",
-          "level": 2,
+          "level": 1,
           "weekday": 5
         },
         {
@@ -2098,7 +2098,7 @@
         {
           "count": 10,
           "date": "2026-09-24",
-          "level": 2,
+          "level": 1,
           "weekday": 4
         },
         {
@@ -2218,13 +2218,13 @@
         {
           "count": 19,
           "date": "2026-10-13",
-          "level": 3,
+          "level": 2,
           "weekday": 2
         },
         {
           "count": 27,
           "date": "2026-10-14",
-          "level": 4,
+          "level": 3,
           "weekday": 3
         },
         {
@@ -2236,7 +2236,7 @@
         {
           "count": 19,
           "date": "2026-10-16",
-          "level": 3,
+          "level": 2,
           "weekday": 5
         },
         {
@@ -2250,13 +2250,13 @@
         {
           "count": 10,
           "date": "2026-10-18",
-          "level": 2,
+          "level": 1,
           "weekday": 0
         },
         {
           "count": 30,
           "date": "2026-10-19",
-          "level": 4,
+          "level": 3,
           "weekday": 1
         },
         {
@@ -2268,13 +2268,13 @@
         {
           "count": 18,
           "date": "2026-10-21",
-          "level": 3,
+          "level": 2,
           "weekday": 3
         },
         {
           "count": 10,
           "date": "2026-10-22",
-          "level": 2,
+          "level": 1,
           "weekday": 4
         },
         {
@@ -2292,9 +2292,9 @@
       ],
       [
         {
-          "count": 19,
+          "count": 41,
           "date": "2026-10-25",
-          "level": 3,
+          "level": 4,
           "weekday": 0
         }
       ]
