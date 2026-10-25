@@ -9,20 +9,20 @@
       "forks": 0,
       "fullName": "itssourov13/scholar-hub",
       "languages": {
-        "CSS": 270363,
+        "CSS": 272810,
         "HTML": 1273,
         "JavaScript": 50218,
         "Kotlin": 3943,
         "PLpgSQL": 34348,
         "Python": 3039,
-        "TypeScript": 1677413
+        "TypeScript": 1684973
       },
       "name": "scholar-hub",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-24T19:31:12Z",
+      "pushedAt": "2026-10-25T05:28:43Z",
       "stars": 1,
       "topics": [],
-      "updatedAt": "2026-10-24T18:15:29Z",
+      "updatedAt": "2026-10-25T02:40:34Z",
       "url": "https://github.com/itssourov13/scholar-hub",
       "visibility": "public"
     },
@@ -42,10 +42,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-24T13:23:14Z",
+      "pushedAt": "2026-10-24T19:32:21Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-24T13:23:18Z",
+      "updatedAt": "2026-10-24T19:32:24Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
