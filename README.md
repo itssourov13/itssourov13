@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, scholar-hub, hackerai-main, personal-website-test, cinematic-architecture-web, personal-website-pentest, hackergf-ai" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, my-awesome-projects, hackerai-main, personal-website-test, cinematic-architecture-web, personal-website-pentest, hackergf-ai" width="100%">
 
 ## After hours
 
@@ -29,20 +29,20 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 81 stars received, 3 followers; 294 contributions in the last 30 days against 75 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 80 stars received, 3 followers; 307 contributions in the last 30 days against 75 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 469 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 482 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 66.8%, JavaScript 12.9%, Python 6.8%, Go 5.3%, CSS 2.4%, HTML 2.3%, MDX 1.5%, GLSL 1.1%, Other 1%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.1%, JavaScript 13.8%, Python 7.7%, Go 5.7%, HTML 2.5%, MDX 1.6%, CSS 1.6%, GLSL 1.2%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [scholar-hub](https://github.com/itssourov13/scholar-hub) | ScholarHub - is an evolving scholarship discovery and application-management platform. | TypeScript | Active | 2026-10-25 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-24 |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | — | Python | Active | 2026-10-25 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-25 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-22 |
 | [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-10-20 |
