@@ -4,7 +4,7 @@
       "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
       "defaultBranch": "main",
-      "description": "Worked for 8s  A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "fork": false,
       "forks": 0,
       "fullName": "itssourov13/my-awesome-projects",
@@ -12,15 +12,39 @@
         "CSS": 41216,
         "HTML": 15686,
         "JavaScript": 38453,
-        "Python": 125774
+        "Python": 125958
       },
       "name": "my-awesome-projects",
       "primaryLanguage": "Python",
-      "pushedAt": "2026-10-25T18:41:20Z",
+      "pushedAt": "2026-10-26T06:20:56Z",
       "stars": 1,
       "topics": [],
-      "updatedAt": "2026-10-25T18:41:24Z",
+      "updatedAt": "2026-10-26T06:21:00Z",
       "url": "https://github.com/itssourov13/my-awesome-projects",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-19T11:46:05Z",
+      "defaultBranch": "main",
+      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/personal-website-pentest",
+      "languages": {
+        "CSS": 27648,
+        "JavaScript": 11944,
+        "MDX": 5774,
+        "TypeScript": 369552
+      },
+      "license": "MIT",
+      "name": "personal-website-pentest",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-26T05:52:53Z",
+      "stars": 2,
+      "topics": [],
+      "updatedAt": "2026-10-26T05:45:47Z",
+      "url": "https://github.com/itssourov13/personal-website-pentest",
       "visibility": "public"
     },
     {
@@ -39,10 +63,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-25T13:45:06Z",
+      "pushedAt": "2026-10-25T19:42:55Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-25T13:45:10Z",
+      "updatedAt": "2026-10-25T19:43:00Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
@@ -117,30 +141,6 @@
       "topics": [],
       "updatedAt": "2026-10-21T08:41:23Z",
       "url": "https://github.com/itssourov13/cinematic-architecture-web",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-19T11:46:05Z",
-      "defaultBranch": "main",
-      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/personal-website-pentest",
-      "languages": {
-        "CSS": 13374,
-        "JavaScript": 11944,
-        "MDX": 5774,
-        "TypeScript": 366448
-      },
-      "license": "MIT",
-      "name": "personal-website-pentest",
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-20T07:38:38Z",
-      "stars": 2,
-      "topics": [],
-      "updatedAt": "2026-10-21T05:47:15Z",
-      "url": "https://github.com/itssourov13/personal-website-pentest",
       "visibility": "public"
     },
     {

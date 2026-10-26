@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-25T19:42:53.136Z",
+  "collectedAt": "2026-10-26T06:22:06.654Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 328
+        "total": 338
       }
     ],
-    "total": 504,
+    "total": 514,
     "weeks": [
       [
         [
@@ -1617,6 +1617,10 @@
         [
           41,
           4
+        ],
+        [
+          10,
+          1
         ]
       ]
     ]
@@ -1636,18 +1640,18 @@
     ],
     [
       3,
-      6,
+      5,
       "language",
       "TypeScript"
     ],
     [
       4,
-      6,
+      5,
       "language",
       "TypeScript"
     ],
     [
-      5,
+      6,
       7,
       "language",
       "JavaScript"
@@ -1708,11 +1712,11 @@
         "percent": 2.5
       },
       {
-        "name": "MDX",
-        "percent": 1.6
+        "name": "CSS",
+        "percent": 1.7
       },
       {
-        "name": "CSS",
+        "name": "MDX",
         "percent": 1.6
       },
       {
@@ -1730,15 +1734,29 @@
       "activity": "active",
       "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
-      "description": "Worked for 8s  A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-10-25T18:41:20Z",
+      "pushedAt": "2026-10-26T06:20:56Z",
       "release": null,
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-19T11:46:05Z",
+      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "personal-website-pentest",
+      "pushedAt": "2026-10-26T05:52:53Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/personal-website-pentest"
     },
     {
       "activity": "active",
@@ -1781,20 +1799,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/cinematic-architecture-web"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-19T11:46:05Z",
-      "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website-pentest",
-      "pushedAt": "2026-10-20T07:38:38Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/personal-website-pentest"
     },
     {
       "activity": "active",
@@ -1845,10 +1849,10 @@
     "passhunter",
     "cyberos",
     "my-awesome-projects",
+    "personal-website-pentest",
     "hackerai-main",
     "personal-website-test",
     "cinematic-architecture-web",
-    "personal-website-pentest",
     "hackergf-ai"
   ],
   "schemaVersion": 1,
@@ -1856,11 +1860,11 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 329,
+      "last30": 339,
       "prev30": 75
     },
     "publicRepos": 32,
-    "totalContributions": 504,
+    "totalContributions": 514,
     "totalStars": 81
   },
   "status": "ok",
