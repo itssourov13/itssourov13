@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-26T06:22:06.654Z",
+  "collectedAt": "2026-10-26T16:11:27.931Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 338
+        "total": 350
       }
     ],
-    "total": 514,
+    "total": 526,
     "weeks": [
       [
         [
@@ -1619,8 +1619,8 @@
           4
         ],
         [
-          10,
-          1
+          22,
+          3
         ]
       ]
     ]
@@ -1628,18 +1628,18 @@
   "edges": [
     [
       0,
-      2,
+      3,
       "language",
       "Python"
     ],
     [
-      3,
+      2,
       4,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      2,
       5,
       "language",
       "TypeScript"
@@ -1693,7 +1693,7 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 64.8
+        "percent": 64.7
       },
       {
         "name": "JavaScript",
@@ -1701,7 +1701,7 @@
       },
       {
         "name": "Python",
-        "percent": 7.8
+        "percent": 7.9
       },
       {
         "name": "Go",
@@ -1733,12 +1733,26 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-26T13:15:11Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
       "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-10-26T06:20:56Z",
+      "pushedAt": "2026-10-26T10:25:38Z",
       "release": null,
       "stars": 1,
       "topics": [],
@@ -1757,20 +1771,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-10-25T11:43:10Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1848,9 +1848,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "hackerai-main",
     "my-awesome-projects",
     "personal-website-pentest",
-    "hackerai-main",
     "personal-website-test",
     "cinematic-architecture-web",
     "hackergf-ai"
@@ -1860,11 +1860,11 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 339,
+      "last30": 351,
       "prev30": 75
     },
     "publicRepos": 32,
-    "totalContributions": 514,
+    "totalContributions": 526,
     "totalStars": 81
   },
   "status": "ok",
