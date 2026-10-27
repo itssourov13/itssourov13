@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-26T21:39:58.246Z",
+  "collectedAt": "2026-10-27T06:22:59.712Z",
   "contributions": {
     "monthly": [
       {
@@ -1621,6 +1621,10 @@
         [
           22,
           3
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1628,18 +1632,18 @@
   "edges": [
     [
       0,
-      3,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
+      3,
       4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
@@ -1733,6 +1737,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-10-26T22:43:25Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1743,20 +1761,6 @@
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-10-26T10:25:38Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1848,8 +1852,8 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai-main",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web",
@@ -1860,8 +1864,8 @@
     "activeRepos90d": 26,
     "followers": 3,
     "momentum": {
-      "last30": 351,
-      "prev30": 75
+      "last30": 350,
+      "prev30": 76
     },
     "publicRepos": 32,
     "totalContributions": 526,
