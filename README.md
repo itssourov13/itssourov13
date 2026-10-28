@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, my-awesome-projects, hackerai-main, personal-website-pentest, personal-website-test, cinematic-architecture-web, hackergf-ai" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, my-awesome-projects, bd-admission-app, personal-website-pentest, personal-website-test, cinematic-architecture-web" width="100%">
 
 ## After hours
 
@@ -29,24 +29,24 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 81 stars received, 3 followers; 350 contributions in the last 30 days against 76 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="33 public repositories, 27 pushed in the last 90 days, 82 stars received, 3 followers; 361 contributions in the last 30 days against 76 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 526 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 537 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 64.7%, JavaScript 13.8%, Python 7.9%, Go 5.7%, HTML 2.5%, CSS 1.7%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.1%, JavaScript 13.7%, Python 7.8%, Go 5.6%, HTML 2.5%, CSS 1.6%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-10-27 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-27 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-28 |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-10-28 |
+| [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | Admission app | TypeScript | Active | 2026-10-28 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-10-26 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-22 |
 | [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |
-| [hackergf-ai](https://github.com/itssourov13/hackergf-ai) | Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn… | JavaScript | Active | 2026-10-19 |
 
 <sub>Selected automatically from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 

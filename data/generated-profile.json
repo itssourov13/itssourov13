@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-28T06:54:03.975Z",
+  "collectedAt": "2026-10-28T16:08:02.202Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 350
+        "total": 361
       }
     ],
-    "total": 526,
+    "total": 537,
     "weeks": [
       [
         [
@@ -1627,8 +1627,8 @@
           0
         ],
         [
-          0,
-          0
+          11,
+          2
         ]
       ]
     ]
@@ -1636,33 +1636,45 @@
   "edges": [
     [
       0,
-      2,
+      3,
       "language",
       "Python"
     ],
     [
-      3,
+      2,
       4,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      2,
       5,
       "language",
       "TypeScript"
     ],
     [
-      4,
-      5,
-      "language",
-      "TypeScript"
-    ],
-    [
+      2,
       6,
-      7,
       "language",
-      "JavaScript"
+      "TypeScript"
+    ],
+    [
+      4,
+      5,
+      "language",
+      "TypeScript"
+    ],
+    [
+      4,
+      6,
+      "language",
+      "TypeScript"
+    ],
+    [
+      5,
+      6,
+      "language",
+      "TypeScript"
     ]
   ],
   "featured": [
@@ -1701,19 +1713,19 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 64.7
+        "percent": 65.1
       },
       {
         "name": "JavaScript",
-        "percent": 13.8
+        "percent": 13.7
       },
       {
         "name": "Python",
-        "percent": 7.9
+        "percent": 7.8
       },
       {
         "name": "Go",
-        "percent": 5.7
+        "percent": 5.6
       },
       {
         "name": "HTML",
@@ -1721,7 +1733,7 @@
       },
       {
         "name": "CSS",
-        "percent": 1.7
+        "percent": 1.6
       },
       {
         "name": "MDX",
@@ -1741,12 +1753,26 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-10-28T13:09:01Z",
+      "release": null,
+      "stars": 4,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
       "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-10-27T22:19:03Z",
+      "pushedAt": "2026-10-28T13:01:29Z",
       "release": null,
       "stars": 1,
       "topics": [],
@@ -1755,16 +1781,16 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "createdAt": "2026-10-28T09:51:14Z",
+      "description": "Admission app",
       "forks": 0,
       "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-10-27T12:22:58Z",
+      "name": "bd-admission-app",
+      "pushedAt": "2026-10-28T11:40:19Z",
       "release": null,
-      "stars": 3,
+      "stars": 0,
       "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
+      "url": "https://github.com/itssourov13/bd-admission-app"
     },
     {
       "activity": "active",
@@ -1807,20 +1833,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/cinematic-architecture-web"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-20T08:21:33Z",
-      "description": "Meet Zoya, the next-generation AI assistant powered by Hacker gf Ai . Built to help you code, learn, create, research, and solve problems with powerful AI.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "hackergf-ai",
-      "pushedAt": "2026-10-19T04:44:44Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackergf-ai"
     }
   ],
   "media": {
@@ -1856,24 +1868,24 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "my-awesome-projects",
     "hackerai-main",
+    "my-awesome-projects",
+    "bd-admission-app",
     "personal-website-pentest",
     "personal-website-test",
-    "cinematic-architecture-web",
-    "hackergf-ai"
+    "cinematic-architecture-web"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 26,
+    "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 350,
+      "last30": 361,
       "prev30": 76
     },
-    "publicRepos": 32,
-    "totalContributions": 526,
-    "totalStars": 81
+    "publicRepos": 33,
+    "totalContributions": 537,
+    "totalStars": 82
   },
   "status": "ok",
   "world": {
