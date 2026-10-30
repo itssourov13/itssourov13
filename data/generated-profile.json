@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-30T15:59:51.745Z",
+  "collectedAt": "2026-10-30T21:33:42.334Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 378
+        "total": 384
       }
     ],
-    "total": 554,
+    "total": 560,
     "weeks": [
       [
         [
@@ -1635,7 +1635,7 @@
           1
         ],
         [
-          4,
+          10,
           1
         ]
       ]
@@ -1644,13 +1644,13 @@
   "edges": [
     [
       0,
-      3,
+      4,
       "language",
       "Python"
     ],
     [
       2,
-      4,
+      3,
       "language",
       "TypeScript"
     ],
@@ -1667,13 +1667,13 @@
       "TypeScript"
     ],
     [
-      4,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      3,
       6,
       "language",
       "TypeScript"
@@ -1761,6 +1761,22 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-28T09:51:14Z",
+      "description": "Admission app for bd students",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "bd-admission-app",
+      "pushedAt": "2026-10-30T18:45:01Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "typescript"
+      ],
+      "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1785,22 +1801,6 @@
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-28T09:51:14Z",
-      "description": "Admission app for bd students",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "bd-admission-app",
-      "pushedAt": "2026-10-30T09:52:05Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "typescript"
-      ],
-      "url": "https://github.com/itssourov13/bd-admission-app"
     },
     {
       "activity": "active",
@@ -1878,9 +1878,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "bd-admission-app",
     "hackerai-main",
     "my-awesome-projects",
-    "bd-admission-app",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web"
@@ -1890,11 +1890,11 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 378,
+      "last30": 384,
       "prev30": 75
     },
     "publicRepos": 33,
-    "totalContributions": 554,
+    "totalContributions": 560,
     "totalStars": 83
   },
   "status": "ok",
