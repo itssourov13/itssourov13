@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-29T21:51:28.093Z",
+  "collectedAt": "2026-10-30T07:15:12.932Z",
   "contributions": {
     "monthly": [
       {
@@ -1633,6 +1633,10 @@
         [
           2,
           1
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1640,36 +1644,36 @@
   "edges": [
     [
       0,
-      4,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
       3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       6,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
@@ -1757,6 +1761,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-10-29T22:48:57Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-28T09:51:14Z",
       "description": "Admission app",
       "forks": 0,
@@ -1781,20 +1799,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-10-29T13:08:13Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1872,9 +1876,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "my-awesome-projects",
     "bd-admission-app",
     "hackerai-main",
-    "my-awesome-projects",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web"
