@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-30T21:33:42.334Z",
+  "collectedAt": "2026-10-31T07:04:35.525Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 384
+        "total": 391
       }
     ],
-    "total": 560,
+    "total": 567,
     "weeks": [
       [
         [
@@ -1635,7 +1635,11 @@
           1
         ],
         [
-          10,
+          12,
+          2
+        ],
+        [
+          5,
           1
         ]
       ]
@@ -1644,13 +1648,13 @@
   "edges": [
     [
       0,
-      4,
+      3,
       "language",
       "Python"
     ],
     [
       2,
-      3,
+      4,
       "language",
       "TypeScript"
     ],
@@ -1667,13 +1671,13 @@
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
@@ -1762,17 +1766,31 @@
       "activity": "active",
       "archived": false,
       "createdAt": "2026-10-28T09:51:14Z",
-      "description": "Admission app for bd students",
+      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
       "forks": 0,
       "language": "TypeScript",
       "name": "bd-admission-app",
-      "pushedAt": "2026-10-30T18:45:01Z",
+      "pushedAt": "2026-10-30T23:18:02Z",
       "release": null,
       "stars": 1,
       "topics": [
         "typescript"
       ],
       "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-10-30T22:25:43Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1787,20 +1805,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-10-30T13:01:01Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1879,8 +1883,8 @@
     "passhunter",
     "cyberos",
     "bd-admission-app",
-    "hackerai-main",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web"
@@ -1890,11 +1894,11 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 384,
+      "last30": 391,
       "prev30": 75
     },
     "publicRepos": 33,
-    "totalContributions": 560,
+    "totalContributions": 567,
     "totalStars": 83
   },
   "status": "ok",

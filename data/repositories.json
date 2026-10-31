@@ -4,7 +4,7 @@
       "archived": false,
       "createdAt": "2026-10-28T09:51:14Z",
       "defaultBranch": "main",
-      "description": "Admission app for bd students",
+      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
       "fork": false,
       "forks": 0,
       "fullName": "itssourov13/bd-admission-app",
@@ -15,13 +15,36 @@
       },
       "name": "bd-admission-app",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-30T18:45:01Z",
+      "pushedAt": "2026-10-30T23:18:02Z",
       "stars": 1,
       "topics": [
         "typescript"
       ],
-      "updatedAt": "2026-10-30T18:45:07Z",
+      "updatedAt": "2026-10-30T23:18:07Z",
       "url": "https://github.com/itssourov13/bd-admission-app",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "defaultBranch": "main",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "fork": false,
+      "forks": 0,
+      "fullName": "itssourov13/my-awesome-projects",
+      "languages": {
+        "CSS": 42783,
+        "HTML": 16762,
+        "JavaScript": 44591,
+        "Python": 140088
+      },
+      "name": "my-awesome-projects",
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-10-30T22:25:43Z",
+      "stars": 1,
+      "topics": [],
+      "updatedAt": "2026-10-30T22:25:47Z",
+      "url": "https://github.com/itssourov13/my-awesome-projects",
       "visibility": "public"
     },
     {
@@ -40,10 +63,10 @@
       },
       "name": "itssourov13",
       "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-10-30T15:59:54Z",
+      "pushedAt": "2026-10-30T21:33:48Z",
       "stars": 3,
       "topics": [],
-      "updatedAt": "2026-10-30T15:59:59Z",
+      "updatedAt": "2026-10-30T21:33:52Z",
       "url": "https://github.com/itssourov13/itssourov13",
       "visibility": "public"
     },
@@ -71,29 +94,6 @@
       "topics": [],
       "updatedAt": "2026-10-28T13:15:37Z",
       "url": "https://github.com/itssourov13/hackerai-main",
-      "visibility": "public"
-    },
-    {
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "defaultBranch": "main",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "fork": false,
-      "forks": 0,
-      "fullName": "itssourov13/my-awesome-projects",
-      "languages": {
-        "CSS": 42783,
-        "HTML": 16762,
-        "JavaScript": 44591,
-        "Python": 140088
-      },
-      "name": "my-awesome-projects",
-      "primaryLanguage": "Python",
-      "pushedAt": "2026-10-30T13:01:01Z",
-      "stars": 1,
-      "topics": [],
-      "updatedAt": "2026-10-30T13:01:05Z",
-      "url": "https://github.com/itssourov13/my-awesome-projects",
       "visibility": "public"
     },
     {
