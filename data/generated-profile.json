@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-10-31T15:23:29.278Z",
+  "collectedAt": "2026-10-31T20:29:28.309Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-10",
-        "total": 403
+        "total": 406
       }
     ],
-    "total": 579,
+    "total": 582,
     "weeks": [
       [
         [
@@ -1639,7 +1639,7 @@
           2
         ],
         [
-          17,
+          20,
           2
         ]
       ]
@@ -1648,13 +1648,13 @@
   "edges": [
     [
       0,
-      3,
+      4,
       "language",
       "Python"
     ],
     [
       2,
-      4,
+      3,
       "language",
       "TypeScript"
     ],
@@ -1671,13 +1671,13 @@
       "TypeScript"
     ],
     [
-      4,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      3,
       6,
       "language",
       "TypeScript"
@@ -1765,6 +1765,22 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-28T09:51:14Z",
+      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "bd-admission-app",
+      "pushedAt": "2026-10-31T20:19:53Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "typescript"
+      ],
+      "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1789,22 +1805,6 @@
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-28T09:51:14Z",
-      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "bd-admission-app",
-      "pushedAt": "2026-10-30T23:18:02Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "typescript"
-      ],
-      "url": "https://github.com/itssourov13/bd-admission-app"
     },
     {
       "activity": "active",
@@ -1882,9 +1882,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "bd-admission-app",
     "hackerai-main",
     "my-awesome-projects",
-    "bd-admission-app",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web"
@@ -1894,11 +1894,11 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 403,
+      "last30": 406,
       "prev30": 75
     },
     "publicRepos": 33,
-    "totalContributions": 579,
+    "totalContributions": 582,
     "totalStars": 83
   },
   "status": "ok",
