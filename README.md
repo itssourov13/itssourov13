@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, bd-admission-app, my-awesome-projects, hackerai-main, personal-website-pentest, personal-website-test, cinematic-architecture-web" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, my-awesome-projects, bd-admission-app, personal-website-pentest, personal-website-test, cinematic-architecture-web" width="100%">
 
 ## After hours
 
@@ -29,21 +29,21 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="33 public repositories, 27 pushed in the last 90 days, 83 stars received, 3 followers; 391 contributions in the last 30 days against 75 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="33 public repositories, 27 pushed in the last 90 days, 83 stars received, 3 followers; 403 contributions in the last 30 days against 75 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 567 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 579 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.2%, JavaScript 13.7%, Python 7.8%, Go 5.6%, HTML 2.5%, CSS 1.6%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.1%, JavaScript 13.7%, Python 7.8%, Go 5.6%, HTML 2.5%, CSS 1.6%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-31 |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-10-31 |
 | [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | An offline-first Android app for practicing university admission questions in Bangladesh, organized…<br>`typescript` | TypeScript | Active | 2026-10-30 |
-| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-10-30 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-10-30 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-10-26 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-22 |
 | [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |
