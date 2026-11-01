@@ -1,11 +1,7 @@
 {
-  "collectedAt": "2026-10-31T20:29:28.309Z",
+  "collectedAt": "2026-11-01T07:38:08.910Z",
   "contributions": {
     "monthly": [
-      {
-        "month": "2025-11",
-        "total": 0
-      },
       {
         "month": "2025-12",
         "total": 0
@@ -48,41 +44,15 @@
       },
       {
         "month": "2026-10",
-        "total": 406
+        "total": 408
+      },
+      {
+        "month": "2026-11",
+        "total": 7
       }
     ],
-    "total": 582,
+    "total": 591,
     "weeks": [
-      [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          0
-        ]
-      ],
       [
         [
           0,
@@ -1639,8 +1609,14 @@
           2
         ],
         [
-          20,
-          2
+          22,
+          3
+        ]
+      ],
+      [
+        [
+          7,
+          1
         ]
       ]
     ]
@@ -1648,13 +1624,13 @@
   "edges": [
     [
       0,
-      4,
+      3,
       "language",
       "Python"
     ],
     [
       2,
-      3,
+      4,
       "language",
       "TypeScript"
     ],
@@ -1671,13 +1647,13 @@
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
@@ -1725,7 +1701,7 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.1
+        "percent": 65.3
       },
       {
         "name": "JavaScript",
@@ -1770,13 +1746,27 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "bd-admission-app",
-      "pushedAt": "2026-10-31T20:19:53Z",
+      "pushedAt": "2026-11-01T06:28:12Z",
       "release": null,
       "stars": 1,
       "topics": [
         "typescript"
       ],
       "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-10-31T21:39:59Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1791,20 +1781,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-10-31T11:02:06Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1883,8 +1859,8 @@
     "passhunter",
     "cyberos",
     "bd-admission-app",
-    "hackerai-main",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-pentest",
     "personal-website-test",
     "cinematic-architecture-web"
@@ -1894,11 +1870,11 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 406,
-      "prev30": 75
+      "last30": 415,
+      "prev30": 71
     },
     "publicRepos": 33,
-    "totalContributions": 582,
+    "totalContributions": 591,
     "totalStars": 83
   },
   "status": "ok",
