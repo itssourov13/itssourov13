@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-03T07:59:13.159Z",
+  "collectedAt": "2026-11-03T17:08:50.262Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 8
+        "total": 29
       }
     ],
-    "total": 592,
+    "total": 613,
     "weeks": [
       [
         [
@@ -1623,8 +1623,8 @@
           0
         ],
         [
-          1,
-          1
+          22,
+          3
         ]
       ]
     ]
@@ -1632,19 +1632,13 @@
   "edges": [
     [
       0,
-      3,
+      4,
       "language",
       "Python"
     ],
     [
       2,
-      4,
-      "language",
-      "TypeScript"
-    ],
-    [
-      2,
-      5,
+      3,
       "language",
       "TypeScript"
     ],
@@ -1655,20 +1649,32 @@
       "TypeScript"
     ],
     [
-      4,
-      5,
+      2,
+      7,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      3,
       6,
       "language",
       "TypeScript"
     ],
     [
+      3,
+      7,
+      "language",
+      "TypeScript"
+    ],
+    [
       5,
       6,
+      "topic",
+      "typescript"
+    ],
+    [
+      6,
+      7,
       "language",
       "TypeScript"
     ]
@@ -1709,23 +1715,23 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.3
+        "percent": 65.9
       },
       {
         "name": "JavaScript",
-        "percent": 13.7
+        "percent": 13.4
       },
       {
         "name": "Python",
-        "percent": 7.8
+        "percent": 7.6
       },
       {
         "name": "Go",
-        "percent": 5.6
+        "percent": 5.5
       },
       {
         "name": "HTML",
-        "percent": 2.5
+        "percent": 2.4
       },
       {
         "name": "CSS",
@@ -1754,25 +1760,11 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "personal-website-pentest",
-      "pushedAt": "2026-11-03T07:15:17Z",
+      "pushedAt": "2026-11-03T16:29:18Z",
       "release": null,
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-03T01:01:30Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1782,11 +1774,43 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-11-02T16:11:33Z",
+      "pushedAt": "2026-11-03T14:26:44Z",
       "release": null,
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-03T14:22:30Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-12T05:23:11Z",
+      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
+      "forks": 0,
+      "language": "MDX",
+      "name": "blog",
+      "pushedAt": "2026-11-03T10:23:16Z",
+      "release": null,
+      "stars": 3,
+      "topics": [
+        "mdx",
+        "typescript",
+        "website"
+      ],
+      "url": "https://github.com/itssourov13/blog"
     },
     {
       "activity": "active",
@@ -1817,20 +1841,6 @@
       "stars": 3,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-test"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-19T21:16:29Z",
-      "description": "A cinematic architectural website experiment combining immersive imagery, editorial typography, and scroll-driven motion.",
-      "forks": 0,
-      "language": "JavaScript",
-      "name": "cinematic-architecture-web",
-      "pushedAt": "2026-10-21T09:26:32Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/cinematic-architecture-web"
     }
   ],
   "media": {
@@ -1867,22 +1877,22 @@
     "passhunter",
     "cyberos",
     "personal-website-pentest",
-    "my-awesome-projects",
     "hackerai-main",
+    "my-awesome-projects",
+    "blog",
     "bd-admission-app",
-    "personal-website-test",
-    "cinematic-architecture-web"
+    "personal-website-test"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 401,
+      "last30": 422,
       "prev30": 86
     },
     "publicRepos": 33,
-    "totalContributions": 592,
+    "totalContributions": 613,
     "totalStars": 83
   },
   "status": "ok",

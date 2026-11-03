@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-pentest, my-awesome-projects, hackerai-main, bd-admission-app, personal-website-test, cinematic-architecture-web" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, personal-website-pentest, hackerai-main, my-awesome-projects, blog, bd-admission-app, personal-website-test" width="100%">
 
 ## After hours
 
@@ -29,24 +29,24 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="33 public repositories, 27 pushed in the last 90 days, 83 stars received, 3 followers; 401 contributions in the last 30 days against 86 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="33 public repositories, 27 pushed in the last 90 days, 83 stars received, 3 followers; 422 contributions in the last 30 days against 86 in the 30 before" width="100%">
 
-<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 592 GitHub contributions" width="100%">
+<img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 613 GitHub contributions" width="100%">
 
 <img src="assets/generated/activity-pulse.svg" alt="Monthly contribution bars" width="100%">
 
-<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.3%, JavaScript 13.7%, Python 7.8%, Go 5.6%, HTML 2.5%, CSS 1.6%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
+<img src="assets/generated/language-galaxy.svg" alt="Language distribution: TypeScript 65.9%, JavaScript 13.4%, Python 7.6%, Go 5.5%, HTML 2.4%, CSS 1.6%, MDX 1.6%, GLSL 1.1%, Other 0.9%" width="100%">
 
 ## Recent work
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-11-03 |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-03 |
 | [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-03 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-02 |
+| [blog](https://github.com/itssourov13/blog) | Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, i…<br>`mdx` `typescript` `website` | MDX | Active | 2026-11-03 |
 | [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | An offline-first Android app for practicing university admission questions in Bangladesh, organized…<br>`typescript` | TypeScript | Active | 2026-11-01 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-10-22 |
-| [cinematic-architecture-web](https://github.com/itssourov13/cinematic-architecture-web) | A cinematic architectural website experiment combining immersive imagery, editorial typography, and… | JavaScript | Active | 2026-10-21 |
 
 <sub>Selected automatically from public repositories by most recent push. Status: Active ≤ 30 days · Recent ≤ 90 · Quiet ≤ 1 year · Dormant beyond, measured at the last data update.</sub>
 
