@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-03T22:21:19.023Z",
+  "collectedAt": "2026-11-04T07:34:02.101Z",
   "contributions": {
     "monthly": [
       {
@@ -1625,6 +1625,10 @@
         [
           22,
           3
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1632,36 +1636,36 @@
   "edges": [
     [
       0,
-      4,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
       3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       6,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       7,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       7,
       "language",
       "TypeScript"
@@ -1755,6 +1759,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-03T23:26:59Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-19T11:46:05Z",
       "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
       "forks": 0,
@@ -1779,20 +1797,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-03T14:22:30Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1876,9 +1880,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "my-awesome-projects",
     "personal-website-pentest",
     "hackerai-main",
-    "my-awesome-projects",
     "blog",
     "bd-admission-app",
     "personal-website-test"
@@ -1888,8 +1892,8 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 422,
-      "prev30": 86
+      "last30": 401,
+      "prev30": 107
     },
     "publicRepos": 33,
     "totalContributions": 613,
