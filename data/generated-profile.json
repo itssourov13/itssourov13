@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-04T22:41:34.181Z",
+  "collectedAt": "2026-11-05T07:57:32.877Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 29
+        "total": 32
       }
     ],
-    "total": 613,
+    "total": 616,
     "weeks": [
       [
         [
@@ -1629,6 +1629,10 @@
         [
           0,
           0
+        ],
+        [
+          3,
+          1
         ]
       ]
     ]
@@ -1636,49 +1640,31 @@
   "edges": [
     [
       0,
-      2,
+      3,
       "language",
       "Python"
     ],
     [
-      3,
+      2,
       4,
       "language",
       "TypeScript"
     ],
     [
-      3,
-      6,
-      "language",
-      "TypeScript"
-    ],
-    [
-      3,
-      7,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      6,
-      "language",
-      "TypeScript"
-    ],
-    [
-      4,
-      7,
-      "language",
-      "TypeScript"
-    ],
-    [
+      2,
       5,
+      "language",
+      "TypeScript"
+    ],
+    [
+      2,
       6,
       "topic",
       "typescript"
     ],
     [
-      6,
-      7,
+      4,
+      5,
       "language",
       "TypeScript"
     ]
@@ -1699,14 +1685,14 @@
       "url": "https://github.com/itssourov13/passhunter"
     },
     {
-      "activity": "recent",
+      "activity": "active",
       "archived": false,
       "createdAt": "2026-08-30T05:44:38Z",
       "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
       "forks": 0,
       "language": "Go",
       "name": "cyberos",
-      "pushedAt": "2026-08-30T05:55:49Z",
+      "pushedAt": "2026-11-05T02:30:51Z",
       "release": null,
       "stars": 3,
       "topics": [],
@@ -1719,7 +1705,7 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.9
+        "percent": 65.8
       },
       {
         "name": "JavaScript",
@@ -1739,7 +1725,7 @@
       },
       {
         "name": "CSS",
-        "percent": 1.6
+        "percent": 1.7
       },
       {
         "name": "MDX",
@@ -1759,16 +1745,46 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-28T09:51:14Z",
+      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "bd-admission-app",
+      "pushedAt": "2026-11-05T07:40:10Z",
+      "release": null,
+      "stars": 1,
+      "topics": [
+        "typescript"
+      ],
+      "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-25T12:08:04Z",
       "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-11-04T19:49:51Z",
+      "pushedAt": "2026-11-05T06:53:25Z",
       "release": null,
       "stars": 1,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-08-30T05:44:38Z",
+      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
+      "forks": 0,
+      "language": "Go",
+      "name": "cyberos",
+      "pushedAt": "2026-11-05T02:30:51Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/cyberos"
     },
     {
       "activity": "active",
@@ -1815,36 +1831,6 @@
         "website"
       ],
       "url": "https://github.com/itssourov13/blog"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-28T09:51:14Z",
-      "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "bd-admission-app",
-      "pushedAt": "2026-11-01T06:28:12Z",
-      "release": null,
-      "stars": 1,
-      "topics": [
-        "typescript"
-      ],
-      "url": "https://github.com/itssourov13/bd-admission-app"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-17T15:59:42Z",
-      "description": "Personal website . Build with Next js.",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "personal-website-test",
-      "pushedAt": "2026-10-22T21:32:09Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/personal-website-test"
     }
   ],
   "media": {
@@ -1880,23 +1866,22 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "bd-admission-app",
     "my-awesome-projects",
     "hackerai-main",
     "personal-website-pentest",
-    "blog",
-    "bd-admission-app",
-    "personal-website-test"
+    "blog"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 401,
-      "prev30": 107
+      "last30": 390,
+      "prev30": 121
     },
     "publicRepos": 33,
-    "totalContributions": 613,
+    "totalContributions": 616,
     "totalStars": 83
   },
   "status": "ok",
