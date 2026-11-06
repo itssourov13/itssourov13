@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-05T17:28:28.228Z",
+  "collectedAt": "2026-11-06T07:59:23.900Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 44
+        "total": 55
       }
     ],
-    "total": 628,
+    "total": 639,
     "weeks": [
       [
         [
@@ -1631,8 +1631,12 @@
           0
         ],
         [
-          15,
-          2
+          22,
+          3
+        ],
+        [
+          4,
+          1
         ]
       ]
     ]
@@ -1640,30 +1644,30 @@
   "edges": [
     [
       0,
-      4,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
       3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       6,
       "topic",
       "typescript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
@@ -1692,7 +1696,7 @@
       "forks": 0,
       "language": "Go",
       "name": "cyberos",
-      "pushedAt": "2026-11-05T02:30:51Z",
+      "pushedAt": "2026-11-05T20:44:07Z",
       "release": null,
       "stars": 3,
       "topics": [],
@@ -1705,19 +1709,19 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.9
+        "percent": 65.2
       },
       {
         "name": "JavaScript",
-        "percent": 13.5
+        "percent": 13.3
       },
       {
         "name": "Python",
-        "percent": 7.6
+        "percent": 7.5
       },
       {
         "name": "Go",
-        "percent": 5.4
+        "percent": 6.4
       },
       {
         "name": "HTML",
@@ -1725,11 +1729,11 @@
       },
       {
         "name": "CSS",
-        "percent": 1.7
+        "percent": 1.8
       },
       {
         "name": "MDX",
-        "percent": 1.6
+        "percent": 1.5
       },
       {
         "name": "GLSL",
@@ -1742,6 +1746,34 @@
     ]
   },
   "latest": [
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-08-30T05:44:38Z",
+      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
+      "forks": 0,
+      "language": "Go",
+      "name": "cyberos",
+      "pushedAt": "2026-11-05T20:44:07Z",
+      "release": null,
+      "stars": 3,
+      "topics": [],
+      "url": "https://github.com/itssourov13/cyberos"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-05T20:00:04Z",
+      "release": null,
+      "stars": 1,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
     {
       "activity": "active",
       "archived": false,
@@ -1771,34 +1803,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-05T06:53:25Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-08-30T05:44:38Z",
-      "description": "CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automation, and AI-driven security operations.",
-      "forks": 0,
-      "language": "Go",
-      "name": "cyberos",
-      "pushedAt": "2026-11-05T02:30:51Z",
-      "release": null,
-      "stars": 3,
-      "topics": [],
-      "url": "https://github.com/itssourov13/cyberos"
     },
     {
       "activity": "active",
@@ -1866,9 +1870,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "my-awesome-projects",
     "bd-admission-app",
     "hackerai-main",
-    "my-awesome-projects",
     "personal-website-pentest",
     "blog"
   ],
@@ -1877,11 +1881,11 @@
     "activeRepos90d": 27,
     "followers": 3,
     "momentum": {
-      "last30": 402,
-      "prev30": 121
+      "last30": 408,
+      "prev30": 126
     },
     "publicRepos": 33,
-    "totalContributions": 628,
+    "totalContributions": 639,
     "totalStars": 83
   },
   "status": "ok",
