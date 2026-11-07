@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-07T07:16:50.664Z",
+  "collectedAt": "2026-11-07T15:44:30.730Z",
   "contributions": {
     "monthly": [
       {
@@ -1753,6 +1753,34 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-11-07T13:14:33Z",
+      "release": null,
+      "stars": 4,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-07T13:08:55Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-19T11:46:05Z",
       "description": "A deliberately vulnerable web application for hands-on penetration testing, vulnerability research, and security assessment practice.",
       "forks": 0,
@@ -1763,34 +1791,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-06T19:28:04Z",
-      "release": null,
-      "stars": 1,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-11-06T14:23:55Z",
-      "release": null,
-      "stars": 4,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1816,7 +1816,7 @@
       "name": "bd-admission-app",
       "pushedAt": "2026-11-05T16:15:56Z",
       "release": null,
-      "stars": 1,
+      "stars": 2,
       "topics": [
         "typescript"
       ],
@@ -1874,23 +1874,23 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "personal-website-pentest",
-    "my-awesome-projects",
     "hackerai-main",
+    "my-awesome-projects",
+    "personal-website-pentest",
     "bd-admission-app",
     "blog"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 27,
-    "followers": 3,
+    "followers": 2,
     "momentum": {
       "last30": 402,
       "prev30": 138
     },
     "publicRepos": 33,
     "totalContributions": 645,
-    "totalStars": 83
+    "totalStars": 85
   },
   "status": "ok",
   "world": {
