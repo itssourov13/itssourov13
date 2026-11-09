@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-09T08:04:30.937Z",
+  "collectedAt": "2026-11-09T19:54:05.603Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 62
+        "total": 74
       }
     ],
-    "total": 646,
+    "total": 658,
     "weeks": [
       [
         [
@@ -1619,8 +1619,8 @@
           0
         ],
         [
-          1,
-          1
+          13,
+          2
         ]
       ]
     ]
@@ -1628,27 +1628,33 @@
   "edges": [
     [
       0,
-      2,
+      4,
       "language",
       "Python"
     ],
     [
-      4,
+      2,
+      3,
+      "language",
+      "TypeScript"
+    ],
+    [
+      2,
       5,
       "language",
       "TypeScript"
     ],
     [
-      4,
-      6,
+      3,
+      5,
       "language",
       "TypeScript"
     ],
     [
       5,
       6,
-      "language",
-      "TypeScript"
+      "topic",
+      "typescript"
     ]
   ],
   "featured": [
@@ -1687,27 +1693,23 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 65.8
+        "percent": 67
       },
       {
         "name": "JavaScript",
-        "percent": 13
+        "percent": 13.1
       },
       {
         "name": "Python",
-        "percent": 7.3
+        "percent": 7.4
       },
       {
         "name": "Go",
-        "percent": 6.3
-      },
-      {
-        "name": "HTML",
-        "percent": 2.3
+        "percent": 6.4
       },
       {
         "name": "CSS",
-        "percent": 1.8
+        "percent": 1.9
       },
       {
         "name": "MDX",
@@ -1715,7 +1717,11 @@
       },
       {
         "name": "GLSL",
-        "percent": 1
+        "percent": 1.1
+      },
+      {
+        "name": "HTML",
+        "percent": 0.7
       },
       {
         "name": "Other",
@@ -1727,43 +1733,12 @@
     {
       "activity": "active",
       "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-09T06:41:09Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-14T06:18:49Z",
-      "description": "Create Present - Open-source gift website for creating beautiful, personalized digital gifts for birthdays, anniversaries, proposals, and every special moment—all for free. 🎁",
-      "forks": 0,
-      "language": "HTML",
-      "name": "create-present-website",
-      "pushedAt": "2026-11-09T05:59:56Z",
-      "release": null,
-      "stars": 2,
-      "topics": [
-        "html",
-        "web-development"
-      ],
-      "url": "https://github.com/itssourov13/create-present-website"
-    },
-    {
-      "activity": "active",
-      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-11-08T13:36:19Z",
+      "pushedAt": "2026-11-09T16:33:59Z",
       "release": null,
       "stars": 4,
       "topics": [],
@@ -1777,11 +1752,25 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "personal-website-pentest",
-      "pushedAt": "2026-11-06T22:10:06Z",
+      "pushedAt": "2026-11-09T10:55:51Z",
       "release": null,
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-09T06:41:09Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1812,6 +1801,24 @@
         "typescript"
       ],
       "url": "https://github.com/itssourov13/bd-admission-app"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-09-12T05:23:11Z",
+      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
+      "forks": 0,
+      "language": "MDX",
+      "name": "blog",
+      "pushedAt": "2026-11-03T10:23:16Z",
+      "release": null,
+      "stars": 3,
+      "topics": [
+        "mdx",
+        "typescript",
+        "website"
+      ],
+      "url": "https://github.com/itssourov13/blog"
     }
   ],
   "media": {
@@ -1847,23 +1854,23 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "my-awesome-projects",
-    "create-present-website",
     "hackerai-main",
     "personal-website-pentest",
-    "bd-admission-app"
+    "my-awesome-projects",
+    "bd-admission-app",
+    "blog"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 27,
+    "activeRepos90d": 26,
     "followers": 2,
     "momentum": {
-      "last30": 375,
+      "last30": 387,
       "prev30": 166
     },
-    "publicRepos": 33,
-    "totalContributions": 646,
-    "totalStars": 85
+    "publicRepos": 32,
+    "totalContributions": 658,
+    "totalStars": 83
   },
   "status": "ok",
   "world": {
