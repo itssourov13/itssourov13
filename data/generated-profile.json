@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-10T17:07:35.195Z",
+  "collectedAt": "2026-11-10T22:25:19.965Z",
   "contributions": {
     "monthly": [
       {
@@ -1632,18 +1632,18 @@
   "edges": [
     [
       0,
-      3,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
+      3,
       4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
@@ -1737,6 +1737,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-10T19:48:08Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1747,20 +1761,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-09T22:25:51Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1858,15 +1858,15 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai-main",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-pentest",
     "bd-admission-app",
     "blog"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 26,
+    "activeRepos90d": 25,
     "followers": 2,
     "momentum": {
       "last30": 385,

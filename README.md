@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, my-awesome-projects, personal-website-pentest, bd-admission-app, blog" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, my-awesome-projects, hackerai-main, personal-website-pentest, bd-admission-app, blog" width="100%">
 
 ## After hours
 
@@ -29,7 +29,7 @@
 
 ## GitHub intelligence
 
-<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 26 pushed in the last 90 days, 83 stars received, 2 followers; 385 contributions in the last 30 days against 168 in the 30 before" width="100%">
+<img src="assets/generated/github-intelligence.svg" alt="32 public repositories, 25 pushed in the last 90 days, 83 stars received, 2 followers; 385 contributions in the last 30 days against 168 in the 30 before" width="100%">
 
 <img src="assets/generated/contribution-terrain.svg" alt="Isometric terrain of 658 GitHub contributions" width="100%">
 
@@ -41,8 +41,8 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-10 |
 | [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-10 |
-| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-09 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-11-09 |
 | [cyberos](https://github.com/itssourov13/cyberos) | CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security… | Go | Active | 2026-11-05 |
 | [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | An offline-first Android app for practicing university admission questions in Bangladesh, organized…<br>`typescript` | TypeScript | Active | 2026-11-05 |
