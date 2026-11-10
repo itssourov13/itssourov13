@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-09T19:54:05.603Z",
+  "collectedAt": "2026-11-10T08:29:22.476Z",
   "contributions": {
     "monthly": [
       {
@@ -1621,6 +1621,10 @@
         [
           13,
           2
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1628,24 +1632,24 @@
   "edges": [
     [
       0,
-      4,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
       3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
@@ -1733,6 +1737,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-09T22:25:51Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1757,20 +1775,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/personal-website-pentest"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-09T06:41:09Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1854,9 +1858,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "my-awesome-projects",
     "hackerai-main",
     "personal-website-pentest",
-    "my-awesome-projects",
     "bd-admission-app",
     "blog"
   ],
@@ -1865,8 +1869,8 @@
     "activeRepos90d": 26,
     "followers": 2,
     "momentum": {
-      "last30": 387,
-      "prev30": 166
+      "last30": 385,
+      "prev30": 168
     },
     "publicRepos": 32,
     "totalContributions": 658,
