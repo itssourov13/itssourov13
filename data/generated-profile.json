@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-11T17:15:09.300Z",
+  "collectedAt": "2026-11-11T23:30:30.103Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 74
+        "total": 75
       }
     ],
-    "total": 658,
+    "total": 659,
     "weeks": [
       [
         [
@@ -1627,8 +1627,8 @@
           0
         ],
         [
-          0,
-          0
+          1,
+          1
         ]
       ]
     ]
@@ -1653,16 +1653,28 @@
       "TypeScript"
     ],
     [
+      2,
+      6,
+      "language",
+      "TypeScript"
+    ],
+    [
       4,
       5,
       "language",
       "TypeScript"
     ],
     [
+      4,
+      6,
+      "language",
+      "TypeScript"
+    ],
+    [
       5,
       6,
-      "topic",
-      "typescript"
+      "language",
+      "TypeScript"
     ]
   ],
   "featured": [
@@ -1741,6 +1753,36 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-09-16T16:39:38Z",
+      "description": "Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "claude-personal-website",
+      "pushedAt": "2026-11-11T21:37:12Z",
+      "release": null,
+      "stars": 3,
+      "topics": [
+        "nextjs"
+      ],
+      "url": "https://github.com/itssourov13/claude-personal-website"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-11T19:39:45Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1751,20 +1793,6 @@
       "stars": 4,
       "topics": [],
       "url": "https://github.com/itssourov13/hackerai-main"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-10T19:48:08Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1809,24 +1837,6 @@
         "typescript"
       ],
       "url": "https://github.com/itssourov13/bd-admission-app"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-09-12T05:23:11Z",
-      "description": "Blog Website — Personal publication covering cybersecurity, engineering, programming, technology, ideas, and life.",
-      "forks": 0,
-      "language": "MDX",
-      "name": "blog",
-      "pushedAt": "2026-11-03T10:23:16Z",
-      "release": null,
-      "stars": 3,
-      "topics": [
-        "mdx",
-        "typescript",
-        "website"
-      ],
-      "url": "https://github.com/itssourov13/blog"
     }
   ],
   "media": {
@@ -1862,22 +1872,22 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai-main",
+    "claude-personal-website",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-pentest",
-    "bd-admission-app",
-    "blog"
+    "bd-admission-app"
   ],
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 24,
     "followers": 2,
     "momentum": {
-      "last30": 373,
+      "last30": 374,
       "prev30": 169
     },
     "publicRepos": 32,
-    "totalContributions": 658,
+    "totalContributions": 659,
     "totalStars": 83
   },
   "status": "ok",
