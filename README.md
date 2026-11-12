@@ -20,7 +20,7 @@
 <tr><td width="50%" valign="top"><a href="https://github.com/itssourov13/passhunter"><img src="assets/generated/cards/passhunter.svg" alt="passhunter — PassHunter — Advanced custom password-pattern generation framework for authorized security testing, CTFs, labs, and sec… (Python)" width="100%"></a></td><td width="50%" valign="top"><a href="https://github.com/itssourov13/cyberos"><img src="assets/generated/cards/cyberos.svg" alt="cyberos — CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security research, automatio… (Go)" width="100%"></a></td></tr>
 </table>
 
-<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, my-awesome-projects, bd-admission-app, claude-personal-website, hackerai-main, personal-website-pentest" width="100%">
+<img src="assets/generated/project-constellation.svg" alt="Project constellation: passhunter, cyberos, hackerai-main, my-awesome-projects, bd-admission-app, claude-personal-website, personal-website-pentest" width="100%">
 
 ## After hours
 
@@ -41,10 +41,10 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
+| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-12 |
 | [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-12 |
 | [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | An offline-first Android app for practicing university admission questions in Bangladesh, organized…<br>`typescript` | TypeScript | Active | 2026-11-12 |
 | [claude-personal-website](https://github.com/itssourov13/claude-personal-website) | Sourov Mondol — Demo Personal website, portfolio, research, ideas, and engineering.<br>`nextjs` | TypeScript | Active | 2026-11-11 |
-| [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-11 |
 | [personal-website-pentest](https://github.com/itssourov13/personal-website-pentest) | A deliberately vulnerable web application for hands-on penetration testing, vulnerability research,… | TypeScript | Active | 2026-11-09 |
 | [cyberos](https://github.com/itssourov13/cyberos) | CYBEROS — An extensible cybersecurity platform for offensive security, defensive security, security… | Go | Active | 2026-11-05 |
 
