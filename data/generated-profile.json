@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-18T08:36:57.961Z",
+  "collectedAt": "2026-11-18T18:10:39.670Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 131
+        "total": 142
       }
     ],
-    "total": 715,
+    "total": 726,
     "weeks": [
       [
         [
@@ -1627,8 +1627,8 @@
           4
         ],
         [
-          2,
-          1
+          13,
+          3
         ]
       ]
     ]
@@ -1636,13 +1636,13 @@
   "edges": [
     [
       0,
-      3,
+      4,
       "language",
       "Python"
     ],
     [
       2,
-      4,
+      3,
       "language",
       "TypeScript"
     ],
@@ -1665,19 +1665,19 @@
       "TypeScript"
     ],
     [
-      4,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      3,
       6,
       "language",
       "TypeScript"
     ],
     [
-      4,
+      3,
       7,
       "language",
       "TypeScript"
@@ -1777,12 +1777,26 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-11-18T15:47:46Z",
+      "release": null,
+      "stars": 5,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-10-28T09:51:14Z",
       "description": "An offline-first Android app for practicing university admission questions in Bangladesh, organized by university and admission unit.",
       "forks": 0,
       "language": "TypeScript",
       "name": "bd-admission-app",
-      "pushedAt": "2026-11-17T22:44:57Z",
+      "pushedAt": "2026-11-18T13:04:32Z",
       "release": null,
       "stars": 2,
       "topics": [
@@ -1803,20 +1817,6 @@
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-11-17T16:11:34Z",
-      "release": null,
-      "stars": 5,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1896,23 +1896,23 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "hackerai-main",
     "bd-admission-app",
     "my-awesome-projects",
-    "hackerai-main",
     "personal-website-test",
     "claude-personal-website",
     "personal-website-pentest"
   ],
   "schemaVersion": 1,
   "stats": {
-    "activeRepos90d": 23,
+    "activeRepos90d": 22,
     "followers": 3,
     "momentum": {
-      "last30": 325,
+      "last30": 336,
       "prev30": 247
     },
     "publicRepos": 32,
-    "totalContributions": 715,
+    "totalContributions": 726,
     "totalStars": 84
   },
   "status": "ok",
