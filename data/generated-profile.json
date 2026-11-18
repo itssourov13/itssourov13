@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-17T18:38:49.087Z",
+  "collectedAt": "2026-11-18T08:36:57.961Z",
   "contributions": {
     "monthly": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "month": "2026-11",
-        "total": 105
+        "total": 131
       }
     ],
-    "total": 689,
+    "total": 715,
     "weeks": [
       [
         [
@@ -856,7 +856,7 @@
         ],
         [
           13,
-          2
+          3
         ],
         [
           4,
@@ -1092,7 +1092,7 @@
         ],
         [
           8,
-          1
+          2
         ],
         [
           0,
@@ -1110,11 +1110,11 @@
         ],
         [
           7,
-          1
+          2
         ],
         [
           8,
-          1
+          2
         ],
         [
           0,
@@ -1136,7 +1136,7 @@
       [
         [
           10,
-          1
+          2
         ],
         [
           3,
@@ -1212,7 +1212,7 @@
         ],
         [
           6,
-          1
+          2
         ],
         [
           4,
@@ -1234,11 +1234,11 @@
         ],
         [
           9,
-          1
+          2
         ],
         [
           6,
-          1
+          2
         ],
         [
           3,
@@ -1246,7 +1246,7 @@
         ],
         [
           9,
-          1
+          2
         ],
         [
           2,
@@ -1354,7 +1354,7 @@
         ],
         [
           6,
-          1
+          2
         ],
         [
           4,
@@ -1388,11 +1388,11 @@
         ],
         [
           6,
-          1
+          2
         ],
         [
           10,
-          1
+          2
         ],
         [
           0,
@@ -1436,15 +1436,15 @@
       [
         [
           12,
-          2
+          3
         ],
         [
           21,
-          3
+          4
         ],
         [
           14,
-          2
+          3
         ],
         [
           5,
@@ -1452,15 +1452,15 @@
         ],
         [
           12,
-          2
-        ],
-        [
-          21,
           3
         ],
         [
+          21,
+          4
+        ],
+        [
           7,
-          1
+          2
         ]
       ],
       [
@@ -1470,15 +1470,15 @@
         ],
         [
           12,
-          2
+          3
         ],
         [
           19,
-          2
+          4
         ],
         [
           27,
-          3
+          4
         ],
         [
           0,
@@ -1486,7 +1486,7 @@
         ],
         [
           19,
-          2
+          4
         ],
         [
           0,
@@ -1496,27 +1496,27 @@
       [
         [
           10,
-          1
+          2
         ],
         [
           30,
-          3
+          4
         ],
         [
           22,
-          3
+          4
         ],
         [
           18,
-          2
+          4
         ],
         [
           10,
-          1
+          2
         ],
         [
           12,
-          2
+          3
         ],
         [
           11,
@@ -1530,7 +1530,7 @@
         ],
         [
           22,
-          3
+          4
         ],
         [
           0,
@@ -1538,7 +1538,7 @@
         ],
         [
           22,
-          3
+          4
         ],
         [
           2,
@@ -1546,17 +1546,17 @@
         ],
         [
           12,
-          2
+          3
         ],
         [
           22,
-          3
+          4
         ]
       ],
       [
         [
           7,
-          1
+          2
         ],
         [
           0,
@@ -1564,7 +1564,7 @@
         ],
         [
           22,
-          3
+          4
         ],
         [
           0,
@@ -1572,11 +1572,11 @@
         ],
         [
           22,
-          3
+          4
         ],
         [
           8,
-          1
+          2
         ],
         [
           2,
@@ -1590,7 +1590,7 @@
         ],
         [
           13,
-          2
+          3
         ],
         [
           0,
@@ -1602,11 +1602,11 @@
         ],
         [
           18,
-          2
+          4
         ],
         [
           10,
-          1
+          2
         ],
         [
           0,
@@ -1619,12 +1619,16 @@
           0
         ],
         [
-          0,
-          0
+          2,
+          1
         ],
         [
-          0,
-          0
+          22,
+          4
+        ],
+        [
+          2,
+          1
         ]
       ]
     ]
@@ -1632,13 +1636,13 @@
   "edges": [
     [
       0,
-      4,
+      3,
       "language",
       "Python"
     ],
     [
       2,
-      3,
+      4,
       "language",
       "TypeScript"
     ],
@@ -1661,19 +1665,19 @@
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       7,
       "language",
       "TypeScript"
@@ -1733,23 +1737,23 @@
     "items": [
       {
         "name": "TypeScript",
-        "percent": 67.5
+        "percent": 67.3
       },
       {
         "name": "JavaScript",
-        "percent": 12.9
+        "percent": 13.1
       },
       {
         "name": "Python",
-        "percent": 7.3
+        "percent": 7.4
       },
       {
         "name": "Go",
-        "percent": 6.3
+        "percent": 6.2
       },
       {
         "name": "CSS",
-        "percent": 1.9
+        "percent": 1.8
       },
       {
         "name": "MDX",
@@ -1757,7 +1761,7 @@
       },
       {
         "name": "GLSL",
-        "percent": 1.1
+        "percent": 1
       },
       {
         "name": "HTML",
@@ -1765,25 +1769,11 @@
       },
       {
         "name": "Other",
-        "percent": 0.9
+        "percent": 0.8
       }
     ]
   },
   "latest": [
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-07-26T06:23:29Z",
-      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
-      "forks": 0,
-      "language": "TypeScript",
-      "name": "hackerai-main",
-      "pushedAt": "2026-11-17T16:11:34Z",
-      "release": null,
-      "stars": 5,
-      "topics": [],
-      "url": "https://github.com/itssourov13/hackerai-main"
-    },
     {
       "activity": "active",
       "archived": false,
@@ -1792,7 +1782,7 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "bd-admission-app",
-      "pushedAt": "2026-11-17T14:37:31Z",
+      "pushedAt": "2026-11-17T22:44:57Z",
       "release": null,
       "stars": 2,
       "topics": [
@@ -1808,11 +1798,25 @@
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-11-16T22:09:29Z",
+      "pushedAt": "2026-11-17T20:59:20Z",
       "release": null,
       "stars": 2,
       "topics": [],
       "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
+      "createdAt": "2026-07-26T06:23:29Z",
+      "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
+      "forks": 0,
+      "language": "TypeScript",
+      "name": "hackerai-main",
+      "pushedAt": "2026-11-17T16:11:34Z",
+      "release": null,
+      "stars": 5,
+      "topics": [],
+      "url": "https://github.com/itssourov13/hackerai-main"
     },
     {
       "activity": "active",
@@ -1892,9 +1896,9 @@
   "scene": [
     "passhunter",
     "cyberos",
-    "hackerai-main",
     "bd-admission-app",
     "my-awesome-projects",
+    "hackerai-main",
     "personal-website-test",
     "claude-personal-website",
     "personal-website-pentest"
@@ -1902,13 +1906,13 @@
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 23,
-    "followers": 2,
+    "followers": 3,
     "momentum": {
-      "last30": 329,
-      "prev30": 217
+      "last30": 325,
+      "prev30": 247
     },
     "publicRepos": 32,
-    "totalContributions": 689,
+    "totalContributions": 715,
     "totalStars": 84
   },
   "status": "ok",
