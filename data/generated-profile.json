@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-19T18:22:36.861Z",
+  "collectedAt": "2026-11-20T08:40:07.266Z",
   "contributions": {
     "monthly": [
       {
@@ -1633,6 +1633,10 @@
         [
           9,
           2
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1640,48 +1644,48 @@
   "edges": [
     [
       0,
-      4,
+      2,
       "language",
       "Python"
     ],
     [
-      2,
       3,
+      4,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       5,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       6,
       "language",
       "TypeScript"
     ],
     [
-      2,
+      3,
       7,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       5,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       6,
       "language",
       "TypeScript"
     ],
     [
-      3,
+      4,
       7,
       "language",
       "TypeScript"
@@ -1781,6 +1785,20 @@
     {
       "activity": "active",
       "archived": false,
+      "createdAt": "2026-10-25T12:08:04Z",
+      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
+      "forks": 0,
+      "language": "Python",
+      "name": "my-awesome-projects",
+      "pushedAt": "2026-11-19T20:42:00Z",
+      "release": null,
+      "stars": 2,
+      "topics": [],
+      "url": "https://github.com/itssourov13/my-awesome-projects"
+    },
+    {
+      "activity": "active",
+      "archived": false,
       "createdAt": "2026-07-26T06:23:29Z",
       "description": "Official HackerAi - \"Production-grade AI-powered cybersecurity assistant with autonomous pentesting agents, secure sandboxes, real-time collaboration, and modern SaaS architecture.\"",
       "forks": 0,
@@ -1807,20 +1825,6 @@
         "typescript"
       ],
       "url": "https://github.com/itssourov13/bd-admission-app"
-    },
-    {
-      "activity": "active",
-      "archived": false,
-      "createdAt": "2026-10-25T12:08:04Z",
-      "description": "A visual portfolio showcasing my software, cybersecurity, web development, and creative projects with project details and live demos.",
-      "forks": 0,
-      "language": "Python",
-      "name": "my-awesome-projects",
-      "pushedAt": "2026-11-18T20:37:00Z",
-      "release": null,
-      "stars": 2,
-      "topics": [],
-      "url": "https://github.com/itssourov13/my-awesome-projects"
     },
     {
       "activity": "active",
@@ -1900,9 +1904,9 @@
   "scene": [
     "passhunter",
     "cyberos",
+    "my-awesome-projects",
     "hackerai-main",
     "bd-admission-app",
-    "my-awesome-projects",
     "personal-website-test",
     "claude-personal-website",
     "personal-website-pentest"
@@ -1910,10 +1914,10 @@
   "schemaVersion": 1,
   "stats": {
     "activeRepos90d": 22,
-    "followers": 3,
+    "followers": 2,
     "momentum": {
-      "last30": 323,
-      "prev30": 264
+      "last30": 305,
+      "prev30": 282
     },
     "publicRepos": 32,
     "totalContributions": 735,
