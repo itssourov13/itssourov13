@@ -1,51 +1,7 @@
 {
   "calendar": {
-    "total": 735,
+    "total": 746,
     "weeks": [
-      [
-        {
-          "count": 0,
-          "date": "2025-11-16",
-          "level": 0,
-          "weekday": 0
-        },
-        {
-          "count": 0,
-          "date": "2025-11-17",
-          "level": 0,
-          "weekday": 1
-        },
-        {
-          "count": 0,
-          "date": "2025-11-18",
-          "level": 0,
-          "weekday": 2
-        },
-        {
-          "count": 0,
-          "date": "2025-11-19",
-          "level": 0,
-          "weekday": 3
-        },
-        {
-          "count": 0,
-          "date": "2025-11-20",
-          "level": 0,
-          "weekday": 4
-        },
-        {
-          "count": 0,
-          "date": "2025-11-21",
-          "level": 0,
-          "weekday": 5
-        },
-        {
-          "count": 0,
-          "date": "2025-11-22",
-          "level": 0,
-          "weekday": 6
-        }
-      ],
       [
         {
           "count": 0,
@@ -2328,10 +2284,18 @@
           "weekday": 5
         },
         {
-          "count": 0,
+          "count": 2,
           "date": "2026-11-21",
-          "level": 0,
+          "level": 1,
           "weekday": 6
+        }
+      ],
+      [
+        {
+          "count": 9,
+          "date": "2026-11-22",
+          "level": 2,
+          "weekday": 0
         }
       ]
     ]
