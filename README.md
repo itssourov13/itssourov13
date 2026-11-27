@@ -41,7 +41,7 @@
 
 | Repository | Description | Language | Status | Last push |
 | --- | --- | --- | --- | --- |
-| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-26 |
+| [my-awesome-projects](https://github.com/itssourov13/my-awesome-projects) | A visual portfolio showcasing my software, cybersecurity, web development, and creative projects wi… | Python | Active | 2026-11-27 |
 | [hackerai-main](https://github.com/itssourov13/hackerai-main) | Official HackerAi - "Production-grade AI-powered cybersecurity assistant with autonomous pentesting… | TypeScript | Active | 2026-11-26 |
 | [bd-admission-app](https://github.com/itssourov13/bd-admission-app) | An offline-first Android app for practicing university admission questions in Bangladesh, organized…<br>`typescript` | TypeScript | Active | 2026-11-22 |
 | [personal-website-test](https://github.com/itssourov13/personal-website-test) | Personal website . Build with Next js. | TypeScript | Active | 2026-11-12 |
