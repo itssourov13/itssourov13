@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-27T09:44:52.094Z",
+  "collectedAt": "2026-11-28T00:34:55.779Z",
   "contributions": {
     "monthly": [
       {
@@ -1637,6 +1637,10 @@
         [
           0,
           0
+        ],
+        [
+          0,
+          0
         ]
       ]
     ]
@@ -1790,7 +1794,7 @@
       "forks": 0,
       "language": "Python",
       "name": "my-awesome-projects",
-      "pushedAt": "2026-11-27T08:40:42Z",
+      "pushedAt": "2026-11-27T21:22:02Z",
       "release": null,
       "stars": 2,
       "topics": [],
@@ -1804,7 +1808,7 @@
       "forks": 0,
       "language": "TypeScript",
       "name": "hackerai-main",
-      "pushedAt": "2026-11-26T17:02:17Z",
+      "pushedAt": "2026-11-27T16:47:40Z",
       "release": null,
       "stars": 5,
       "topics": [],
@@ -1916,8 +1920,8 @@
     "activeRepos90d": 22,
     "followers": 3,
     "momentum": {
-      "last30": 198,
-      "prev30": 372
+      "last30": 196,
+      "prev30": 374
     },
     "publicRepos": 32,
     "totalContributions": 746,
